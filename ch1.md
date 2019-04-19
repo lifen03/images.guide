@@ -1,0 +1,31 @@
+## [1.介绍](https://images.guide/#introduction)
+
+**图片仍然是造成网络膨胀的首要原因。**
+
+图像占用了大量的互联网带宽，因为它们通常有较大的文件大小。根据[HTTP存档](http://httparchive.org/)，60%用于获取网页的数据是由JPEG、PNG和GIF组成的图像。截至2017年7月，图片在3.0MB平均站点加载的内容中占了[1.7MB](http://httparchive.org/interesting.php#bytesperpage)。
+
+根据Tammy Everts，将图像添加到页面或使现有图像更大已被[证明](https://calendar.perfplanet.com/2014/images-are-king-an-image-optimization-checklist-for-everyone-in-your-organization/)可以提高转化率。图像不太可能消失，因此投资于有效的压缩策略以尽量减少膨胀变得非常重要。
+
+![Performance](https://images.guide/images/book-images/Modern-Image00-medium.jpg)
+
+根据Soasta/Google 2016年的研究，图片是第二大转换预测指标，最佳页面的图片数量少于38%。
+
+图像优化包含各种不同的方法，它们都可以减少图像的文件大小。这最终取决于你的图像所要求的视觉保真度。
+
+![Performance](https://images.guide/images/book-images/image-optimisation-medium.jpeg)
+
+**图像优化**：选择正确的格式，仔细压缩，并将关键图像优先于那些可能被延迟加载的图像。
+
+常见的图像优化包括压缩，使用[``<picture>``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture)/[``<img srcset>``](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)响应式地根据屏幕大小为它们服务，以及调整它们的大小以降低图像解码成本。
+
+![Performance](https://images.guide/images/book-images/chart_naedwl-medium.jpg)
+
+根据[HTTP存档](http://jsfiddle.net/rviscomi/rzneberp/embedded/result/)，在第95百分位数(查看累积分布函数)的每幅图像节省的费用是30KB！
+
+有足够的空间让我们共同优化图像更好。
+
+![Performance](https://images.guide/images/book-images/image-optim-medium.jpg)
+
+ImageOptim是免费的，通过现代压缩技术和剥离不必要的EXIF元数据来减少图像大小。
+
+如果您是一个设计师，也有一个[Sketch的ImageOptim插件](https://github.com/ImageOptim/Sketch-plugin)，将优化您导出d的资源。我发现它节省了很多时间。
