@@ -119,7 +119,7 @@ Chrome子采样配置的JPEG是质量为80。
 
 了解更多：在JPEG规范中没有指定色度子采样的确切方法，因此不同的解码器处理它的方式不同。MozJPEG和libjpeg-turbo使用相同的缩放方法。旧版本的libjpeg使用了一种不同的方法，该方法以颜色添加边缘振荡效应。
 
-> ** 注意：**Photoshop在使用“Save for web”功能时自动设置色度子采样。当图像质量设置在51-100之间时，完全不使用子采样(4:4:4)。当质量低于此值时，将使用4:2:0子采样。这就是为什么在将质量从51切换到50时可以观察到更大的文件大小缩减。  
+> ** 注意：**Photoshop在使用“Save for Web”功能时自动设置色度子采样。当图像质量设置在51-100之间时，完全不使用子采样(4:4:4)。当质量低于此值时，将使用4:2:0子采样。这就是为什么在将质量从51切换到50时可以观察到更大的文件大小缩减。  
 <br>
 
 > **注意: **在子采样讨论中，经常提到[YCbCr](https://en.wikipedia.org/wiki/YCbCr)这个术语。这个模型可以表示经过伽玛校正的[RGB](https://en.wikipedia.org/wiki/RGB_color_model)颜色空间。Y为伽玛校正亮度，Cb为蓝色的色度分量，Cr为红色的色度分量。如果查看ExifData，你将看到YCbCr接近于抽样级别。
@@ -172,7 +172,7 @@ Chrome子采样配置的JPEG是质量为80。
 
     - [JPEGRecompress](https://github.com/danielgtaylor/jpeg-archive)(它在底层使用的是MozJPEG)
 
-    - [JPEGMini](http://www.jpegmini.com/) 它类似于Guetzli —— 自动选择最好的质量。它在技术上没有Guetzli那么复杂，但速度更快，目标是输出更适合web的质量范围的图像。
+    - [JPEGMini](http://www.jpegmini.com/) 它类似于Guetzli —— 自动选择最好的质量。它在技术上没有Guetzli那么复杂，但速度更快，目标是输出更适合Web的质量范围的图像。
 
     - [ImageOptim API](https://imageoptim.com/api) ([这里](https://imageoptim.com/online)有免费的在线界面工具) —— 它在处理颜色方面是独一无二的。你可以选择颜色质量与整体质量分开。它会自动选择色度子采样级别，以在截图中保留高分辨率的颜色，但避免在自然照片的平滑颜色上浪费字节。
 

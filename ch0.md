@@ -27,20 +27,20 @@
                 <li><a href="ch6.html#whos-using-webp-in-production">6.2.谁在生产中使用WebP?</a></li>
                 <li><a href="ch6.html#how-does-webp-encoding-work">6.3.WebP编码是如何工作的?</a></li>
                 <li><a href="ch6.html#webp-browser-support">6.4.WebP浏览器支持t</a></li>
-                <li><a href="ch6.html#how-do-i-convert-to-webp">6.5.我的图像如何转换成WebP?</a></li>
-                <li><a href="ch6.html#how-do-i-view-webp-on-my-os">6.6.如何查看我的操作系统上的WebP图像?</a></li>
-                <li><a href="ch6.html#how-do-i-serve-webp">6.7.我如何提供WebP?</a></li>
+                <li><a href="ch6.html#how-do-i-convert-to-webp">6.5.图像如何转换成WebP?</a></li>
+                <li><a href="ch6.html#how-do-i-view-webp-on-my-os">6.6.如何查看操作系统上的WebP图像?</a></li>
+                <li><a href="ch6.html#how-do-i-serve-webp">6.7.如何提供WebP?</a></li>
             </ul>
         </li>
         <li><a href="ch7.html">7.SVG优化</a></li>
         <li><a href="ch8.html">8.避免使用有损编解码器重新压缩图像</a></li>
         <li><a href="ch9.html">9.减少不必要的图像解码并调整成本</a>
             <ul>
-                <li><a href="ch9.html#delivering-hidpi-with-srcset">9.1使用<code>srcset</code>提供HiDPI图像</a></li>
-                <li><a href="ch9.html#art-direction">9.2艺术方向</a></li>
+                <li><a href="ch9.html#delivering-hidpi-with-srcset">9.1.使用<code>srcset</code>提供高分辨率图像</a></li>
+                <li><a href="ch9.html#art-direction">9.2.艺术指导</a></li>
             </ul>
         </li>
-        <li><a href="ch10.html">10.色彩管理</a></li>
+        <li><a href="ch10.html">10.颜色管理</a></li>
         <li><a href="ch11.html">11.图像精灵</a></li>
         <li><a href="ch12.html">12.延迟加载非关键图像</a></li>
         <li><a href="ch13.html">13.避免 <code>display: none;</code> 陷阱</a></li>

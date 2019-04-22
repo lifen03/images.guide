@@ -268,7 +268,7 @@ Vincent Orback推荐这种方法:
 
 浏览器可以通过[Accept头](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept)[显式地发出WebP支持的信号](http://vincentorback.se/blog/using-webp-images-with-htaccess/)。如果你控制后端，则可以返回存在于磁盘上的图像的WebP版本，而不是JPEG或PNG等格式。但是这并不总是可能的(例如，对于静态主机，如GitHub pages或S3)，所以在考虑这个选项之前一定要检查一下服务器是否支持。
 
-下面是Apache web服务器的.htaccess文件示例:
+下面是Apache Web服务器的.htaccess文件示例:
 
 ```XML
 <IfModule mod_rewrite.c>

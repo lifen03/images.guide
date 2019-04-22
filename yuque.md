@@ -885,59 +885,59 @@ Sara Soueidan的《[web优化SVG交付的技巧](https://calendar.perfplanet.com
 
 ## [8.避免使用有损编解码器重新压缩图像](https://images.guide/#avoid-recompressing-images-lossy-codecs)
 
-建议始终对原始图像进行压缩。重新压缩图像会有后果。假设你有一个JPEG，它已经被压缩，质量为60。如果你用有损编码重新压缩此图像，它看起来会更糟。每一轮额外的压缩都将引入分代丢失——信息将丢失，压缩工件将开始构建。即使你在高质量的环境下重新压缩。
+建议始终对原始图像进行压缩。重新压缩图像会有很严重的后果。假设你有一个JPEG，它已经被压缩，质量为60。如果你用有损编码重新压缩此图像，它看起来会更糟。每一轮额外的压缩都将引入分代丢失 —— 压缩过的图像构建会导致信息丢失。即使你在高质量的环境下重新压缩。
 
-为了避免这个陷阱，**首先设置你愿意接受的最低质量的文件**，你将从一开始就获得最大的文件节省。然后你就可以避免这个陷阱，因为仅从降低质量的角度来看，任何文件大小的减少都是不好的。
+为了避免这个陷阱，**首先设置你愿意接受的最低质量的文件**，将从一开始就获得文件大小的最大可节省的字节数。然后你就可以避免这个陷阱，因为仅从降低质量的角度来看，任何文件大小的减少都是不好的。
 
-重新编码一个有损耗的文件几乎总是会得到一个较小的文件，但这并不意味着你可以从中获得你可能认为的那么高的质量。
+重新编码一个有损耗的文件总是会得到一个较小的文件，但这并不意味着你可以从中获得你可能认为的那么高质量。
 
 ![Performance](https://images.guide/images/book-images/generational-loss-large.jpg)
 
-上面，从Jon Sneyers的这段[优秀的视频](https://www.youtube.com/watch?v=w7vXJbLhTyI)和[附带的文章](http://cloudinary.com/blog/why_jpeg_is_like_a_photocopier)中，我们可以看到使用几种格式进行重新压缩的世代损失影响。如果从社交网络中保存(已压缩)图像并重新上传(导致重新压缩)，你可能会遇到这个问题。质量损失会增加。
+上面，从Jon Sneyers的这段[优秀的视频](https://www.youtube.com/watch?v=w7vXJbLhTyI)和[附带的文章](http://cloudinary.com/blog/why_jpeg_is_like_a_photocopier)中，我们可以看到使用这几种格式进行重新压缩的世代损失影响。如果从社交网络中保存(已压缩)图像并重新上传(导致重新压缩)，你可能会遇到这个问题。质量损失会增加。
 
-由于网格量化，MozJPEG（可能是偶然的）对再压缩降级具有更好的抵抗力。 它不是精确地压缩所有DCT值，而是检查+1/-1范围内的接近值，以查看类似值是否压缩为更少的位。有损FLIF有一个类似于有损PNG的hack，在(重新)压缩之前，它可以查看数据并决定丢弃什么。重新压缩的png有“漏洞”，它可以检测，以避免进一步改变数据。
+由于网格量化，MozJPEG（可能是偶然的）对再压缩降级具有更好的抵抗力。 它不是精确地压缩所有DCT值，而是检查+1/-1范围内的接近值，以查看类似值是否压缩为更少的字节。有损FLIF有一个类似于有损PNG的hack，在(重新)压缩之前，它可以查看数据并决定丢弃什么。它可以检测重新压缩的PNG是否有“漏洞”，以避免进一步改变数据。
 
 **在编辑源文件时，以无损的格式(如PNG或TIFF)存储它们，以便尽可能地保持质量。**然后，你的构建工具或图像压缩服务将以最小的质量损失向用户提供你所输出的压缩版本。
 
-## [9.减少不必要的图解码并调整成本](https://images.guide/#reduce-unnecessary-image-decode-costs)
+## [9.减少不必要的图像解码和调整成本](https://images.guide/#reduce-unnecessary-image-decode-costs)
 
-我们之前已经为我们的用户提供了比我们用户所需的大、更高分辨率的图像。 这需要付出代价的。对于一般的移动硬件来说，解码和调整图像大小是非常昂贵的操作。如果向下发大图像并使用CSS或宽/高属性进行缩放，你可能会看到这种情况，它会影响性能。
+我们之前已经为用户提供了比用户所需要的更大、更高分辨率的图像。 是需要付出代价的。对于一般的移动硬件来说，解码和调整图像大小是非常昂贵的操作。如果向下发送大的图像并使用CSS的宽和高属性进行缩放，你可能会看到调整图像大小对性能的影响。
 
 ![Performance](https://images.guide/images/book-images/image-pipeline-large.jpg)
 
-当浏览器获取图像时，它必须将图像从原始源格式（例如JPEG）解码为内存中的位图。 通常需要调整图像的大小（例如，宽度已设置为其容器的百分比）。 解码和调整图像大小非常昂贵，并且可能会延迟显示图像所需的时间。
+当浏览器获取图像时，它必须将图像从原始源格式（例如JPEG）解码为内存中的位图。 通常需要调整图像的大小（例如，宽度已设置为其容器的百分比）。 解码和调整图像大小的操作就非常昂贵，并且可能会加长显示图像所需的时间。
 
-发送浏览器完全不需要调整大小就可以呈现的图像是最理想的。因此，利用[```srcset```和```size```](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)的优势，为你的目标屏幕大小和分辨率提供最小的图像——我们将很快介绍```srcset```。
+发送浏览器完全不需要调整大小就可以呈现的图像是最理想的。因此，利用[```srcset```和```size```](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)的优势，为你的目标屏幕大小和分辨率提供最小的图像 —— 我们将很快介绍```srcset```。
 
-省略图像上的```width```或```height```属性也会对性能产生负面影响。 如果没有它们，浏览器会为图像指定一个较小的占位符区域，直到有足够的字节到达它以便知道正确的尺寸。 此时，文档布局必须在称为回流的昂贵步骤中进行更新。
+省略图像上的```width```或```height```属性也会对性能产生负面影响。如果没有它们，浏览器会为图像指定一个较小的占位符区域，直到有足够的字节到达它才知道正确的尺寸。 此时，文档布局必须在成为回流的昂贵步骤中进行更新。
 
 ![Performance](https://images.guide/images/book-images/devtools-decode-large.jpg)
 
-浏览器必须经过许多步骤才能在屏幕上绘制图像。除了获取图像外，还需要对图像进行解码并经常调整大小。这些事件可以在Chrome DevTools [Timeline](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/performance-reference)中进行审计。
+浏览器必须经过许多步骤才能在屏幕上绘制图像。除了获取图像外，还需要对图像进行解码并经常调整大小。这些事件可以在Chrome DevTools [Timeline](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/performance-reference)中进行审查。
 
-较大的图像还会增加内存大小成本。解码后的图像每像素约4字节。如果你并不关心，你会让浏览器崩溃;在低端设备上，启动内存交换并不需要那么多。因此，请关注你的图像解码、调整大小和内存成本。
+较大的图像还会增加内存大小成本。解码后的图像每像素约4个字节。如果你并不关心，你会让浏览器崩溃；在低端设备上，启动内存交换并不需要那么多。因此，请关注你的图像解码、调整大小和内存的成本。
 
 ![Performance](https://images.guide/images/book-images/image-decoding-mobile-large.jpg)
 
-在普通和低端手机上解码图像的成本非常高。 在某些情况下，解码速度可能会慢5倍（如果不是更长）。
+在普通和低端手机上解码图像的成本非常高。 在某些情况下，解码速度可能会慢5倍（甚至更长）。
 
-在构建新的[移动网络体验](https://medium.com/@paularmstrong/twitter-lite-and-high-performance-react-progressive-web-apps-at-scale-d28a00e780a3)时，Twitter通过确保为用户提供适当大小的图像来提高图像解码性能。 这需要Twitter许多图像的解码时间Timeline从大约400毫秒一直降到大约19毫秒！
+在构建新的[移动网络体验](https://medium.com/@paularmstrong/twitter-lite-and-high-performance-react-progressive-web-apps-at-scale-d28a00e780a3)时，Twitter通过确保为用户提供适当大小的图像来提高图像的解码性能。 Twitter可以把很多图像的解码时间Timeline从大约400毫秒一直降到大约19毫秒！
 
 ![Performance](https://images.guide/images/book-images/image-decoding-large.jpg)
 
-Chrome DevTools时间轴/性能面板突出显示Twitter Lite优化其图像管道之前和之后的图像解码时间（绿色）。
+Chrome DevTools Timeline和Performance面板突出显示了Twitter的Lite优化其图像管道之前和之后的图像解码时间（绿色）。
 
-### [9.1 使用```srcset``提供HiDPI图像`](https://images.guide/#delivering-hidpi-with-srcset)
+<h3 id="delivering-hidpi-with-srcset"><a href="https://images.guide/#delivering-hidpi-with-srcset">9.1 使用```srcset``提供高分辨率图像`</a></h3>
 
-用户可以通过一系列具有高分辨率屏幕的移动和桌面设备访问你的网站。 [设备像素比率](https://stackoverflow.com/a/21413366)（DPR）（也称为“CSS像素比率”）决定了CSS如何解释设备的屏幕分辨率。 DPR由手机制造商创建，旨在提高移动屏幕的分辨率和清晰度，而不会使元素显得太小。
+用户可以通过一系列具有高分辨率屏幕的移动设备和桌面设备访问你的网站。 [设备像素比率](https://stackoverflow.com/a/21413366)（DPR）（也称为“CSS像素比率”）决定了CSS如何解释设备的屏幕分辨率。 DPR由手机制造商创建，旨在提高移动屏幕的分辨率和清晰度，而不会使元素显得太小。
 
-为了匹配用户可能期望的图像质量，请向其设备提供最合适的分辨率图像。 可以将锐利的高DPR图像（例如2倍，3倍）提供给支持它们的设备。 低和标准DPR图像应该在没有高分辨率屏幕的情况下提供给用户，因为这样的2倍+图像通常会产生更多的字节。
+为了匹配用户可能期望的图像质量，请向设备提供最合适的分辨率图像。可以将锐利的高分辨率图像（例如2倍、3倍）提供给支持它们的设备。 低分辨率和标准分辨率的图像应该在没有高分辨率屏幕的情况下提供给用户，因为这样的2倍以上分辨率的图像通常会产生更多的字节。
 
 ![Performance](https://images.guide/images/book-images/device-pixel-ratio-large.jpg)
 
-设备像素比率：许多网站都会跟踪常用设备的DPR，包括[material.io](https://material.io/devices/)和[mydevice.io](https://mydevice.io/devices/)。
+设备像素比率：许多网站都会跟踪常用设备的分辨率，包括[material.io](https://material.io/devices/)和[mydevice.io](https://mydevice.io/devices/)。
 
-[srcset](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)允许浏览器韦每个设备选择最佳可用图像,例如为一个2x移动显示器选择一个2×图像。不支持```srcset```的浏览器可以退回到```<img>```标记中指定的默认```src```标签。
+[srcset](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)允许浏览器为每个设备选择最佳可用图像,例如为一个2倍分辨率的移动设备显示器选择一个2倍分辨率的图像。不支持```srcset```的浏览器可以退回到```<img>```标签中指定的默认```src```属性。
 
 ```html
 <img srcset="paul-irish-320w.jpg,
@@ -946,93 +946,92 @@ Chrome DevTools时间轴/性能面板突出显示Twitter Lite优化其图像管�
      src="paul-irish-960w.jpg" alt="Paul Irish cameo">
 ```
 
-像[Cloudinary](http://cloudinary.com/blog/how_to_automatically_adapt_website_images_to_retina_and_hidpi_devices)和[Imgix](https://docs.imgix.com/apis/url/dpr)这样的图像CDN都支持控制图像密度，以便从单一规范源向用户提供最佳密度。
+像[Cloudinary](http://cloudinary.com/blog/how_to_automatically_adapt_website_images_to_retina_and_hidpi_devices)和[Imgix](https://docs.imgix.com/apis/url/dpr)这样的图像CDN服务都支持控制图像的分辨率，以便从单一规范源向用户提供最佳分辨率的图像。
 
-> 注意: 在这个免费的Udacity课程和Web基础上的图像指南中，你可以了解更多关于设备像素比和响应图像的信息。一个友好的提醒，[客户端提示](https://www.smashingmagazine.com/2016/01/leaner-responsive-images-client-hints/)也可以提供一种替代方案，在你的响应图像标记中指定每个可能的像素密度和格式。相反，它们将这些信息附加到HTTP请求中，以便web服务器能够选择最适合当前设备屏幕密度的信息。
+> **注意：**在这个免费的Udacity课程和Web基础上的图像指南中，你可以了解更多关于设备像素比和响应式图像的信息。一个友好的提醒，[客户端提示](https://www.smashingmagazine.com/2016/01/leaner-responsive-images-client-hints/)也可以提供一种替代方案，在你的响应式图像标记中指定每个可能的像素密度和格式。相反，它们将这些信息附加到HTTP请求中，以便web服务器能够选择最适合当前设备屏幕密度的信息。
 
-### [9.2 艺术方向](https://images.guide/#art-direction)
+<h3 id="dart-direction"><a href="https://images.guide/#art-direction">9.2 艺术指导</a></h3>
 
-虽然向用户提供正确的解决方案很重要，但有些网站还需要从[艺术方向](http://usecases.responsiveimages.org/#art-direction)考虑这一点。 如果用户位于较小的屏幕上，你可能需要裁剪或放大并显示主题以充分利用可用空间。 尽管艺术方向超出了本文的范围，但像[Cloudinary](http://cloudinary.com/blog/automatically_art_directed_responsive_images%20)这样的服务提供的API可以尽可能地尝试自动化。
+虽然向用户提供正确的解决方案很重要，但有些网站还需要从[艺术指导](http://usecases.responsiveimages.org/#art-direction)上考虑这一点。 如果用户位于较小的屏幕上，你可能需要裁剪或放大并显示主题以充分利用可用空间。尽管艺术指导超出了本文的范围，但像[Cloudinary](http://cloudinary.com/blog/automatically_art_directed_responsive_images%20)这样的服务提供的API尝试尽可能地自动化。
 
 ![Performance](https://images.guide/images/book-images/responsive-art-direction-large.jpg)
 
-艺术方向：埃里克·波蒂斯（Eric Portis）汇集了一个优秀的[样本](https://ericportis.com/etc/cloudinary/)，展示了在艺术方向上将如何响应式图像。 此示例调整主要横幅在不同断点处的视觉特征，以充分利用可用空间。
+艺术指导：埃里克·波蒂斯（Eric Portis）汇集了一个优秀的[样本](https://ericportis.com/etc/cloudinary/)，展示了在艺术指导上将如何呈现响应式图像。 此示例主要调整横幅在不同断点处的视觉特征，以充分利用可用空间。
 
-## [10.色彩管理](https://images.guide/#color-management)
+## [10.颜色管理](https://images.guide/#color-management)
 
-色彩至少有三种不同的视角:生物、物理和印刷。在生物学中，颜色是一种[感知现象](http://hubel.med.harvard.edu/book/ch8.pdf)。物体反射不同波长的光。我们眼睛中的光感受器将这些波长转换成我们所知的颜色。在物理学中，光很重要——光的频率和亮度。印刷更多的是关于色轮，油墨和艺术模型。
+颜色至少有三种不同的视角：生物、物理和印刷。在生物学中，颜色是一种[感知现象](http://hubel.med.harvard.edu/book/ch8.pdf)。物体反射不同波长的光。我们眼睛中的光感受器将这些波长转换成我们所知道的颜色。在物理学中，光（光的频率和亮度）很重要。印刷中更多的是关于色论、油墨和艺术模型。  
 
-理想情况下，世界上的每个屏幕和web浏览器显示的颜色完全相同。不幸的是，由于一些固有的不一致，它们做不到。色彩管理允许我们通过色彩模型、空间和配置文件在显示色彩方面达成妥协。
+理想情况下，世界上的每个屏幕和web浏览器显示的颜色完全相同。不幸的是，由于一些固有的不一致，它们做不到完全相同。颜色管理允许我们通过颜色模型、颜色空间和颜色配置文件在显示颜色方面达成妥协。  
 
-**颜色模型**
+**颜色模型**  
 
-[颜色模型](https://en.wikipedia.org/wiki/Gamma_correction)是一种从较小的一组原色生成完整的颜色范围的系统。有不同类型的颜色空间，它们使用不同的参数来控制颜色。有些颜色空间的控制参数比其他颜色空间少，例如灰度只有一个参数来控制黑色和白色之间的亮度。
+[颜色模型](https://en.wikipedia.org/wiki/Gamma_correction)是一种从较小的一组原色生成完整的颜色范围的系统。有不同类型的颜色空间，它们使用不同的参数来控制颜色。有些颜色空间的控制参数比其他颜色空间少，例如灰度只有一个参数来控制黑色和白色之间的亮度。  
 
-两种常见的颜色模型是加色和减色。加色模型(如RGB，用于数字显示)使用光来显示颜色，而减色模型(如CMYK，用于打印)则通过去除光来工作。
+两种常见的颜色模型是加色和减色。加色模型(如RGB，用于数字显示)使用光来显示颜色，而减色模型(如CMYK，用于打印)则通过去除光来工作。  
 
-![Performance](https://images.guide/images/book-images/colors_ept6f2-large.jpg)
+![Performance](https://images.guide/images/book-images/colors_ept6f2-large.jpg)  
 
-在RGB中，红色、绿色和蓝色的光以不同的组合方式被加入，以产生广谱的颜色。CYMK(青色、品红、黄色和黑色)通过不同颜色的墨水从白纸上减去亮度来工作。
+在RGB中，红色、绿色和蓝色的光以不同的组合方式被加入，以产生广泛的颜色空间。CYMK(青色、品红、黄色和黑色)通过不同颜色的墨水从白纸上减去亮度来工作。  
 
-[了解颜色模型和专色系统](https://www.designersinsights.com/designer-resources/understanding-color-models/)对其他颜色模型和模式有很好的描述，如HSL、HSV和LAB。
+[了解颜色模型和专色系统](https://www.designersinsights.com/designer-resources/understanding-color-models/)对其他颜色模型和模式有很好的描述，如HSL、HSV和LAB。  
 
-**颜色空间**
+**颜色空间**  
 
-[颜色空间](http://www.dpbestflow.org/color/color-space-and-color-profiles#space)是一个特定的颜色范围，可以表示为给定的图像。例如，如果一幅图像包含多达1670万种颜色，不同的颜色空间允许使用这些颜色的更窄或更宽的范围。一些开发人员将颜色模型和颜色空间称为同一事物。
+[颜色空间](http://www.dpbestflow.org/color/color-space-and-color-profiles#space)是一个特定的颜色范围，可以表示为给定的图像。例如，如果一幅图像包含多达1670万种颜色，不同的颜色空间允许使用这些颜色的更窄或者更宽的范围。一些开发人员将颜色模型和颜色空间视为同一事物。  
 
-[sRGB](https://en.wikipedia.org/wiki/SRGB)是为web设计的[标准](https://www.w3.org/Graphics/Color/sRGB.html)颜色空间，它基于RGB。它是一个很小的颜色空间，通常被认为是跨浏览器颜色管理的最小公分母，也是最安全的选项。其他颜色空间(如[Adobe RGB](https://en.wikipedia.org/wiki/Adobe_RGB_color_space)或[ProPhoto RGB](https://en.wikipedia.org/wiki/ProPhoto_RGB_color_space)——在Photoshop和Lightroom中使用)可以比sRGB表示更鲜艳的颜色，但由于后者在大多数web浏览器、游戏和显示器中更普遍，所以它是人们通常关注的焦点。
+[sRGB](https://en.wikipedia.org/wiki/SRGB)是为web设计的[标准](https://www.w3.org/Graphics/Color/sRGB.html)颜色空间，它基于RGB。它是一个很小的颜色空间，通常被认为是跨浏览器颜色管理的最小公分母，也是最安全的选项。其他颜色空间(如[Adobe RGB](https://en.wikipedia.org/wiki/Adobe_RGB_color_space)或[ProPhoto RGB](https://en.wikipedia.org/wiki/ProPhoto_RGB_color_space) —— 在Photoshop和Lightroom中使用)可以比sRGB表示更鲜艳的颜色，但由于后者在大多数web浏览器、游戏和显示器中更普遍，所以通常它是人们关注的焦点。  
 
 ![Performance](https://images.guide/images/book-images/color-wheel_hazsbk-large.jpg)
 
-上面我们可以看到色域的可视化——颜色空间可以定义的颜色范围。
+上面我们可以看到色域的可视化 —— 颜色空间可以定义的颜色范围。  
 
-颜色空间有三个通道(红色、绿色和蓝色)。在8位模式下，每个通道可以有255种颜色，总共1670万种。16位图像可以显示数万亿种颜色。
+颜色空间有三个通道(红色、绿色和蓝色)。在8位模式下，每个通道可以有255种颜色，总共1670万种。16位图像可以显示数万亿种颜色。  
 
-![Performance](https://images.guide/images/book-images/srgb-rgb_ntuhi4-large.jpg)
+![Performance](https://images.guide/images/book-images/srgb-rgb_ntuhi4-large.jpg)  
 
-使用[标尺](https://yardstick.pictures/tags/img%3Adci-p3)中的图像比较sRGB、Adobe RGB和ProPhoto RGB。在sRGB中显示这个概念是非常困难的，因为无法显示看不到的颜色。一张普通的sRGB和宽色域的照片应该有所有相同的东西，除了大多数饱和的“多汁”颜色。
+使用图像中的[标尺](https://yardstick.pictures/tags/img%3Adci-p3)比较sRGB、Adobe RGB和ProPhoto RGB。在sRGB中显示这个概念是非常困难的，因为无法显示看不到的颜色。一张普通的sRGB和宽色域的照片应该所有的东西都相同，除了大多数饱和“多汁”的颜色。   
 
-颜色空间(如sRGB、Adobe RGB和ProPhoto RGB)的差异在于它们的色域(它们可以通过阴影再现的颜色范围)、光源和[伽马](http://blog.johnnovak.net/2016/09/21/what-every-coder-should-know-about-gamma/)曲线。sRGB比Adobe RGB小~20%，ProPhoto RGB比Adobe RGB大~[50%](http://www.petrvodnakphotography.com/Articles/ColorSpace.htm)。上面的图像源来自[剪切路径](http://clippingpathzone.com/blog/essential-photoshop-color-settings-for-photographers)。
+颜色空间(如sRGB、Adobe RGB和ProPhoto RGB)的差异在于它们的色域(它们可以通过阴影再现的颜色范围)、光源和[伽马](http://blog.johnnovak.net/2016/09/21/what-every-coder-should-know-about-gamma/)曲线。sRGB比Adobe RGB小~20%，ProPhoto RGB比Adobe RGB大大约[50%](http://www.petrvodnakphotography.com/Articles/ColorSpace.htm)。上面的图像源自[剪切路径](http://clippingpathzone.com/blog/essential-photoshop-color-settings-for-photographers)。  
 
-[宽色域](http://www.astramael.com/)是描述色域大于sRGB的颜色空间的术语。这种类型的显示器正变得越来越普遍。也就是说，许多数字显示器仍然无法显示明显优于sRGB的彩色配置文件。在Photoshop中保存网页时，考虑使用“转换到sRGB”选项，除非用户使用的是更高端的宽屏幕。
+[宽色域](http://www.astramael.com/)是描述色域大于sRGB的颜色空间的术语。这种类型的显示器正在变得越来越普遍。也就是说，许多数字显示器仍然无法显示明显优于sRGB的颜色配置文件。在Photoshop中保存网页时，除非用户使用的是更高端的宽屏幕才会考虑使用“转换到sRGB”选项。  
 
-> 注意: 在使用原始照片时，避免使用sRGB作为基本颜色空间。它比大多数相机支持的颜色空间要小，还会造成剪切。相反，你可以在更大的颜色空间(如ProPhoto RGB)上工作，并在导出web时输出到sRGB。
+> **注意：**在使用原始照片时，避免使用sRGB作为基本颜色空间。它比大多数相机支持的颜色空间要小，还会造成剪切。相反，你可以在更大的颜色空间(如ProPhoto RGB)上工作，并在导出Web图像时输出到sRGB。     
 
-**在任何情况下，广泛的范围对web内容有意义吗?**
+**在任何情况下，广泛的颜色范围对Web的内容都有意义吗?**   
 
-有的。如果一个图像包含非常饱和的、多汁的、充满活力的颜色，而你关心的是它在支持它的屏幕上是同样多汁的。然而，在真实的照片中，这种情况很少发生。通常很容易调整颜色，使其看起来充满活力，而实际上不超过sRGB的色域。
+有的。如果一个图像包含非常饱和、多汁、充满活力的颜色，而且你关心的是它在支持它的屏幕上是否同样多汁。然而，在真实的照片中，这种情况很少发生。通常很容易调整颜色，使其看起来充满活力，而实际上不超过sRGB的色域。  
 
-这是因为人类对颜色的感知不是绝对的，而是相对于我们周围的环境而言的，很容易被愚弄。如果你的图像包含荧光高亮颜色，那么你将有一个更容易的时间与广泛的范围。
+这是因为人类对颜色的感知不是绝对的，而是相对于我们周围的环境而言的，很容易被耍。如果你的图像包含荧光高亮颜色，那么你将更容易拥有宽色域。
 
-**伽玛校正与压缩**
+**伽玛校正与压缩**   
 
-[伽玛校正](https://en.wikipedia.org/wiki/Gamma_correction)(或仅仅伽玛)控制图像的整体亮度。改变伽马也可以改变红绿蓝的比例。没有伽玛校正的图像可能看起来颜色被漂白或太暗。
+[伽玛校正](https://en.wikipedia.org/wiki/Gamma_correction)(或仅仅伽玛)控制图像的整体亮度。改变伽马也可以改变红绿蓝的比例。没有伽玛校正的图像可能看起来颜色被漂白或太暗。  
 
-在视频和计算机图形学中，伽玛用于压缩，类似于数据压缩。这允许你在更少的位(8位而不是12或16位)中压缩有用的亮度级别。人类对亮度的感知并不正比于物理光的量。在为人眼编码图像时，用真实的物理形式表示颜色是一种浪费。伽玛压缩被用来在更接近人类感知的尺度上对亮度进行编码。
+在视频和计算机图形学中，伽玛用于压缩，类似于数据压缩。这允许你在更少的字节(8位而不是12或16位)中压缩到可用的亮度级别。人类对亮度的感知并不是和物理光的量形成正比。在为人眼编码图像时，用真实的物理形式表示颜色是一种浪费。伽玛压缩编码颜色的亮度更接近人类感知的尺度。  
 
-使用伽玛压缩有用的亮度范围适合8位精度(0-255使用的大多数RGB颜色)。所有这些都来自这样一个事实:如果颜色使用与物理1:1关系的单位，那么RGB值将从1到100万，其中0-1000的值看起来不同，但是999000-1000000之间的值看起来相同。想象一下，在一个只有一支蜡烛的黑暗房间里。点第二根蜡烛，你会发现房间灯光的亮度明显增加。再加第三根蜡烛，它看起来会更亮。现在想象一下，在一个有100支蜡烛的房间里。点燃第101根蜡烛，第102根。你不会注意到亮度的变化。
+使用伽玛压缩可用的亮度范围适合用8位字节精度(0-255使用的大多数RGB颜色)。所有这些都来自一个这样的事实：如果颜色使用与物理1:1关系的单位，那么RGB值将从1到100万，其中0-1000的值看起来不同，但是999000-1000000之间的值看起来相同。想象一下，在一个只有一支蜡烛的黑暗房间里。点第二根蜡烛，你会发现房间灯光的亮度明显增加。再加第三根蜡烛，它看起来会更亮。现在想象一下，在一个有100支蜡烛的房间里，点燃第101根蜡烛，第102根，你不会注意到亮度的变化。  
 
-即使在这两种情况下，物理上，增加的光量是完全相同的。因此，由于眼睛对明亮的光线不那么敏感，伽玛压缩“压缩”了明亮的值，所以从物理角度来说，明亮的级别不那么精确，但是尺度是为人类调整的，所以从人类的角度来看，所有的值都是一样精确的。
+即使在这两种情况下，物理上，增加的光量是完全相同的。因此，由于眼睛对明亮的光线不那么敏感，伽玛压缩“压缩”了明亮的值，所以从物理角度来说，明亮的级别不那么精确，但是尺度是为人类调整的，所以从人类的角度来看，所有的值都是一样精确的。  
 
-> 注意: 这里的伽马压缩/校正不同于你可能在Photoshop中配置的图像伽马曲线。当伽马压缩正常工作时，它看起来不像任何东西。
+> **注意：**这里的伽马压缩和校正可能不同于你在Photoshop中配置的伽马曲线图像。当伽马压缩正常工作时，它看起来不像任何东西。   
 
-**颜色配置文件**
+**颜色配置文件**  
 
-颜色配置文件是描述设备的颜色空间的信息。它用于在不同的颜色空间之间进行转换。配置文件试图确保图像在这些不同类型的屏幕和介质上看起来尽可能相似。
+颜色配置文件是描述设备的颜色空间的信息。它用于在不同的颜色空间之间进行转换。配置文件试图确保图像在这些不同类型的屏幕和介质上看起来尽可能相似。  
 
-图像可以像[国际色彩协会](http://www.color.org/icc_specs2.xalter)(ICC)所描述的那样嵌入颜色配置文件，以精确地表示颜色应该如何显示。包括JPEG、PNG、SVG和[WebP](https://developers.google.com/speed/webp/docs/riff_container)在内的不同格式都支持这一点，大多数主流浏览器都支持嵌入式ICC配置文件。当一个图像显示在一个应用程序中，它知道显示器的功能，这些颜色可以根据颜色配置文件进行调整。
+图像可以像[国际颜色协会](http://www.color.org/icc_specs2.xalter)(ICC)所描述的那样嵌入颜色配置文件，以精确地表示颜色应该如何显示。包括JPEG、PNG、SVG和[WebP](https://developers.google.com/speed/webp/docs/riff_container)在内的不同格式都支持这一点，大多数主流浏览器都支持嵌入式ICC配置文件。当一个图像显示在一个应用程序中，它知道显示器的功能，这些颜色可以根据颜色配置文件进行调整。   
 
-> 注意: 有些监视器的颜色配置文件类似于sRGB，不能显示更好的配置文件，因此根据目标用户的显示，嵌入这些配置文件的价值可能有限。检查你的目标用户是谁。
+> **注意：**有些监视器的颜色配置文件类似于sRGB，不能显示更好的配置文件，因此根据目标用户的需要显示，嵌入这些配置文件的价值就有限。需要衡量你的目标用户是谁。  
+嵌入的颜色配置文件也会大大增加图像的大小(偶尔会增加100KB以上)，所以要小心嵌入。像ImageOptim这样的工具如果找到颜色配置文件，就会[自动](https://imageoptim.com/color-profiles.html)删除它们。相反，如果以减小大小的名义删除ICC配置文件，浏览器将被迫在监视器的颜色空间中显示图像，这可能导致预期的饱和度和对比度有差异。权衡这个对你的用例也是有意义的。  
 
-嵌入的颜色配置文件也会大大增加图像的大小(偶尔会增加100KB以上)，所以要小心嵌入。像ImageOptim这样的工具如果找到颜色配置文件，就会[自动](https://imageoptim.com/color-profiles.html)删除它们。相反，如果以减小大小的名义删除ICC配置文件，浏览器将被迫在监视器的颜色空间中显示图像，这可能导致预期的饱和度和对比度的差异。评估这个的权衡对你的用例是有意义的。
+如果你有兴趣了解更多关于配置文件的信息，[下面的9个Degree](https://ninedegreesbelow.com/photography/articles.html)提供了一组颜色管理关于ICC配置文件的优秀资源。     
 
-如果你有兴趣了解更多关于配置文件的信息，[下面的9个Degree](https://ninedegreesbelow.com/photography/articles.html)提供了一组关于ICC配置文件颜色管理的优秀资源。
+**颜色配置文件和Web浏览器**  
 
-**颜色配置文件和web浏览器**
+早期版本的Chrome对颜色管理的支持不是很好，但随着2017年[颜色正确渲染](https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/ptuKdRQwPAo)的出现，这一功能正在改善。不是sRGB(新款MacBook pro)的显示器将把颜色从sRGB转换为显示配置文件。这意味着在不同的系统和浏览器中颜色应该看起来更相似。Safari、Edge和Firefox现在也可以将ICC配置文件考虑在内，因此具有不同颜色的配置文件(例如ICC)的图像现在可以正确地显示它们，无论你的屏幕是否具有广域。  
 
-早期版本的Chrome对色彩管理的支持不是很好，但随着2017年[色彩正确渲染](https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/ptuKdRQwPAo)的出现，这一功能正在改善。不是sRGB(新款MacBook pro)的显示器将把颜色从sRGB转换为显示配置文件。这意味着在不同的系统和浏览器中颜色应该看起来更相似。Safari、Edge和Firefox现在也可以将ICC配置文件考虑在内，因此具有不同颜色配置文件(例如ICC)的图像现在可以正确地显示它们，无论你的屏幕是否具有广域。
-
-> 注意: 有关如何将颜色应用于更广泛的web工作方式的指南，请参阅由Sarah Drasner编写的书呆子色彩指南。
+> **注意：**有关如何将颜色应用于更广泛的Web工作方式指南，请参阅由Sarah Drasner编写的《[书呆子颜色指南](https://css-tricks.com/nerds-guide-color-web/)》。   
 
 ## [11.图像精灵](https://images.guide/#image-sprites)
 
