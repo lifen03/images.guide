@@ -1,6 +1,6 @@
 ## [1.介绍](https://images.guide/#introduction)
 
-**图片仍然是造成网络膨胀的首要原因。**
+**图像仍然是造成网络膨胀的首要原因。**
 
 图像占用了大量的互联网带宽，因为它们通常有较大的文件大小。根据[HTTP存档](http://httparchive.org/)，60%用于获取网页的数据是由JPEG、PNG和GIF组成的图像。截至2017年7月，在平均3.0MB大小的站点加载的网页内容中图像占了[1.7MB](http://httparchive.org/interesting.php#bytesperpage)。
 
@@ -8,7 +8,7 @@
 
 ![Performance](https://images.guide/images/book-images/Modern-Image00-medium.jpg)
 
-根据2016年[Soasta/Google的研究](https://www.thinkwithgoogle.com/marketing-resources/experience-design/mobile-page-speed-load-time/)，图片是第二大转换预测指标，最佳页面的图像数量占比少于38%。
+根据2016年[Soasta/Google的研究](https://www.thinkwithgoogle.com/marketing-resources/experience-design/mobile-page-speed-load-time/)，图像是第二大转换预测指标，最佳页面的图像数量占比少于38%。
 
 图像优化包含各种不同的方法，它们都可以减少图像的文件大小。这最终取决于你对图像所要求的视觉保真度。
 

@@ -28,7 +28,7 @@ WebP有一个无损的8位透明通道，仅比PNG多22%的字节。它还支持
 
 WebP文件格式支持EXIF照片元数据和XMP数字文档元数据。它还包含ICC颜色配置文件。
 
-WebP提供了更好的压缩，但代价是CPU更密集。早在2013年，WebP的压缩速度比JPEG慢了大约10倍，只是现在可以忽略不计(一些图片的压缩速度可能是慢了2倍)。进行处理的静态图像作为构建的一部分，这应该不是一个大问题。动态生成的映像可能会造成额外可感知的CPU开销，你需要对其进行评估。
+WebP提供了更好的压缩，但代价是CPU更密集。早在2013年，WebP的压缩速度比JPEG慢了大约10倍，只是现在可以忽略不计(一些图像的压缩速度可能是慢了2倍)。进行处理的静态图像作为构建的一部分，这应该不是一个大问题。动态生成的映像可能会造成额外可感知的CPU开销，你需要对其进行评估。
 
 > **注意：**WebP有损质量设置不能与JPEG直接比较。“70%质量”的JPEG与“70%质量”的WebP图像大不相同，因为WebP通过丢弃更多的数据来实现更小的文件大小。
 
@@ -228,13 +228,13 @@ Jeremy Wagner有一篇关于[使用Bash进行图像优化](https://jeremywagner.
 
 <h3 id="how-do-i-view-webp-on-my-os"><a href="https://images.guide/#how-do-i-view-webp-on-my-os">6.6 如何查看我的操作系统上的WebP图像？</a></h3>
 
-你可以拖拽WebP图片到基于flash的浏览器(Chrome, Opera, Brave)来预览它们，你也可以使用Mac或Windows的附加组件直接在你的操作系统中预览它们。
+你可以拖拽WebP图像到基于flash的浏览器(Chrome, Opera, Brave)来预览它们，你也可以使用Mac或Windows的附加组件直接在你的操作系统中预览它们。
 
 几年前，[Facebook尝试使用WebP](https://www.cnet.com/news/facebook-tries-googles-webp-image-format-users-squawk/)，发现那些试图右键单击照片并将其保存到磁盘的用户注意到，由于WebP格式的照片，它们不会显示在浏览器之外。这里出现了三个关键问题:
 
 + “另存为” 无法在本地查看WebP文件。因为这是固定的Chrome注册自己为“.webp”处理程序。
 
-+ “另存为” 然后将图片附加到电子邮件中与没有Chrome的人分享。Facebook解决了这个问题，它在用户界面中引入了一个明显的“下载”按钮，并在用户请求下载时返回一个JPEG。
++ “另存为” 然后将图像附加到电子邮件中与没有Chrome的人分享。Facebook解决了这个问题，它在用户界面中引入了一个明显的“下载”按钮，并在用户请求下载时返回一个JPEG。
 
 + 右击 -> 复制URL -> 在web上共享URL。这是通过[内容类型协商](https://www.igvita.com/2012/12/18/deploying-new-image-formats-on-the-web/)解决的。
 
@@ -352,7 +352,7 @@ image/webp webp;
 
 **缓存启用器和优化器** —— 如果你使用WordPress，至少有一个半开源的选项。开源插件[缓存启用](https://wordpress.org/plugins/cache-enabler/)程序有一个菜单复选框选项，如果当前用户的浏览器支持WebP，就用于缓存可用的WebP图像。这使得提供WebP图像变得容易。但是有一个缺点: 缓存启用程序需要使用名为优化器的姐妹程序，这个程序需要按年付费。这个特性似乎不符合一个真正的开源解决方案。
 
-**短像素** —— 另一个与缓存启用器一起使用的选项，也是需要付费的，是短像素。短像素函数很像上面描述的优化器。但是你可以每月免费优化多达100张图片。
+**短像素** —— 另一个与缓存启用器一起使用的选项，也是需要付费的，是短像素。短像素函数很像上面描述的优化器。但是你可以每月免费优化多达100张图像。
 
 **为什么```<video>```比GIF压缩动画更好**
 
@@ -362,7 +362,7 @@ GIF动画的格式非常有限，但是它仍然得到了广泛的使用。尽�
 
 GIF动画与视频: 不同格式的文件大小在大约相等质量下的比较。
 
-**MP4视频与GIF动画相比传输相同的文件通常可以减少80%或更多的文件大小。**GIF不仅常常浪费大量带宽，而且加载时间更长，包含的颜色更少，而且通常只提供了部分的用户体验。你可能已经注意到上传到Twitter的动态GIF，在Twitter上的表现比在其他网站上要好。[Twitter上的GIF动画实际上并不是GIF](http://mashable.com/2014/06/20/twitter-gifs-mp4/#fiiFE85eQZqW)。为了改善用户体验和减少带宽消耗，上传到Twitter的GIF动画实际上被转换成了视频。类似地，在上传时[Imgur将GIF图片转换成视频](https://thenextweb.com/insider/2014/10/09/imgur-begins-converting-gif-uploads-mp4-videos-new-gifv-format/)，并悄无声息地将其转换成MP4格式。
+**MP4视频与GIF动画相比传输相同的文件通常可以减少80%或更多的文件大小。**GIF不仅常常浪费大量带宽，而且加载时间更长，包含的颜色更少，而且通常只提供了部分的用户体验。你可能已经注意到上传到Twitter的动态GIF，在Twitter上的表现比在其他网站上要好。[Twitter上的GIF动画实际上并不是GIF](http://mashable.com/2014/06/20/twitter-gifs-mp4/#fiiFE85eQZqW)。为了改善用户体验和减少带宽消耗，上传到Twitter的GIF动画实际上被转换成了视频。类似地，在上传时[Imgur将GIF图像转换成视频](https://thenextweb.com/insider/2014/10/09/imgur-begins-converting-gif-uploads-mp4-videos-new-gifv-format/)，并悄无声息地将其转换成MP4格式。
 
 为什么GIF比视频要大很多倍？GIF动画存储每个帧作为无损的GIF图像 —— 是的，无损！我们经常经历的质量下降是由于GIF被限制为256种颜色。与H.264等视频编解码器不同，这种格式通常比较大，因为它不考虑用于压缩的相邻帧。MP4视频将每个关键帧存储为有损的JPEG, JPEG会丢弃一些原始数据以实现更好的压缩。
 
