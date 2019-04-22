@@ -8,28 +8,28 @@
         <li><a href="ch4.html">4.普通的JPEG</a></li>
         <li><a href="ch5.html">5.JPEG压缩模式</a>
             <ul>
-                <li><a href="ch5.html#the-advantages-of-progressive-jpegs">5.1渐进式JPEG的优点</a></li>
-                <li><a href="ch5.html#whos-using-progressive-jpegs-in-production">5.2谁在生产中使用渐进式JPEG?</a></li>
-                <li><a href="ch5.html#the-disadvantages-of-progressive-jpegs">5.3渐进式JPEG的缺点</a></li>
-                <li><a href="ch5.html#how-to-create-progressive-jpegs">5.4如何创建渐进式JPEG?</a></li>
-                <li><a href="ch5.html#chroma-subsampling">5.5色度(或颜色)子采样</a></li>
-                <li><a href="ch5.html#how-far-have-we-come-from-the-jpeg">5.6我们离JPEG还有多远?</a></li>
-                <li><a href="ch5.html#optimizing-jpeg-encoders">5.7优化JPEG编码器</a></li>
-                <li><a href="ch5.html#what-is-mozjpeg">5.8MozJPEG是什么?</a></li>
-                <li><a href="ch5.html#what-is-guetzli">5.9Guetzli是什么?</a></li>
-                <li><a href="ch5.html#mozjpeg-vs-guetzli">5.10MozJPEG与Guetzli相比如何?</a></li>
-                <li><a href="ch5.html#butteraugli">5.11Butteraugli</a></li>
+                <li><a href="ch5.html#the-advantages-of-progressive-jpegs">5.1.渐进式JPEG的优点</a></li>
+                <li><a href="ch5.html#whos-using-progressive-jpegs-in-production">5.2.谁在生产中使用渐进式JPEG?</a></li>
+                <li><a href="ch5.html#the-disadvantages-of-progressive-jpegs">5.3.渐进式JPEG的缺点</a></li>
+                <li><a href="ch5.html#how-to-create-progressive-jpegs">5.4.如何创建渐进式JPEG?</a></li>
+                <li><a href="ch5.html#chroma-subsampling">5.5.色度(或颜色)子采样</a></li>
+                <li><a href="ch5.html#how-far-have-we-come-from-the-jpeg">5.6.我们离JPEG还有多远?</a></li>
+                <li><a href="ch5.html#optimizing-jpeg-encoders">5.7.优化JPEG编码器</a></li>
+                <li><a href="ch5.html#what-is-mozjpeg">5.8.MozJPEG是什么?</a></li>
+                <li><a href="ch5.html#what-is-guetzli">5.9.Guetzli是什么?</a></li>
+                <li><a href="ch5.html#mozjpeg-vs-guetzli">5.10.MozJPEG与Guetzli相比如何?</a></li>
+                <li><a href="ch5.html#butteraugli">5.11.Butteraugli</a></li>
             </ul>
         </li>
         <li><a href="ch6.html">6.什么是WebP?</a>
             <ul>
-                <li><a href="ch6.html#how-does-webp-perform">6.1WebP的性能如何?</a></li>
-                <li><a href="ch6.html#whos-using-webp-in-production">6.2谁在生产中使用WebP?</a></li>
-                <li><a href="ch6.html#how-does-webp-encoding-work">6.3WebP编码是如何工作的?</a></li>
-                <li><a href="ch6.html#webp-browser-support">6.4WebP浏览器支持t</a></li>
-                <li><a href="ch6.html#how-do-i-convert-to-webp">6.5我的图像如何转换成WebP?</a></li>
-                <li><a href="ch6.html#how-do-i-view-webp-on-my-os">6.6如何查看我的操作系统上的WebP图像?</a></li>
-                <li><a href="ch6.html#how-do-i-serve-webp">6.7我如何提供WebP?</a></li>
+                <li><a href="ch6.html#how-does-webp-perform">6.1.WebP的性能如何?</a></li>
+                <li><a href="ch6.html#whos-using-webp-in-production">6.2.谁在生产中使用WebP?</a></li>
+                <li><a href="ch6.html#how-does-webp-encoding-work">6.3.WebP编码是如何工作的?</a></li>
+                <li><a href="ch6.html#webp-browser-support">6.4.WebP浏览器支持t</a></li>
+                <li><a href="ch6.html#how-do-i-convert-to-webp">6.5.我的图像如何转换成WebP?</a></li>
+                <li><a href="ch6.html#how-do-i-view-webp-on-my-os">6.6.如何查看我的操作系统上的WebP图像?</a></li>
+                <li><a href="ch6.html#how-do-i-serve-webp">6.7.我如何提供WebP?</a></li>
             </ul>
         </li>
         <li><a href="ch7.html">7.SVG优化</a></li>

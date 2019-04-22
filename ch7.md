@@ -4,9 +4,9 @@
 
 ![Performance](https://images.guide/images/book-images/Modern-Image26-large.jpg)
 
-由Jake Archibald创建的[SVGOMG](https://jakearchibald.github.io/svgomg/)是一个GUI界面，通过选择优化，通过输出标记的实时预览，您可以根据自己的喜好优化SVG
+由Jake Archibald创建的[SVGOMG](https://jakearchibald.github.io/svgomg/)是一个GUI界面工具，通过选择优化，通过输出标记的实时预览，您可以根据自己的喜好优化SVG
 
-**SVG优化(SVGO)的一些一般规则:**
+**一些一般的SVG优化(SVGO)规则:**
 
 + 缩小和压缩SVG文件。SVG实际上只是用XML表示的文本资源，如CSS、HTML和JavaScript，应该进行压缩和gzip，以提高性能。
 
