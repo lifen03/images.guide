@@ -42,9 +42,9 @@
         </li>
         <li><a href="ch10.html">10.颜色管理</a></li>
         <li><a href="ch11.html">11.图像精灵</a></li>
-        <li><a href="ch12.html">12.延迟加载非关键图像</a></li>
+        <li><a href="ch12.html">12.非关键图像的懒加载</a></li>
         <li><a href="ch13.html">13.避免 <code>display: none;</code> 陷阱</a></li>
-        <li><a href="ch14.html">14.图像处理CDN对你有意义吗？</a></li>
+        <li><a href="ch14.html">14.CDN对图像处理有意义吗？</a></li>
         <li><a href="ch15.html">15.缓存图像资源</a></li>
         <li><a href="ch16.html">16.预加载关键图像资源</a></li>
         <li><a href="ch17.html">17.图像的性能预算</a></li>

@@ -276,7 +276,7 @@
                 <a href="ch12.html">
             
                     
-                    12.延迟加载非关键图像
+                    12.非关键图像的懒加载
             
                 </a>
             
@@ -302,7 +302,7 @@
                 <a href="ch14.html">
             
                     
-                    14.图像处理CDN对你有意义吗？
+                    14.CDN对图像处理有意义吗？
             
                 </a>
             
@@ -434,40 +434,40 @@
                                 <section class="normal markdown-section">
                                 
                                 <h2 id="18&#x5199;&#x5728;&#x6700;&#x540E;"><a href="https://images.guide/#closing-recommendations" target="_blank">18.&#x5199;&#x5728;&#x6700;&#x540E;</a></h2>
-<p>&#x6700;&#x7EC8;&#xFF0C;&#x9009;&#x62E9;&#x56FE;&#x50CF;&#x4F18;&#x5316;&#x7B56;&#x7565;&#x5C06;&#x5F52;&#x7ED3;&#x4E3A;&#x4F60;&#x5411;&#x7528;&#x6237;&#x63D0;&#x4F9B;&#x7684;&#x56FE;&#x50CF;&#x7C7B;&#x578B;&#xFF0C;&#x4EE5;&#x53CA;&#x4F60;&#x51B3;&#x5B9A;&#x7684;&#x4E00;&#x7EC4;&#x5408;&#x7406;&#x7684;&#x8BC4;&#x4F30;&#x6807;&#x51C6;&#x3002; &#x5B83;&#x53EF;&#x80FD;&#x6B63;&#x5728;&#x4F7F;&#x7528;SSIM&#x6216;Butteraugli&#xFF0C;&#x6216;&#x8005;&#xFF0C;&#x5982;&#x679C;&#x5B83;&#x662F;&#x4E00;&#x7EC4;&#x8DB3;&#x591F;&#x5C0F;&#x7684;&#x56FE;&#x50CF;&#xFF0C;&#x90A3;&#x4E48;&#x4EBA;&#x7C7B;&#x7684;&#x611F;&#x77E5;&#x5C31;&#x4F1A;&#x53D8;&#x5F97;&#x6700;&#x6709;&#x610F;&#x4E49;&#x3002;</p>
+<p>&#x6700;&#x7EC8;&#xFF0C;&#x9009;&#x62E9;&#x56FE;&#x50CF;&#x4F18;&#x5316;&#x7B56;&#x7565;&#x5C06;&#x5F52;&#x7ED3;&#x4E3A;&#x4F60;&#x5411;&#x7528;&#x6237;&#x63D0;&#x4F9B;&#x7684;&#x56FE;&#x50CF;&#x7C7B;&#x578B;&#xFF0C;&#x4EE5;&#x53CA;&#x4F60;&#x51B3;&#x5B9A;&#x7684;&#x4E00;&#x7EC4;&#x5408;&#x7406;&#x7684;&#x8BC4;&#x4F30;&#x6807;&#x51C6;&#x3002;&#x5B83;&#x53EF;&#x80FD;&#x6B63;&#x5728;&#x4F7F;&#x7528;SSIM&#x548C;Butteraugli&#xFF0C;&#x6216;&#x8005;&#xFF0C;&#x5982;&#x679C;&#x5B83;&#x662F;&#x4E00;&#x7EC4;&#x8DB3;&#x591F;&#x5C0F;&#x7684;&#x56FE;&#x50CF;&#xFF0C;&#x90A3;&#x4E48;&#x4EBA;&#x7C7B;&#x7684;&#x611F;&#x77E5;&#x5C31;&#x4F1A;&#x53D8;&#x5F97;&#x6700;&#x6709;&#x610F;&#x4E49;&#x3002;</p>
 <p><strong>&#x4EE5;&#x4E0B;&#x662F;&#x6211;&#x6700;&#x540E;&#x7684;&#x5EFA;&#x8BAE;:</strong></p>
-<p>&#x5982;&#x679C;&#x4F60;<strong>&#x4E0D;&#x80FD;</strong>&#x57FA;&#x4E8E;&#x6D4F;&#x89C8;&#x5668;&#x652F;&#x6301;&#x6709;&#x6761;&#x4EF6;&#x5730;&#x63D0;&#x4F9B;&#x683C;&#x5F0F;:</p>
+<p>&#x5982;&#x679C;&#x4F60;<strong>&#x4E0D;&#x80FD;</strong>&#x57FA;&#x4E8E;&#x6D4F;&#x89C8;&#x5668;&#x652F;&#x6301;&#x6709;&#x6761;&#x4EF6;&#x5730;&#x63D0;&#x4F9B;&#x56FE;&#x50CF;&#x683C;&#x5F0F;:</p>
 <ul>
 <li><p>Guetzli + MozJPEG&#x7684;jpegtran&#x662F;JPEG&#x8D28;&#x91CF;&gt;90&#x7684;&#x4F18;&#x79C0;&#x4F18;&#x5316;&#x5668;&#x3002;</p>
 <ul>
-<li><p>&#x5BF9;&#x4E8E;Web, <code>q=90</code>&#x662F;&#x975E;&#x5E38;&#x6D6A;&#x8D39;&#x7684;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x5C1D;&#x8BD5;<code>q=80</code>, 2&#x500D;&#x5C4F;&#x663E;&#x793A;&#x5373;&#x4F7F;<code>q=50</code>&#x3002;&#x56E0;&#x4E3A;Guetzli&#x6CA1;&#x6709;&#x90A3;&#x4E48;&#x4F4E;&#xFF0C;&#x5BF9;&#x4E8E;web&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;MozJPEG&#x3002;</p>
+<li><p>&#x5BF9;&#x4E8E;Web, <code>q=90</code>&#x662F;&#x975E;&#x5E38;&#x6D6A;&#x8D39;&#x7684;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x5C1D;&#x8BD5;<code>q=80</code>, 2&#x500D;&#x5C4F;&#x751A;&#x81F3;&#x53EF;&#x4EE5;&#x663E;&#x793A;<code>q=50</code>&#x3002;&#x56E0;&#x4E3A;Guetzli&#x6CA1;&#x6709;&#x90A3;&#x4E48;&#x4F4E;&#xFF0C;&#x5BF9;&#x4E8E;web&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;MozJPEG&#x3002;</p>
 </li>
-<li><p>Kornel Lesi&#x144;ski&#x6700;&#x8FD1;&#x6539;&#x5584;mozjpeg&#x7684;cjpeg&#x547D;&#x4EE4;&#x6765;&#x6DFB;&#x52A0;&#x5C0F;sRGB&#x6982;&#x8981;&#x6587;&#x4EF6;&#x6765;&#x5E2E;&#x52A9;Chrome&#x5728;&#x5C4F;&#x5E55;&#x4E0A;&#x663E;&#x793A;&#x81EA;&#x7136;&#x8272;</p>
+<li><p>Kornel Lesi&#x144;ski&#x6700;&#x8FD1;&#x6539;&#x5584;mozjpeg&#x7684;cjpeg&#x547D;&#x4EE4;&#x6765;&#x6DFB;&#x52A0;&#x5C0F;sRGB&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x6765;&#x5E2E;&#x52A9;Chrome&#x5728;&#x5C4F;&#x5E55;&#x4E0A;&#x663E;&#x793A;&#x81EA;&#x7136;&#x8272;</p>
 </li>
 </ul>
 </li>
-<li><p>PNG pngquant + advpng&#x5177;&#x6709;&#x5F88;&#x597D;&#x7684;&#x901F;&#x5EA6;/&#x538B;&#x7F29;&#x6BD4;</p>
+<li><p>PNG pngquant + advpng&#x5177;&#x6709;&#x5F88;&#x597D;&#x7684;&#x901F;&#x5EA6;&#x548C;&#x538B;&#x7F29;&#x6BD4;</p>
 </li>
-<li><p>&#x5982;&#x679C;&#x4F60;&#x53EF;&#x4EE5;&#x6709;&#x6761;&#x4EF6;&#x7684;&#x670D;&#x52A1;(&#x4F7F;&#x7528;<code>&lt;picture&gt;</code>&#xFF0C;<a href="https://www.igvita.com/2013/05/01/deploying-webp-via-accept-content-negotiation/" target="_blank">&#x63A5;&#x53D7;&#x5934;</a>&#x6216;<a href="https://scottjehl.github.io/picturefill/" target="_blank">&#x56FE;&#x50CF;&#x586B;&#x5145;</a>):</p>
+<li><p>&#x5982;&#x679C;&#x4F60;&#x53EF;&#x4EE5;&#x63D0;&#x4F9B;&#x6709;&#x6761;&#x4EF6;&#x7684;&#x670D;&#x52A1;(&#x4F7F;&#x7528;<code>&lt;picture&gt;</code>&#x3001;<a href="https://www.igvita.com/2013/05/01/deploying-webp-via-accept-content-negotiation/" target="_blank">HTTP&#x63A5;&#x53D7;&#x5934;&#x90E8;</a>&#x548C;<a href="https://scottjehl.github.io/picturefill/" target="_blank">&#x56FE;&#x50CF;&#x586B;&#x5145;</a>):</p>
 <ul>
 <li><p>&#x4E3A;&#x652F;&#x6301;WebP&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x63D0;&#x4F9B;WebP&#x670D;&#x52A1;</p>
 <ul>
-<li><p>&#x4ECE;&#x539F;&#x59CB;&#x7684;100%&#x8D28;&#x91CF;&#x7684;&#x56FE;&#x50CF;&#x521B;&#x5EFA;WebP&#x56FE;&#x50CF;&#x3002;&#x5426;&#x5219;&#xFF0C;&#x4F60;&#x5C06;&#x4F1A;&#x7ED9;&#x6D4F;&#x89C8;&#x5668;&#x63D0;&#x4F9B;&#x652F;&#x6301;&#x5B83;&#x7684;&#x66F4;&#x7CDF;&#x7CD5;&#x7684;&#x56FE;&#x50CF;&#x4E0E;JPEG&#x5931;&#x771F;&#x548C;WebP&#x5931;&#x771F;!&#x5982;&#x679C;&#x4F60;&#x4F7F;&#x7528;WebP&#x538B;&#x7F29;&#x672A;&#x538B;&#x7F29;&#x7684;&#x6E90;&#x56FE;&#x50CF;&#xFF0C;&#x5B83;&#x4F1A;&#x6709;&#x8F83;&#x5C11;&#x7684;&#x53EF;&#x89C1;WebP&#x5931;&#x771F;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x538B;&#x7F29;&#x5F97;&#x66F4;&#x597D;&#x3002;</p>
+<li><p>&#x4ECE;&#x539F;&#x59CB;&#x7684;100%&#x8D28;&#x91CF;&#x7684;&#x56FE;&#x50CF;&#x521B;&#x5EFA;WebP&#x56FE;&#x50CF;&#x3002;&#x5426;&#x5219;&#xFF0C;&#x4F60;&#x5C06;&#x4F1A;&#x7ED9;&#x652F;&#x6301;&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x63D0;&#x4F9B;&#x5B83;&#x66F4;&#x7CDF;&#x7CD5;&#x7684;&#x56FE;&#x50CF;&#xFF0C;&#x5BFC;&#x81F4;JPEG&#x5931;&#x771F;&#x548C;WebP&#x5931;&#x771F;!&#x5982;&#x679C;&#x4F60;&#x4F7F;&#x7528;WebP&#x538B;&#x7F29;&#x672A;&#x538B;&#x7F29;&#x7684;&#x6E90;&#x56FE;&#x50CF;&#xFF0C;&#x5B83;&#x4F1A;&#x6709;&#x8F83;&#x5C11;&#x53EF;&#x89C1;&#x7684;WebP&#x5931;&#x771F;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x538B;&#x7F29;&#x5F97;&#x66F4;&#x597D;&#x3002;</p>
 </li>
-<li><p>WebP&#x56E2;&#x961F;&#x4F7F;&#x7528;&#x7684;<code>-m 4 - q 75</code>&#x7684;&#x9ED8;&#x8BA4;&#x8BBE;&#x7F6E;&#x901A;&#x5E38;&#x9002;&#x7528;&#x4E8E;&#x4ED6;&#x4EEC;&#x4F18;&#x5316;&#x901F;&#x5EA6;/&#x6BD4;&#x7387;&#x7684;&#x5927;&#x591A;&#x6570;&#x60C5;&#x51B5;&#x3002;</p>
+<li><p>WebP&#x56E2;&#x961F;&#x901A;&#x5E38;&#x4F7F;&#x7528;&#x7684;<code>-m 4 -q 75</code>&#x9ED8;&#x8BA4;&#x8BBE;&#x7F6E;&#x9002;&#x7528;&#x4E8E;&#x4ED6;&#x4EEC;&#x4F18;&#x5316;&#x901F;&#x5EA6;&#x548C;&#x4F18;&#x5316;&#x6BD4;&#x7387;&#x7684;&#x5927;&#x591A;&#x6570;&#x60C5;&#x51B5;&#x3002;</p>
 </li>
-<li><p>WebP&#x8FD8;&#x6709;&#x4E00;&#x79CD;&#x7279;&#x6B8A;&#x7684;&#x65E0;&#x635F;&#x6A21;&#x5F0F;(<code>- m 6 - q 100</code>)&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x63A2;&#x7D22;&#x6240;&#x6709;&#x53C2;&#x6570;&#x7EC4;&#x5408;&#x5C06;&#x6587;&#x4EF6;&#x7F29;&#x51CF;&#x5230;&#x6700;&#x5C0F;&#x5927;&#x5C0F;&#x3002;&#x867D;&#x7136;&#x901F;&#x5EA6;&#x6162;&#x4E86;&#x4E00;&#x4E2A;&#x6570;&#x91CF;&#x7EA7;&#xFF0C;&#x4F46;&#x5BF9;&#x4E8E;&#x9759;&#x6001;&#x8D44;&#x4EA7;&#x6765;&#x8BF4;&#x662F;&#x503C;&#x5F97;&#x7684;&#x3002;</p>
-</li>
-</ul>
-</li>
-<li><p>&#x4F5C;&#x4E3A;&#x4E00;&#x79CD;&#x9000;&#x8DEF;&#xFF0C;&#x5C06;Guetzli/MozJPEG&#x538B;&#x7F29;&#x6E90;&#x63D0;&#x4F9B;&#x7ED9;&#x5176;&#x4ED6;&#x6D4F;&#x89C8;&#x5668;</p>
+<li><p>WebP&#x8FD8;&#x6709;&#x4E00;&#x79CD;&#x7279;&#x6B8A;&#x7684;&#x65E0;&#x635F;&#x6A21;&#x5F0F;(<code>-m 6 -q 100</code>)&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x63A2;&#x7D22;&#x6240;&#x6709;&#x53C2;&#x6570;&#x7EC4;&#x5408;&#x5C06;&#x6587;&#x4EF6;&#x5927;&#x5C0F;&#x7F29;&#x51CF;&#x5230;&#x6700;&#x5C0F;&#x3002;&#x867D;&#x7136;&#x901F;&#x5EA6;&#x6162;&#x4E86;&#x4E00;&#x4E2A;&#x6570;&#x91CF;&#x7EA7;&#xFF0C;&#x4F46;&#x5BF9;&#x4E8E;&#x9759;&#x6001;&#x8D44;&#x4EA7;&#x6765;&#x8BF4;&#x662F;&#x503C;&#x5F97;&#x7684;&#x3002;</p>
 </li>
 </ul>
 </li>
+<li><p>&#x4F5C;&#x4E3A;&#x4E00;&#x79CD;&#x56DE;&#x9000;&#x65B9;&#x6848;&#xFF0C;&#x5C06;Guetzli&#x548C;MozJPEG&#x538B;&#x7F29;&#x6E90;&#x63D0;&#x4F9B;&#x7ED9;&#x5176;&#x4ED6;&#x6D4F;&#x89C8;&#x5668;</p>
+</li>
 </ul>
-<p>&#x538B;&#x7F29;&#x5FEB;&#x4E50;!</p>
+</li>
+</ul>
+<p>&#x795D;&#x4F60;&#x538B;&#x7F29;&#x5FEB;&#x4E50;!</p>
 <blockquote>
-<p>&#x6CE8;&#x610F;&#xFF1A;&#x6709;&#x5173;&#x5982;&#x4F55;&#x4F18;&#x5316;&#x56FE;&#x50CF;&#x7684;&#x66F4;&#x5B9E;&#x7528;&#x7684;&#x6307;&#x5BFC;&#xFF0C;&#x6211;&#x5F3A;&#x70C8;&#x63A8;&#x8350;Jeremy Wagner&#x7684;<a href="https://www.manning.com/books/web-performance-in-action" target="_blank">Web Performance in Action</a>&#x3002; <a href="http://shop.oreilly.com/product/0636920039730.do" target="_blank">&#x9AD8;&#x6027;&#x80FD;&#x56FE;&#x50CF;</a>&#x4E5F;&#x5145;&#x6EE1;&#x4E86;&#x5173;&#x4E8E;&#x8FD9;&#x4E2A;&#x4E3B;&#x9898;&#x7684;&#x4F18;&#x79C0;&#x3001;&#x7EC6;&#x81F4;&#x7684;&#x5EFA;&#x8BAE;&#x3002;</p>
+<p><strong>&#x6CE8;&#x610F;&#xFF1A;</strong>&#x6709;&#x5173;&#x5982;&#x4F55;&#x4F18;&#x5316;&#x56FE;&#x50CF;&#x66F4;&#x5B9E;&#x7528;&#x7684;&#x6307;&#x5BFC;&#xFF0C;&#x6211;&#x5F3A;&#x70C8;&#x63A8;&#x8350;Jeremy Wagner&#x7684;&#x300A;<a href="https://www.manning.com/books/web-performance-in-action" target="_blank">Web&#x6027;&#x80FD;&#x5B9E;&#x8DF5;</a>&#x300B;&#x3002; &#x300A;<a href="http://shop.oreilly.com/product/0636920039730.do" target="_blank">&#x9AD8;&#x6027;&#x80FD;&#x56FE;&#x50CF;</a>&#x300B;&#x4E5F;&#x5145;&#x6EE1;&#x4E86;&#x5173;&#x4E8E;&#x8FD9;&#x4E2A;&#x4E3B;&#x9898;&#x4F18;&#x79C0;&#x548C;&#x7EC6;&#x81F4;&#x7684;&#x5EFA;&#x8BAE;&#x3002;</p>
 </blockquote>
 
                                 
@@ -512,7 +512,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"18.写在最后","level":"1.21","depth":1,"next":{"title":"19.了解更多","level":"1.22","depth":1,"path":"ch19.md","ref":"ch19.md","articles":[]},"previous":{"title":"17.图像的性能预算","level":"1.20","depth":1,"path":"ch17.md","ref":"ch17.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ch18.md","mtime":"2019-04-22T12:25:55.378Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-22T12:29:55.636Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"18.写在最后","level":"1.21","depth":1,"next":{"title":"19.了解更多","level":"1.22","depth":1,"path":"ch19.md","ref":"ch19.md","articles":[]},"previous":{"title":"17.图像的性能预算","level":"1.20","depth":1,"path":"ch17.md","ref":"ch17.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ch18.md","mtime":"2019-04-22T16:44:52.311Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-22T16:55:00.074Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
