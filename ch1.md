@@ -2,9 +2,9 @@
 
 **图片仍然是造成网络膨胀的首要原因。**
 
-图像占用了大量的互联网带宽，因为它们通常有较大的文件大小。根据[HTTP存档](http://httparchive.org/)，60%用于获取网页的数据是由JPEG、PNG和GIF组成的图像。截至2017年7月，在平均3.0MB大小的站点加载的内容中图像占了[1.7MB](http://httparchive.org/interesting.php#bytesperpage)。
+图像占用了大量的互联网带宽，因为它们通常有较大的文件大小。根据[HTTP存档](http://httparchive.org/)，60%用于获取网页的数据是由JPEG、PNG和GIF组成的图像。截至2017年7月，在平均3.0MB大小的站点加载的网页内容中图像占了[1.7MB](http://httparchive.org/interesting.php#bytesperpage)。
 
-根据Tammy Everts，将图像添加到页面或使用更大量的现有图像已经被[证明](https://calendar.perfplanet.com/2014/images-are-king-an-image-optimization-checklist-for-everyone-in-your-organization/)可以提高转化率。图像不太可能消失，因此投资于有效的压缩策略以尽量减少网络膨胀变得非常重要。
+根据Tammy Everts，将图像添加到页面或使用更多的现有图像已经被[证明](https://calendar.perfplanet.com/2014/images-are-king-an-image-optimization-checklist-for-everyone-in-your-organization/)可以提高转化率。图像不太可能消失，因此投资于有效的压缩策略以尽量减少网络膨胀变得非常重要。
 
 ![Performance](https://images.guide/images/book-images/Modern-Image00-medium.jpg)
 
@@ -20,12 +20,12 @@
 
 ![Performance](https://images.guide/images/book-images/chart_naedwl-medium.jpg)
 
-根据[HTTP存档](http://jsfiddle.net/rviscomi/rzneberp/embedded/result/)，在第95百分位数(查看累积分布函数)的每幅图像可以节省30KB流量！
+根据[HTTP存档](http://jsfiddle.net/rviscomi/rzneberp/embedded/result/)，每个图像在第95%(查看累积分布函数)的位置可以节省30KB流量！
 
-有足够的空间让我们一起把图像优化做得更好。
+因此有足够的空间让我们一起把图像优化做得更好。
 
 ![Performance](https://images.guide/images/book-images/image-optim-medium.jpg)
 
 ImageOptim是免费的，通过现代压缩技术和剥离不必要的EXIF元数据来减少图像大小。
 
-如果您是一个设计师，也有一个[Sketch的ImageOptim插件](https://github.com/ImageOptim/Sketch-plugin)，可以优化你导出的资源。我发现它节省了很多时间。
+如果你是一个设计师，也有一个[Sketch的ImageOptim插件](https://github.com/ImageOptim/Sketch-plugin)，可以优化你导出的资源。我发现它可以节省很多时间。

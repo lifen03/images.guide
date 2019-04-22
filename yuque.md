@@ -9,7 +9,7 @@
 鸣谢: [Kornel Lesiński](https://twitter.com/kornelski), [Estelle Weyl](https://twitter.com/estellevw), [Jeremy Wagner](https://twitter.com/malchata), [Tim Kadlec](https://twitter.com/tkadlec), [Nolan O’Brien](https://twitter.com/NolanOBrien), [Pat Meenan](https://twitter.com/patmeenan), [Kristofer Baxter](https://twitter.com/kristoferbaxter), [Henri Helvetica](https://twitter.com/HenriHelvetica), [Houssein Djirdeh](https://twitter.com/hdjirdeh), [Una Kravets](https://twitter.com/una), [Elle Osmani](https://twitter.com/ARebelBelle) and [Ilya Grigorik](https://twitter.com/igrigorik).<br />
 感谢他们的帮助和评论。
 
-翻译&校验：freedom
+*翻译&校验：freedom*
 
 ## [摘要](https://images.guide/#the-tldr)
 
@@ -25,21 +25,21 @@
 
 至少：使用[ImageOptim](https://imageoptim.com/)。它可以显著地减小图像的大小，同时保持视觉质量。也可以使用Windows和Linux的[替代方案](https://imageoptim.com/versions.html)。
 
-更具体地说：通过[MozJPEG](https://github.com/mozilla/mozjpeg)运行JPEG(对于Web内容，```Q=80```或更低都没问题)，并考虑支持[渐进式JPEG](http://cloudinary.com/blog/progressive_jpegs_and_green_martians)，PNG通过[pngquant](https://pngquant.org/)优化，SVG通过[SVGO](https://github.com/svg/svgo)优化。显式删除元数据(pngquant用```--strip```)以避免膨胀。代替超级巨大的GIF动画，提供[H.264](https://en.wikipedia.org/wiki/H.264/MPEG-4_AVC)视频(或为Chrome、Firefox和Opera提供[WebM](https://www.webmproject.org/))！如果你连[Giflossy](https://github.com/pornel/giflossy)都不能用。你又要节省额外的CPU周期，需要高于web的平均质量，并且对缓慢的编码时间没有问题：试试[Guetzli](https://research.googleblog.com/2017/03/announcing-guetzli-new-open-source-jpeg.html)。
+更具体地说：通过[MozJPEG](https://github.com/mozilla/mozjpeg)运行JPEG(对于Web内容，```Q=80```或更低都没问题)，并考虑支持[渐进式JPEG](http://cloudinary.com/blog/progressive_jpegs_and_green_martians)，PNG通过[pngquant](https://pngquant.org/)优化，SVG通过[SVGO](https://github.com/svg/svgo)优化。显式删除元数据(pngquant用```--strip```)以避免网络膨胀。代替超级巨大的GIF动画，提供[H.264](https://en.wikipedia.org/wiki/H.264/MPEG-4_AVC)视频(或为Chrome、Firefox和Opera提供[WebM](https://www.webmproject.org/))！如果你连[Giflossy](https://github.com/pornel/giflossy)都不能用。你又要节省额外的CPU周期，需要的图像质量高于web的平均质量，并且编码慢一点也能接受的话：试试[Guetzli](https://research.googleblog.com/2017/03/announcing-guetzli-new-open-source-jpeg.html)。
 
 一些浏览器通过接受请求头来宣布对图像格式的支持。这可以用于有条件地提供格式：例如，基于[Blink](https://zh.wikipedia.org/wiki/Blink)的浏览器(如Chrome)使用有损[WebP](https://developers.google.com/speed/webp/)，而对于其他浏览器则使用JPEG/PNG。
 
 总是有很多你能做到的。有工具可以生成和服务```srcset```断点。在具有[客户端提示](https://developers.google.com/web/updates/2015/09/automating-resource-selection-with-client-hints)的基于Blink的浏览器中，资源选择可以自动化，并且如果用户选择在浏览器中“保存数据”，那么可以通过遵从[保存数据](https://developers.google.com/web/updates/2016/02/save-data)提示来减少字节数。
 
-你可以使你的图像文件大小越小，你就可以为用户提供更好的网络体验-尤其是在移动平台上。在这篇文章中，我们将探讨通过现代压缩技术减少图像大小的方法，并将对图像质量的影响降到最低。
+你可以使你的图像文件大小越小，你就可以为用户提供更好的网络体验 —— 尤其是在移动平台上。在这篇文章中，我们将探讨通过现代压缩技术减少图像大小的方法，并将对图像质量的影响降到最低。
 
 ## [1.介绍](https://images.guide/#introduction)
 
 **图片仍然是造成网络膨胀的首要原因。**
 
-图像占用了大量的互联网带宽，因为它们通常有较大的文件大小。根据[HTTP存档](http://httparchive.org/)，60%用于获取网页的数据是由JPEG、PNG和GIF组成的图像。截至2017年7月，在平均3.0MB大小的站点加载的内容中图像占了[1.7MB](http://httparchive.org/interesting.php#bytesperpage)。
+图像占用了大量的互联网带宽，因为它们通常有较大的文件大小。根据[HTTP存档](http://httparchive.org/)，60%用于获取网页的数据是由JPEG、PNG和GIF组成的图像。截至2017年7月，在平均3.0MB大小的站点加载的网页内容中图像占了[1.7MB](http://httparchive.org/interesting.php#bytesperpage)。
 
-根据Tammy Everts，将图像添加到页面或使用更大量的现有图像已经被[证明](https://calendar.perfplanet.com/2014/images-are-king-an-image-optimization-checklist-for-everyone-in-your-organization/)可以提高转化率。图像不太可能消失，因此投资于有效的压缩策略以尽量减少网络膨胀变得非常重要。
+根据Tammy Everts，将图像添加到页面或使用更多的现有图像已经被[证明](https://calendar.perfplanet.com/2014/images-are-king-an-image-optimization-checklist-for-everyone-in-your-organization/)可以提高转化率。图像不太可能消失，因此投资于有效的压缩策略以尽量减少网络膨胀变得非常重要。
 
 ![Performance](https://images.guide/images/book-images/Modern-Image00-medium.jpg)
 
@@ -55,19 +55,19 @@
 
 ![Performance](https://images.guide/images/book-images/chart_naedwl-medium.jpg)
 
-根据[HTTP存档](http://jsfiddle.net/rviscomi/rzneberp/embedded/result/)，在第95百分位数(查看累积分布函数)的每幅图像可以节省30KB流量！
+根据[HTTP存档](http://jsfiddle.net/rviscomi/rzneberp/embedded/result/)，每个图像在第95%(查看累积分布函数)的位置可以节省30KB流量！
 
-有足够的空间让我们一起把图像优化做得更好。
+因此有足够的空间让我们一起把图像优化做得更好。
 
 ![Performance](https://images.guide/images/book-images/image-optim-medium.jpg)
 
 ImageOptim是免费的，通过现代压缩技术和剥离不必要的EXIF元数据来减少图像大小。
 
-如果您是一个设计师，也有一个[Sketch的ImageOptim插件](https://github.com/ImageOptim/Sketch-plugin)，可以优化你导出的资源。我发现它节省了很多时间。
+如果你是一个设计师，也有一个[Sketch的ImageOptim插件](https://github.com/ImageOptim/Sketch-plugin)，可以优化你导出的资源。我发现它可以节省很多时间。
 
 ## [2.如何判断我的图像是否需要优化?](https://images.guide/#do-my-images-need-optimization)
 
-通过[WebPageTest.org](https://www.webpagetest.org/)执行站点审核，它将有更加明显的机会去更好地优化图像(参见“压缩图像”)。
+通过[WebPageTest.org](https://www.webpagetest.org/)执行站点审核，它将有去更好地优化图像(参见“压缩图像”)更明显的机会。
 
 ![Performance](https://images.guide/images/book-images/Modern-Image1-medium.jpg)
 
@@ -81,29 +81,29 @@ ImageOptim是免费的，通过现代压缩技术和剥离不必要的EXIF元数
 
 ![Performance](https://images.guide/images/book-images/hbo-medium.jpg)
 
-Lighthouse可以审核Web性能的最佳实践和改进Web应用功能的工具。
+Lighthouse是可以审核Web性能的最佳实践和改进Web应用功能的工具。
 
 您也可能熟悉其他性能审核工具，如[PageSpeed](https://developers.google.com/speed/pagespeed/insights/)、[Insight](https://developers.google.com/speed/pagespeed/insights/)或者通过Cloudinary的[Website Speed Test](https://webspeedtest.cloudinary.com/)，其中包括详细的图像分析审核。
 
 ## [3.如何选择图像格式?](https://images.guide/#choosing-an-image-format)
 
-正如Ilya Grigorik在其出色的[图像优化指南](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization)中所指出的，图像的“正确格式”是视觉所期望的结果和功能需求的结合。你是在处理光栅图形还是矢量图形？
+正如Ilya Grigorik在其出色的[图像优化指南](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization)中所指出的，图像的“正确格式”是视觉所期望的结果和功能需求的结合。你是在处理光栅图形还是矢量图形呢？
 
-![Performance](https://images.guide/images/book-images/rastervvector-large.png)
+![](https://images.guide/images/book-images/rastervvector-large.png)
 
-[光栅图形](https://en.wikipedia.org/wiki/Raster_graphics)通过对矩形像素网格内的每个像素的值进行编码来表示图像。 它们不是分辨率或独立缩放的。 WebP或广泛支持的格式（如JPEG或PNG）可以很好地处理这些图形，其中照片写实是必需的。 我们讨论过的Guetzli，MozJPEG和其他方法都很适用于光栅图形。
+[光栅图形](https://en.wikipedia.org/wiki/Raster_graphics)通过对矩形像素网格内的每个像素的值进行编码来表示图像。 它们不是分辨率或者独立的缩放。 WebP和广泛支持的格式（如JPEG或PNG）可以很好地处理这些图像，其中照片写实是必需的。 我们讨论过的Guetzli，MozJPEG以及一些其他方法都很适用于光栅图形。
 
-[矢量图形](https://en.wikipedia.org/wiki/Vector_graphics)使用点、线和多边形来表示图像，是使用简单的几何形状（例如logo）提供高分辨率和像SVG一样更好地处理缩放情况的图像格式。
+[矢量图形](https://en.wikipedia.org/wiki/Vector_graphics)是使用点、线和多边形来表示图像，是使用简单的几何形状（例如logo）提供高分辨率和像SVG一样更好地处理缩放情况的图像格式。
 
-错误的格式会使你付出代价。选择正确格式的逻辑流程又可能充满风险，因此尝试其他格式可以在一定程度上节省费用。
+错误的格式会使你付出代价。选择正确图像格式逻辑流程又可能充满风险，因此尝试其他格式可以在一定程度上节省费用。
 
 Jeremy Wagner在他的图像优化演讲中谈到了在评估格式时值得考虑的[权衡点](http://jlwagner.net/talks/these-images/#/2/2)。
 
 ## [4.普通的JPEG](https://images.guide/#the-humble-jpeg)
 
-[JPEG](https://en.wikipedia.org/wiki/JPEG)很可能是世界上使用最广泛的图像格式。如前所述，在[HTTP Archive](https://httparchive.org/)爬虫的站点上看到的图像中，有[45%是JPEG](https://httparchive.org/reports/state-of-the-web?start=latest)。你的手机，你的数码单反相机，旧的网络摄像头-一切都支持这个编解码器。它也很古老，可以追溯到1992年第一次发布。在这段时间里，有大量的研究试图改进它所提供的东西。
+[JPEG](https://en.wikipedia.org/wiki/JPEG)很可能是世界上使用最广泛的图像格式。如前所述，在[HTTP存档](https://httparchive.org/)爬虫的站点上看到的图像中，有[45%是JPEG](https://httparchive.org/reports/state-of-the-web?start=latest)。你的手机，你的数码单反相机，旧的网络摄像头 —— 一切都支持这个编解码器。它也很古老，可以追溯到1992年第一次发布。在这段时间里，有大量的研究试图改进它所提供的东西。
 
-JPEG使用的是一种为了节省空间而丢弃信息的有损压缩算法，并试图在尽量保持文件大小的同时保持视觉保真度的格式。
+JPEG使用的是一种为了节省空间而丢弃信息的有损压缩算法，并试图在尽量保持文件大小的同时保持视觉保真度的图像格式。
 
 **实际情况允许你可以接受什么样的图像质量？**
 

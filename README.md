@@ -9,4 +9,4 @@
 鸣谢: [Kornel Lesiński](https://twitter.com/kornelski), [Estelle Weyl](https://twitter.com/estellevw), [Jeremy Wagner](https://twitter.com/malchata), [Tim Kadlec](https://twitter.com/tkadlec), [Nolan O’Brien](https://twitter.com/NolanOBrien), [Pat Meenan](https://twitter.com/patmeenan), [Kristofer Baxter](https://twitter.com/kristoferbaxter), [Henri Helvetica](https://twitter.com/HenriHelvetica), [Houssein Djirdeh](https://twitter.com/hdjirdeh), [Una Kravets](https://twitter.com/una), [Elle Osmani](https://twitter.com/ARebelBelle) and [Ilya Grigorik](https://twitter.com/igrigorik).<br />
 感谢他们的帮助和评论。
 
-翻译&校验：freedom
+*翻译&校验：freedom*

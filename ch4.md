@@ -1,8 +1,8 @@
 ## [4.普通的JPEG](https://images.guide/#the-humble-jpeg)
 
-[JPEG](https://en.wikipedia.org/wiki/JPEG)很可能是世界上使用最广泛的图像格式。如前所述，在[HTTP Archive](https://httparchive.org/)爬虫的站点上看到的图像中，有[45%是JPEG](https://httparchive.org/reports/state-of-the-web?start=latest)。你的手机，你的数码单反相机，旧的网络摄像头-一切都支持这个编解码器。它也很古老，可以追溯到1992年第一次发布。在这段时间里，有大量的研究试图改进它所提供的东西。
+[JPEG](https://en.wikipedia.org/wiki/JPEG)很可能是世界上使用最广泛的图像格式。如前所述，在[HTTP存档](https://httparchive.org/)爬虫的站点上看到的图像中，有[45%是JPEG](https://httparchive.org/reports/state-of-the-web?start=latest)。你的手机，你的数码单反相机，旧的网络摄像头 —— 一切都支持这个编解码器。它也很古老，可以追溯到1992年第一次发布。在这段时间里，有大量的研究试图改进它所提供的东西。
 
-JPEG使用的是一种为了节省空间而丢弃信息的有损压缩算法，并试图在尽量保持文件大小的同时保持视觉保真度的格式。
+JPEG使用的是一种为了节省空间而丢弃信息的有损压缩算法，并试图在尽量保持文件大小的同时保持视觉保真度的图像格式。
 
 **实际情况允许你可以接受什么样的图像质量？**
 

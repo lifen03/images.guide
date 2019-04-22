@@ -1,6 +1,6 @@
 ## [2.如何判断我的图像是否需要优化?](https://images.guide/#do-my-images-need-optimization)
 
-通过[WebPageTest.org](https://www.webpagetest.org/)执行站点审核，它将有更加明显的机会去更好地优化图像(参见“压缩图像”)。
+通过[WebPageTest.org](https://www.webpagetest.org/)执行站点审核，它将有去更好地优化图像(参见“压缩图像”)更明显的机会。
 
 ![Performance](https://images.guide/images/book-images/Modern-Image1-medium.jpg)
 
@@ -14,6 +14,6 @@
 
 ![Performance](https://images.guide/images/book-images/hbo-medium.jpg)
 
-Lighthouse可以审核Web性能的最佳实践和改进Web应用功能的工具。
+Lighthouse是可以审核Web性能的最佳实践和改进Web应用功能的工具。
 
 您也可能熟悉其他性能审核工具，如[PageSpeed](https://developers.google.com/speed/pagespeed/insights/)、[Insight](https://developers.google.com/speed/pagespeed/insights/)或者通过Cloudinary的[Website Speed Test](https://webspeedtest.cloudinary.com/)，其中包括详细的图像分析审核。
