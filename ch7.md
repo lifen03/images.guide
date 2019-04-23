@@ -1,3 +1,16 @@
+<div>
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?4f01de5cc0f84f20fea5a4202233614f&tt=ch7&key=" + Date.now();
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+        _hmt.push(['图像优化', 'ch7.md', 'pv', '第7章', 'SVG优化']);
+    })();
+    </script>
+</div>
+
 ## [7.SVG优化](https://images.guide/#svg-optimization)
 
 保持SVG精简意味着去掉任何不必要的东西。使用编辑器创建的SVG文件通常包含大量冗余信息(元数据、注释、隐藏层等)。这些内容通常可以安全地删除或转换为更小的形式，而不会影响SVG的最终呈现。

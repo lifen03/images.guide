@@ -1,3 +1,16 @@
+<div>
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?4f01de5cc0f84f20fea5a4202233614f&tt=ch8&key=" + Date.now();
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+        _hmt.push(['图像优化', 'ch8.md', 'pv', '第8章', '避免使用有损编解码器重新压缩图像']);
+    })();
+    </script>
+</div>
+
 ## [8.避免使用有损编解码器重新压缩图像](https://images.guide/#avoid-recompressing-images-lossy-codecs)
 
 建议始终对原始图像进行压缩。重新压缩图像会有很严重的后果。假设你有一个JPEG，它已经被压缩，质量为60。如果你用有损编码重新压缩此图像，它看起来会更糟。每一轮额外的压缩都将引入分代丢失 —— 压缩过的图像构建会导致信息丢失。即使你在高质量的环境下重新压缩。

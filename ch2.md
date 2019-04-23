@@ -1,3 +1,16 @@
+<div>
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?4f01de5cc0f84f20fea5a4202233614f&tt=ch2&key=" + Date.now();
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+        _hmt.push(['图像优化', 'ch2.md', 'pv', '第2章', '如何判断我的图像是否需要优化?']);
+    })();
+    </script>
+</div>
+
 ## [2.如何判断我的图像是否需要优化?](https://images.guide/#do-my-images-need-optimization)
 
 通过[WebPageTest.org](https://www.webpagetest.org/)执行站点审核，它将有更明显的把优化图像(参见“压缩图像”)到更好的机会。

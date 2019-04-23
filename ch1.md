@@ -1,3 +1,16 @@
+<div>
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?4f01de5cc0f84f20fea5a4202233614f&tt=ch1&key=" + Date.now();
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+        _hmt.push(['图像优化', 'ch1.md', 'pv', '第1章', '介绍']);
+    })();
+    </script>
+</div>
+
 ## [1.介绍](https://images.guide/#introduction)
 
 **图像仍然是造成网络膨胀的首要原因。**
