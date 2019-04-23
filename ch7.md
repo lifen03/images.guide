@@ -4,7 +4,7 @@
 
 ![Performance](https://images.guide/images/book-images/Modern-Image26-large.jpg)
 
-由Jake Archibald创建的[SVGOMG](https://jakearchibald.github.io/svgomg/)是一个GUI界面工具，通过选择优化，通过输出标记的实时预览，你可以根据自己的喜好优化SVG。
+> 由Jake Archibald创建的[SVGOMG](https://jakearchibald.github.io/svgomg/)是一个GUI界面工具，通过选择优化，通过输出标记的实时预览，你可以根据自己的喜好优化SVG。
 
 **一般的SVG优化(SVGO)规则：**
 
@@ -26,13 +26,13 @@
 
 ![Performance](https://images.guide/images/book-images/svgo-precision-large.jpg)
 
-通过SVGO以高精度模式运行SVG源（可以让文件大小节省29%）与低精度模式（可以让文件大小节省38%）的示例。
+> 通过SVGO以高精度模式运行SVG源（可以让文件大小节省29%）与低精度模式（可以让文件大小节省38%）的示例。
 
 [SVGO](https://www.sketchapp.com/extensions/plugins/svgo-compressor/)是一种基于节点的SVG优化工具。SVGO可以通过降低定义中数字的精度来减少文件大小。一个点之后的每一位数字都会增加一个字节，这就是为什么改变精度(位数)会严重影响文件大小的原因。但是，要非常非常小心地更改精度，因为它会在视觉上影响形状的外观。
 
 ![Performance](https://images.guide/images/book-images/Modern-Image28-large.jpg)
 
-需要注意的是，虽然SVGO在前面的示例中没有过度简化路径和形状，但在很多情况下可能不是这样。观察上面火箭上的光带是如何以较低的精度扭曲的。
+> 需要注意的是，虽然SVGO在前面的示例中没有过度简化路径和形状，但在很多情况下可能不是这样。观察上面火箭上的光带是如何以较低的精度扭曲的。
 
 **在命令行使用SVGO:**
 
