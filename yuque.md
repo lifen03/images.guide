@@ -1474,10 +1474,10 @@ Calibre提供了类似的功能，支持为你定位的每个设备级设置预�
     var _hmt = _hmt || [];
     (function() {
         var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?4f01de5cc0f84f20fea5a4202233614f&tt=yuque&key=" + Date.now();
+        hm.src = "https://hm.baidu.com/hm.js?4f01de5cc0f84f20fea5a4202233614f";
         var s = document.getElementsByTagName("script")[0]; 
         s.parentNode.insertBefore(hm, s);
-        _hmt.push(['图像优化', 'yuque.md', 'pv', 'yuque', '语雀版']);
+        _hmt.push(['_trackEvent', '图像优化', '语雀版', 20]);
     })();
     </script>
 </div>

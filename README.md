@@ -16,10 +16,10 @@
     var _hmt = _hmt || [];
     (function() {
         var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?4f01de5cc0f84f20fea5a4202233614f&tt=readme&key=" + Date.now();
+        hm.src = "https://hm.baidu.com/hm.js?4f01de5cc0f84f20fea5a4202233614f";
         var s = document.getElementsByTagName("script")[0]; 
         s.parentNode.insertBefore(hm, s);
-        _hmt.push(['图像优化', 'README.md', 'pv', 'readme', '首页']);
+        _hmt.push(['_trackEvent', '图像优化', 'README.md', -1]);
     })();
     </script>
 </div>

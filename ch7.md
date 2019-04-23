@@ -84,10 +84,10 @@ Sara Soueidan的《[Web优化SVG交付的技巧](https://calendar.perfplanet.com
     var _hmt = _hmt || [];
     (function() {
         var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?4f01de5cc0f84f20fea5a4202233614f&tt=ch7&key=" + Date.now();
+        hm.src = "https://hm.baidu.com/hm.js?4f01de5cc0f84f20fea5a4202233614f";
         var s = document.getElementsByTagName("script")[0]; 
         s.parentNode.insertBefore(hm, s);
-        _hmt.push(['图像优化', 'ch7.md', 'pv', '第7章', 'SVG优化']);
+        _hmt.push(['_trackEvent', '图像优化', 'SVG优化', 7]);
     })();
     </script>
 </div>

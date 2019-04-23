@@ -64,10 +64,10 @@
     var _hmt = _hmt || [];
     (function() {
         var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?4f01de5cc0f84f20fea5a4202233614f&tt=ch9&key=" + Date.now();
+        hm.src = "https://hm.baidu.com/hm.js?4f01de5cc0f84f20fea5a4202233614f";
         var s = document.getElementsByTagName("script")[0]; 
         s.parentNode.insertBefore(hm, s);
-        _hmt.push(['图像优化', 'ch9.md', 'pv', '第9章', '减少不必要的图像解码和调整成本']);
+        _hmt.push(['_trackEvent', '图像优化', '减少不必要的图像解码和调整成本', 9]);
     })();
     </script>
 </div>

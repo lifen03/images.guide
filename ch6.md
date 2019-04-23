@@ -395,10 +395,10 @@ GIF动画的格式非常有限，但是它仍然得到了广泛的使用。尽�
     var _hmt = _hmt || [];
     (function() {
         var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?4f01de5cc0f84f20fea5a4202233614f&tt=ch6&key=" + Date.now();
+        hm.src = "https://hm.baidu.com/hm.js?4f01de5cc0f84f20fea5a4202233614f";
         var s = document.getElementsByTagName("script")[0]; 
         s.parentNode.insertBefore(hm, s);
-        _hmt.push(['图像优化', 'ch6.md', 'pv', '第6章', 'WebP是什么?']);
+        _hmt.push(['_trackEvent', '图像优化', 'WebP是什么?', 6]);
     })();
     </script>
 </div>

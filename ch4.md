@@ -33,10 +33,10 @@ JPEG等格式最适合具有多个颜色区域的照片或图像。 大多数优
     var _hmt = _hmt || [];
     (function() {
         var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?4f01de5cc0f84f20fea5a4202233614f&tt=ch4&key=" + Date.now();
+        hm.src = "https://hm.baidu.com/hm.js?4f01de5cc0f84f20fea5a4202233614f";
         var s = document.getElementsByTagName("script")[0]; 
         s.parentNode.insertBefore(hm, s);
-        _hmt.push(['图像优化', 'ch4.md', 'pv', '第4章', '普通的JPEG']);
+        _hmt.push(['_trackEvent', '图像优化', '普通的JPEG', 5]);
     })();
     </script>
 </div>

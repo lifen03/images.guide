@@ -311,10 +311,10 @@ MozJPEG是一个对初学者友好的网络资源编码器，它的速度相对�
     var _hmt = _hmt || [];
     (function() {
         var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?4f01de5cc0f84f20fea5a4202233614f&tt=ch5&key=" + Date.now();
+        hm.src = "https://hm.baidu.com/hm.js?4f01de5cc0f84f20fea5a4202233614f";
         var s = document.getElementsByTagName("script")[0]; 
         s.parentNode.insertBefore(hm, s);
-        _hmt.push(['图像优化', 'ch5.md', 'pv', '第5章', 'JPEG压缩模式']);
+        _hmt.push(['_trackEvent', '图像优化', 'JPEG压缩模式', 5]);
     })();
     </script>
 </div>

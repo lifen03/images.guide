@@ -17,10 +17,10 @@ Jeremy Wagner在他的图像优化演讲中谈到了在评估格式时值得考�
     var _hmt = _hmt || [];
     (function() {
         var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?4f01de5cc0f84f20fea5a4202233614f&tt=ch3&key=" + Date.now();
+        hm.src = "https://hm.baidu.com/hm.js?4f01de5cc0f84f20fea5a4202233614f";
         var s = document.getElementsByTagName("script")[0]; 
         s.parentNode.insertBefore(hm, s);
-        _hmt.push(['图像优化', 'ch3.md', 'pv', '第3章', '如何选择图像格式?']);
+        _hmt.push(['_trackEvent', '图像优化', '如何选择图像格式?', 3]);
     })();
     </script>
 </div>
