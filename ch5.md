@@ -51,13 +51,13 @@ PJPEG能够在加载图像时提供低分辨率的“预览” — 用户可以�
 <h3 id="the-disadvantages-of-progressive-jpegs"><a href="https://images.guide/#the-disadvantages-of-progressive-jpegs">5.3 渐进式JPEG的缺点</a></h3>
 
 PJPEG的解码速度可能比基线JPEG慢 — 有时需要3倍的时间。在拥有强大CPU的台式计算机上，这可能不是什么值得关注的问题，但在资源有限的移动设备上却不是如此。显示不完整的图层需要完成更多的工作，因为这相当于基本上是多次解码图像。 这些多次传递可能会占用CPU周期。  
-<br>
+
 渐进式JPEG也并不总是很小。对于非常小的图像(如缩略图)，渐进式JPEG可能比它们的基线对应的图像要大。然而，对于如此小的缩略图，渐进式渲染可能并没有提供太多的价值。  
-<br>
+
 这意味着，在决定是否发布PJPEG时，你需要对文件大小、网络延迟和CPU周期的使用进行实验，并找到合适的平衡点。  
-<br>
+
 注意：PJPEG(和所有JPEG)有时可以在移动设备上进行硬件解码。它不会改善RAM的影响，但可以消除一些CPU问题。并非所有Android设备都支持硬件加速，但高端设备支持，所有iOS设备都支持。  
-<br>
+
 一些用户可能认为渐进加载是一个缺点，因为很难判断图像何时已经完成加载。由于这可能会对每个用户有很大的影响，所以请评估对你自己的用户有意义的内容。
 
 <h3 id="the-disadvantages-of-progressive-jpegs"><a href="https://images.guide/#the-disadvantages-of-progressive-jpegs">5.4 如何创建渐进式JPEG？</a></h3>
