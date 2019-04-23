@@ -1,16 +1,3 @@
-<div>
-    <script>
-    var _hmt = _hmt || [];
-    (function() {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?4f01de5cc0f84f20fea5a4202233614f&tt=ch5&key=" + Date.now();
-        var s = document.getElementsByTagName("script")[0]; 
-        s.parentNode.insertBefore(hm, s);
-        _hmt.push(['图像优化', 'ch5.md', 'pv', '第5章', 'JPEG压缩模式']);
-    })();
-    </script>
-</div>
-
 ## [5.JPEG压缩模式](https://images.guide/#jpeg-compression-modes)
 
 JPEG图像格式有多种不同的[压缩模式](http://cs.haifa.ac.il/~nimrod/Compression/JPEG/J5mods2007.pdf)。流行的三种模式是基线(顺序)、渐进式JPEG(PJPEG)和无损。
@@ -318,3 +305,16 @@ MozJPEG与Guetzli相比如何？ – Kornel的观点:
 对于较大的图像，我发现将Guetzli与MozJPEG中的**无损压缩**(jpegtran，而不是cjpeg，以避免丢弃Guetzli所做的工作)相结合，可以进一步减少10%-15%的文件大小(总体减少55%)，而SSIM只减少很小的一部分。我想提醒大家的是，这需要实验和分析，这一领域的其他人，如[Ariya Hidayat](https://ariya.io/2017/03/squeezing-jpeg-images-with-guetzli)，也曾尝试过，结果值得期待。
 
 MozJPEG是一个对初学者友好的网络资源编码器，它的速度相对较快，可以生成高质量的图像。由于Guetzli是资源密集型的，最适合处理文件大小更大、质量更高的图像，所以我将它保留给中级到高级用户。
+
+<div>
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?4f01de5cc0f84f20fea5a4202233614f&tt=ch5&key=" + Date.now();
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+        _hmt.push(['图像优化', 'ch5.md', 'pv', '第5章', 'JPEG压缩模式']);
+    })();
+    </script>
+</div>

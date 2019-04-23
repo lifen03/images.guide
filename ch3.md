@@ -1,16 +1,3 @@
-<div>
-    <script>
-    var _hmt = _hmt || [];
-    (function() {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?4f01de5cc0f84f20fea5a4202233614f&tt=ch3&key=" + Date.now();
-        var s = document.getElementsByTagName("script")[0]; 
-        s.parentNode.insertBefore(hm, s);
-        _hmt.push(['图像优化', 'ch3.md', 'pv', '第3章', '如何选择图像格式?']);
-    })();
-    </script>
-</div>
-
 ## [3.如何选择图像格式?](https://images.guide/#choosing-an-image-format)
 
 正如Ilya Grigorik在其出色的[图像优化指南](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization)中所指出的，图像的“正确格式”是视觉所期望的结果和功能需求的结合。你是在处理光栅图形还是矢量图形呢？
@@ -24,3 +11,16 @@
 错误的格式会使你付出代价。选择正确图像格式逻辑流程又可能充满风险，因此尝试其他格式可以在一定程度上节省费用。
 
 Jeremy Wagner在他的图像优化演讲中谈到了在评估格式时值得考虑的[权衡点](http://jlwagner.net/talks/these-images/#/2/2)。
+
+<div>
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?4f01de5cc0f84f20fea5a4202233614f&tt=ch3&key=" + Date.now();
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+        _hmt.push(['图像优化', 'ch3.md', 'pv', '第3章', '如何选择图像格式?']);
+    })();
+    </script>
+</div>

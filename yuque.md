@@ -1,16 +1,3 @@
-<div>
-    <script>
-    var _hmt = _hmt || [];
-    (function() {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?4f01de5cc0f84f20fea5a4202233614f&tt=yuque&key=" + Date.now();
-        var s = document.getElementsByTagName("script")[0]; 
-        s.parentNode.insertBefore(hm, s);
-        _hmt.push(['图像优化', 'yuque', 'pv', '全文', '']);
-    })();
-    </script>
-</div>
-
 # [图像优化](https://images.guide/)
 
 [原文地址](https://images.guide/)
@@ -1481,3 +1468,16 @@ Calibre提供了类似的功能，支持为你定位的每个设备级设置预�
 + Blink (Chrome使用的渲染引擎)从主线程上解码图像。将解码工作转移到合成器线程将释放主线程来处理其他任务。我们称之为延迟解码。在延迟译码的情况下，译码工作仍然处于帧显示的关键路径上，仍然会造成动画抖动。[img.decode()](https://html.spec.whatwg.org/multipage/embedded-content.html#dom-img-decode) API应该有助于解决jank问题。
 
 本书的内容遵循知识共享[属性-非商业-NoDerivs 2.0 Generic (CC BY-NC-ND 2.0)许可](https://creativecommons.org/licenses/by-nc-nd/2.0/)，代码示例遵循[Apache 2.0许可](http://www.apache.org/licenses/LICENSE-2.0)。版权归谷歌所有，2018。
+
+<div>
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?4f01de5cc0f84f20fea5a4202233614f&tt=yuque&key=" + Date.now();
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+        _hmt.push(['图像优化', 'yuque.md', 'pv', 'yuque', '语雀版']);
+    })();
+    </script>
+</div>

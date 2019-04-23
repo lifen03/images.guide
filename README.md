@@ -1,16 +1,3 @@
-<div>
-    <script>
-    var _hmt = _hmt || [];
-    (function() {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?4f01de5cc0f84f20fea5a4202233614f&tt=readme";
-        var s = document.getElementsByTagName("script")[0]; 
-        s.parentNode.insertBefore(hm, s);
-        _hmt.push(['_trackPageview', '/README.md']);
-    })();
-    </script>
-</div>
-
 # [图像优化](https://images.guide/)
 
 [原文地址](https://images.guide/)
@@ -23,3 +10,16 @@
 感谢他们的帮助和评论。
 
 *翻译&校验：freedom*
+
+<div>
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?4f01de5cc0f84f20fea5a4202233614f&tt=readme&key=" + Date.now();
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+        _hmt.push(['图像优化', 'README.md', 'pv', 'readme', '首页']);
+    })();
+    </script>
+</div>

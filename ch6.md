@@ -1,16 +1,3 @@
-<div>
-    <script>
-    var _hmt = _hmt || [];
-    (function() {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?4f01de5cc0f84f20fea5a4202233614f&tt=ch6&key=" + Date.now();
-        var s = document.getElementsByTagName("script")[0]; 
-        s.parentNode.insertBefore(hm, s);
-        _hmt.push(['图像优化', 'ch6.md', 'pv', '第6章', 'WebP是什么?']);
-    })();
-    </script>
-</div>
-
 ## [6.WebP是什么?](https://images.guide/#what-is-webp)
 
 [WebP](https://developers.google.com/speed/webp/)是来自谷歌的一种最新的图像格式，旨在提供更小的文件大小，在可接受的视觉质量下进行无损和有损压缩。它包括对alpha通道透明度和动画的支持。
@@ -402,3 +389,16 @@ GIF动画的格式非常有限，但是它仍然得到了广泛的使用。尽�
 + 考虑有损GIF编码器。 Gifsicle的分支[Gifsossy](https://github.com/pornel/giflossy)支持带有```-lossy```标签，它可以减少约60%-65%的文件大小。 还有一个很好的基于Gifsossy的工具，叫做[Gifify](https://github.com/vvo/gifify)。 对于非动画GIF，把它们转换为PNG或WebP。
 
 更多的相关信息，请查看Rigor的《[Book of GIF](https://rigor.com/wp-content/uploads/2017/03/TheBookofGIFPDF.pdf)》。
+
+<div>
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?4f01de5cc0f84f20fea5a4202233614f&tt=ch6&key=" + Date.now();
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+        _hmt.push(['图像优化', 'ch6.md', 'pv', '第6章', 'WebP是什么?']);
+    })();
+    </script>
+</div>

@@ -1,16 +1,3 @@
-<div>
-    <script>
-    var _hmt = _hmt || [];
-    (function() {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?4f01de5cc0f84f20fea5a4202233614f&tt=ch9&key=" + Date.now();
-        var s = document.getElementsByTagName("script")[0]; 
-        s.parentNode.insertBefore(hm, s);
-        _hmt.push(['图像优化', 'ch9.md', 'pv', '第9章', '减少不必要的图像解码和调整成本']);
-    })();
-    </script>
-</div>
-
 ## [9.减少不必要的图像解码和调整成本](https://images.guide/#reduce-unnecessary-image-decode-costs)
 
 我们之前已经为用户提供了比用户所需要的更大、更高分辨率的图像。 是需要付出代价的。对于一般的移动硬件来说，解码和调整图像大小是非常昂贵的操作。如果向下发送大的图像并使用CSS的宽和高属性进行缩放，你可能会看到调整图像大小对性能的影响。
@@ -71,3 +58,17 @@
 ![Performance](https://images.guide/images/book-images/responsive-art-direction-large.jpg)
 
 > 艺术指导：埃里克·波蒂斯（Eric Portis）汇集了一个优秀的[样本](https://ericportis.com/etc/cloudinary/)，展示了在艺术指导上将如何呈现响应式图像。 此示例主要调整横幅在不同断点处的视觉特征，以充分利用可用空间。
+
+<div>
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?4f01de5cc0f84f20fea5a4202233614f&tt=ch9&key=" + Date.now();
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+        _hmt.push(['图像优化', 'ch9.md', 'pv', '第9章', '减少不必要的图像解码和调整成本']);
+    })();
+    </script>
+</div>
+

@@ -1,16 +1,3 @@
-<div>
-    <script>
-    var _hmt = _hmt || [];
-    (function() {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?4f01de5cc0f84f20fea5a4202233614f&tt=ch1&key=" + Date.now();
-        var s = document.getElementsByTagName("script")[0]; 
-        s.parentNode.insertBefore(hm, s);
-        _hmt.push(['图像优化', 'ch1.md', 'pv', '第1章', '介绍']);
-    })();
-    </script>
-</div>
-
 ## [1.介绍](https://images.guide/#introduction)
 
 **图像仍然是造成网络膨胀的首要原因。**
@@ -42,3 +29,16 @@
 > ImageOptim是免费的，通过现代压缩技术和剥离不必要的EXIF元数据来减少图像大小。
 
 如果你是一个设计师，也有一个[Sketch的ImageOptim插件](https://github.com/ImageOptim/Sketch-plugin)，可以优化你导出的资源。我发现它可以节省很多时间。
+
+<div>
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?4f01de5cc0f84f20fea5a4202233614f&tt=ch1&key=" + Date.now();
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+        _hmt.push(['图像优化', 'ch1.md', 'pv', '第1章', '介绍']);
+    })();
+    </script>
+</div>

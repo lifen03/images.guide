@@ -1,16 +1,3 @@
-<div>
-    <script>
-    var _hmt = _hmt || [];
-    (function() {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?4f01de5cc0f84f20fea5a4202233614f&tt=ch7&key=" + Date.now();
-        var s = document.getElementsByTagName("script")[0]; 
-        s.parentNode.insertBefore(hm, s);
-        _hmt.push(['图像优化', 'ch7.md', 'pv', '第7章', 'SVG优化']);
-    })();
-    </script>
-</div>
-
 ## [7.SVG优化](https://images.guide/#svg-optimization)
 
 保持SVG精简意味着去掉任何不必要的东西。使用编辑器创建的SVG文件通常包含大量冗余信息(元数据、注释、隐藏层等)。这些内容通常可以安全地删除或转换为更小的形式，而不会影响SVG的最终呈现。
@@ -91,3 +78,16 @@ SVG可以为图标提供[强大的](https://css-tricks.com/icon-fonts-vs-svg/)�
 
 Sara Soueidan的《[Web优化SVG交付的技巧](https://calendar.perfplanet.com/2014/tips-for-optimising-svg-delivery-for-the-web/)》和Chris Coyier的《[SVG实践](https://abookapart.com/products/practical-svg)》都非常优秀。
 我还发现Andreas Larsen的SVG优化文章([第1部分](https://medium.com/larsenwork-andreas-larsen/optimising-svgs-for-web-use-part-1-67e8f2d4035)和[第2部分](https://medium.com/larsenwork-andreas-larsen/optimising-svgs-for-web-use-part-2-6711cc15df46))很有启发。《[在Sketch中准备和导出SVG图标](https://medium.com/sketch-app-sources/preparing-and-exporting-svg-icons-in-sketch-1a3d65b239bb)》也是一个不错的文章。
+
+<div>
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?4f01de5cc0f84f20fea5a4202233614f&tt=ch7&key=" + Date.now();
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+        _hmt.push(['图像优化', 'ch7.md', 'pv', '第7章', 'SVG优化']);
+    })();
+    </script>
+</div>

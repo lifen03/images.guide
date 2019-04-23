@@ -1,16 +1,3 @@
-<div>
-    <script>
-    var _hmt = _hmt || [];
-    (function() {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?4f01de5cc0f84f20fea5a4202233614f&tt=ch&key=" + Date.now();
-        var s = document.getElementsByTagName("script")[0]; 
-        s.parentNode.insertBefore(hm, s);
-        _hmt.push(['图像优化', 'ch.md', 'pv', '概要', '']);
-    })();
-    </script>
-</div>
-
 # [图像优化](https://images.guide/)
 
 [原文地址](https://images.guide/)
@@ -45,3 +32,16 @@
 总是有很多你能做到的。有工具可以生成和服务```srcset```断点。在具有[客户端提示](https://developers.google.com/web/updates/2015/09/automating-resource-selection-with-client-hints)的基于Blink的浏览器中，资源选择可以自动化，并且如果用户选择在浏览器中“保存数据”，那么可以通过遵从[保存数据](https://developers.google.com/web/updates/2016/02/save-data)提示来减少字节数。
 
 你可以使你的图像文件大小越小，你就可以为用户提供更好的网络体验 —— 尤其是在移动平台上。在这篇文章中，我们将探讨通过现代压缩技术减少图像大小的方法，并将对图像质量的影响降到最低。
+
+<div>
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?4f01de5cc0f84f20fea5a4202233614f&tt=ch&key=" + Date.now();
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+        _hmt.push(['图像优化', 'ch.md', 'pv', '概要', '']);
+    })();
+    </script>
+</div>

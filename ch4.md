@@ -1,16 +1,3 @@
-<div>
-    <script>
-    var _hmt = _hmt || [];
-    (function() {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?4f01de5cc0f84f20fea5a4202233614f&tt=ch4&key=" + Date.now();
-        var s = document.getElementsByTagName("script")[0]; 
-        s.parentNode.insertBefore(hm, s);
-        _hmt.push(['图像优化', 'ch4.md', 'pv', '第4章', '普通的JPEG']);
-    })();
-    </script>
-</div>
-
 ## [4.普通的JPEG](https://images.guide/#the-humble-jpeg)
 
 [JPEG](https://en.wikipedia.org/wiki/JPEG)很可能是世界上使用最广泛的图像格式。如前所述，在[HTTP存档](https://httparchive.org/)爬虫的站点上看到的图像中，有[45%是JPEG](https://httparchive.org/reports/state-of-the-web?start=latest)。你的手机，你的数码单反相机，旧的网络摄像头 —— 一切都支持这个编解码器。它也很古老，可以追溯到1992年第一次发布。在这段时间里，有大量的研究试图改进它所提供的东西。
@@ -39,4 +26,17 @@ JPEG等格式最适合具有多个颜色区域的照片或图像。 大多数优
 
 | 注意 |
 | :--- |
-| 我们有时可能高估了用户所需的图像质量。图像质量可以被认为是偏离理想的，非压缩源。这也可以是主观的。 
+| 我们有时可能高估了用户所需的图像质量。图像质量可以被认为是偏离理想的，非压缩源。这也可以是主观的。
+
+<div>
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?4f01de5cc0f84f20fea5a4202233614f&tt=ch4&key=" + Date.now();
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+        _hmt.push(['图像优化', 'ch4.md', 'pv', '第4章', '普通的JPEG']);
+    })();
+    </script>
+</div>

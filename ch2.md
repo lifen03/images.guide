@@ -1,16 +1,3 @@
-<div>
-    <script>
-    var _hmt = _hmt || [];
-    (function() {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?4f01de5cc0f84f20fea5a4202233614f&tt=ch2&key=" + Date.now();
-        var s = document.getElementsByTagName("script")[0]; 
-        s.parentNode.insertBefore(hm, s);
-        _hmt.push(['图像优化', 'ch2.md', 'pv', '第2章', '如何判断我的图像是否需要优化?']);
-    })();
-    </script>
-</div>
-
 ## [2.如何判断我的图像是否需要优化?](https://images.guide/#do-my-images-need-optimization)
 
 通过[WebPageTest.org](https://www.webpagetest.org/)执行站点审核，它将有更明显的把优化图像(参见“压缩图像”)到更好的机会。
@@ -30,3 +17,16 @@
 > Lighthouse是可以审核Web性能的最佳实践和改进Web应用功能的工具。
 
 你也可能熟悉其他性能审核工具，如[PageSpeed](https://developers.google.com/speed/pagespeed/insights/)、[Insight](https://developers.google.com/speed/pagespeed/insights/)或者通过Cloudinary的[Website Speed Test](https://webspeedtest.cloudinary.com/)，其中包括详细的图像分析审核。
+
+<div>
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?4f01de5cc0f84f20fea5a4202233614f&tt=ch2&key=" + Date.now();
+        var s = document.getElementsByTagName("script")[0]; 
+        s.parentNode.insertBefore(hm, s);
+        _hmt.push(['图像优化', 'ch2.md', 'pv', '第2章', '如何判断我的图像是否需要优化?']);
+    })();
+    </script>
+</div>
