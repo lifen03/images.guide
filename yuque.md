@@ -43,35 +43,35 @@
 
 ![Performance](https://images.guide/images/book-images/Modern-Image00-medium.jpg)
 
-根据2016年[Soasta/Google的研究](https://www.thinkwithgoogle.com/marketing-resources/experience-design/mobile-page-speed-load-time/)，图像是第二大转换预测指标，最佳页面的图像数量占比少于38%。
+> 根据2016年[Soasta/Google的研究](https://www.thinkwithgoogle.com/marketing-resources/experience-design/mobile-page-speed-load-time/)，图像是第二大转换预测指标，最佳页面的图像数量占比少于38%。
 
 图像优化包含各种不同的方法，它们都可以减少图像的文件大小。这最终取决于你对图像所要求的视觉保真度。
 
 ![Performance](https://images.guide/images/book-images/image-optimisation-medium.jpeg)
 
-**图像优化**：选择正确的格式，谨慎压缩，并将关键图像优先于那些可能被延迟加载的图像。
+> **图像优化**：选择正确的格式，谨慎压缩，并将关键图像优先于那些可能被延迟加载的图像。
 
 常见的图像优化包括压缩，使用[``<picture>``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture)/[``<img srcset>``](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)根据屏幕大小响应式为它们服务，以及调整它们的大小以降低图像解码成本。
 
 ![Performance](https://images.guide/images/book-images/chart_naedwl-medium.jpg)
 
-根据[HTTP存档](http://jsfiddle.net/rviscomi/rzneberp/embedded/result/)，每个图像在第95%(查看累积分布函数)的位置可以节省30KB流量！
+> 根据[HTTP存档](http://jsfiddle.net/rviscomi/rzneberp/embedded/result/)，每个图像在第95%(查看累积分布函数)的位置可以节省30KB流量！
 
 因此有足够的空间让我们一起把图像优化做得更好。
 
 ![Performance](https://images.guide/images/book-images/image-optim-medium.jpg)
 
-ImageOptim是免费的，通过现代压缩技术和剥离不必要的EXIF元数据来减少图像大小。
+> ImageOptim是免费的，通过现代压缩技术和剥离不必要的EXIF元数据来减少图像大小。
 
 如果你是一个设计师，也有一个[Sketch的ImageOptim插件](https://github.com/ImageOptim/Sketch-plugin)，可以优化你导出的资源。我发现它可以节省很多时间。
 
 ## [2.如何判断我的图像是否需要优化?](https://images.guide/#do-my-images-need-optimization)
 
-通过[WebPageTest.org](https://www.webpagetest.org/)执行站点审核，它将有去更好地优化图像(参见“压缩图像”)更明显的机会。
+通过[WebPageTest.org](https://www.webpagetest.org/)执行站点审核，它将有更明显的把优化图像(参见“压缩图像”)到更好的机会。
 
 ![Performance](https://images.guide/images/book-images/Modern-Image1-medium.jpg)
 
-网页测试报告中的“压缩图像”部分列出了可以更有效地压缩的图像以及这样做估计可以节省的文件大小。
+> 网页测试报告中的“压缩图像”部分列出了可以更有效地压缩的图像以及这样做估计可以节省的文件大小。
 
 ![Performance](https://images.guide/images/book-images/Modern-Image2-large.jpg)
 
@@ -81,7 +81,7 @@ ImageOptim是免费的，通过现代压缩技术和剥离不必要的EXIF元数
 
 ![Performance](https://images.guide/images/book-images/hbo-medium.jpg)
 
-Lighthouse是可以审核Web性能的最佳实践和改进Web应用功能的工具。
+> Lighthouse是可以审核Web性能的最佳实践和改进Web应用功能的工具。
 
 你也可能熟悉其他性能审核工具，如[PageSpeed](https://developers.google.com/speed/pagespeed/insights/)、[Insight](https://developers.google.com/speed/pagespeed/insights/)或者通过Cloudinary的[Website Speed Test](https://webspeedtest.cloudinary.com/)，其中包括详细的图像分析审核。
 
@@ -111,7 +111,7 @@ JPEG等格式最适合具有多个颜色区域的照片或图像。 大多数优
 
 ![Performance](https://images.guide/images/book-images/Modern-Image5-large.jpg)
 
-JPEG：当我们从最佳质量转换到最低质量时，可感知的JPEG压缩伪像会增加。 请注意，一个工具中的图像质量分数与另一个工具中的质量分数又很大的不同。
+> JPEG：当我们从最佳质量转换到最低质量时，可感知的JPEG压缩伪像会增加。 请注意，一个工具中的图像质量分数与另一个工具中的质量分数又很大的不同。
 
 在选择要设置的质量选项时，请考虑你的图像属于哪个质量范畴：
 
@@ -123,9 +123,11 @@ JPEG：当我们从最佳质量转换到最低质量时，可感知的JPEG压缩
 
 + **最低的质量** - 节省带宽是最重要的。用户希望有一个不错的体验，但为了更快地加载页面，用户将接受图像一定程度的降级体验。
 
-接下来，让我们谈谈JPEG的压缩模式，因为这些模式会对感知的性能产生很大的影响。
+接下来，让我们谈谈JPEG的压缩模式，因为这些模式会对感知的性能产生很大的影响。  
 
-> **注意：**我们有时可能高估了用户所需的图像质量。图像质量可以被认为是偏离理想的，非压缩源。这也可以是主观的。
+| 注意 |
+| :--- |
+| 我们有时可能高估了用户所需的图像质量。图像质量可以被认为是偏离理想的，非压缩源。这也可以是主观的。 
 
 ## [5.JPEG压缩模式](https://images.guide/#jpeg-compression-modes)
 
@@ -133,33 +135,35 @@ JPEG图像格式有多种不同的[压缩模式](http://cs.haifa.ac.il/~nimrod/C
 
 **基线(又叫顺序)JPEG和渐进式JPEG有什么不同呢？**
 
-基线JPEG(大多数图像编辑和优化工具默认的压缩模式)是以一种相对简单的方式编码和解码的：自上而下。当基线JPEG加载在缓慢或不稳定的连接上时，用户会看到图像的顶部，并将更多的图像显示为图像加载。与无损JPEG类似，但压缩比较小。
+基线JPEG(大多数图像编辑和优化工具默认的压缩模式)是以一种相对简单的自上而下的方式编码和解码。当基线JPEG加载在缓慢或不稳定的网络连接时，用户会看到图像的顶部，并将更多的图像显示为图像加载。与无损JPEG类似，但压缩比较小。
 
 ![Performance](https://images.guide/images/book-images/Modern-Image6-large.jpg)
 
-基线JPEG从上到下的模式加载图像，而渐进式JPEG从模糊到锐利的模式加载图像。
+> 基线JPEG从上到下的模式加载图像，而渐进式JPEG从模糊到锐利的模式加载图像。
 
 渐进式JPEG将图像划分为多个扫描区域。第一次扫描以模糊或低质量设置显示图像，后续扫描可提高图像质量。把这个过程看作是“逐步”改进它。图像的每一次“扫描”都会增加更多的细节。当合并在一起后，创造了一个完整的质量图像。
 
 ![Performance](https://images.guide/images/book-images/Modern-Image7-large.jpg)
 
-基线JPEG从上到下加载图像。PJPEG从低分辨率（模糊）到高分辨率加载图像。Pat Meenan还编写了一个交互式工具来测试和学习渐进式JPEG扫描。
+> 基线JPEG从上到下加载图像。PJPEG从低分辨率（模糊）到高分辨率加载图像。Pat Meenan还编写了一个交互式工具来测试和学习渐进式JPEG扫描。
 
 通过把数码相机或编辑器添加的[EXIF数据删除](http://www.verexif.com/en/)，优化图像的[Huffman表](https://en.wikipedia.org/wiki/Huffman_coding)或重新扫描图像，都可以实现无损JPEG优化。 像[jpegtran](http://jpegclub.org/jpegtran/)这样的工具通过重新排列压缩数据而不会降低图像质量来实现无损压缩。 [jpegrescan](https://github.com/kud/jpegrescan)、[jpegoptim](https://github.com/tjko/jpegoptim)和[mozjpeg](https://github.com/mozilla/mozjpeg)（我们将在稍后介绍）也支持JPEG无损压缩。
 
 <h3 id="the-advantages-of-progressive-jpegs"><a href="https://images.guide/#the-advantages-of-progressive-jpegs">5.1 渐进式JPEG的优点</a></h3>
 
-PJPEG能够在加载图像时提供低分辨率的“预览” —— 用户可以感觉到与自适应图像相比，图像加载速度更快。
+PJPEG能够在加载图像时提供低分辨率的“预览” — 用户可以感觉到与自适应图像相比，图像加载速度更快。
 
 在较慢的3G网络连接上，只接收到部分文件时，用户可以(粗略地)查看图像中的内容，并调用是否等待文件完全加载。这可能比基线JPEG提供的自上而下显示图像的方式更令人愉快。
 
 ![Performance](https://images.guide/images/book-images/pjpeg-graph-large.png)
 
-在2015年，[Facebook改用了PJPEG(用于他们iOS应用程序)](https://code.facebook.com/posts/857662304298232/faster-photos-in-facebook-for-ios/)节省少了10%数据流量。他们能够比以前显示一个高质量的图像快了15%，优化感知到加载时间，如上图所示。
+> 在2015年，[Facebook改用了PJPEG(用于他们iOS应用程序)](https://code.facebook.com/posts/857662304298232/faster-photos-in-facebook-for-ios/)节省少了10%数据流量。他们能够比以前显示一个高质量的图像快了15%，优化感知到加载时间，如上图所示。
 
 对于超过10KB的图像，PJPEG可以提高压缩性能，与基线/简单JPEG相比，带宽减少[2%-10%](http://www.bookofspeed.com/chapter5.html)。它们的压缩比更高，这要归功于JPEG中的每次扫描都能够有自己的专用的可选的[Huffman表](https://en.wikipedia.org/wiki/Huffman_coding)。现代JPEG编码器(如[libjpeg-turbo](http://libjpeg-turbo.virtualgl.org/)、MozJPEG等)利用PJPEG的灵活性更好地打包数据。
 
-> 注意：为什么PJPEG压缩更好？基线JPEG一次编码一个块。使用PJPEG，可以对多个块相似的**[离散余弦变换](https://en.wikipedia.org/wiki/Discrete_cosine_transform)**系数进行编码，从而获得更好的压缩效果。
+| 注意 |
+| :--- |
+| 为什么PJPEG压缩更好？基线JPEG一次编码一个块。使用PJPEG，可以对多个块相似的**[离散余弦变换](https://en.wikipedia.org/wiki/Discrete_cosine_transform)**系数进行编码，从而获得更好的压缩效果。
 
 <h3 id="whos-using-progressive-jpegs-in-production"><a href="https://images.guide/#whos-using-progressive-jpegs-in-production">5.2 谁在生产中使用渐进式JPEG？</a></h3>
 
@@ -173,11 +177,11 @@ PJPEG能够在加载图像时提供低分辨率的“预览” —— 用户可�
 
 ![Performance](https://images.guide/images/book-images/pinterest-loading-medium.png)
 
-Pinterest的JPEG图像都是渐进式编码的。通过逐个扫描加载优化了用户体验。
+> Pinterest的JPEG图像都是渐进式编码的。通过逐个扫描加载优化了用户体验。
 
 <h3 id="the-disadvantages-of-progressive-jpegs"><a href="https://images.guide/#the-disadvantages-of-progressive-jpegs">5.3 渐进式JPEG的缺点</a></h3>
 
-PJPEG的解码速度可能比基线JPEG慢 —— 有时需要3倍的时间。在拥有强大CPU的台式计算机上，这可能不是什么值得关注的问题，但在资源有限的移动设备上却不是如此。显示不完整的图层需要完成更多的工作，因为这相当于基本上是多次解码图像。 这些多次传递可能会占用CPU周期。  
+PJPEG的解码速度可能比基线JPEG慢 — 有时需要3倍的时间。在拥有强大CPU的台式计算机上，这可能不是什么值得关注的问题，但在资源有限的移动设备上却不是如此。显示不完整的图层需要完成更多的工作，因为这相当于基本上是多次解码图像。 这些多次传递可能会占用CPU周期。  
 <br>
 渐进式JPEG也并不总是很小。对于非常小的图像(如缩略图)，渐进式JPEG可能比它们的基线对应的图像要大。然而，对于如此小的缩略图，渐进式渲染可能并没有提供太多的价值。  
 <br>
@@ -189,7 +193,7 @@ PJPEG的解码速度可能比基线JPEG慢 —— 有时需要3倍的时间。�
 
 <h3 id="the-disadvantages-of-progressive-jpegs"><a href="https://images.guide/#the-disadvantages-of-progressive-jpegs">5.4 如何创建渐进式JPEG？</a></h3>
 
-像[ImageMagick](https://www.imagemagick.org/)、[libjpeg](http://libjpeg.sourceforge.net/)、[jpegtran](http://jpegclub.org/jpegtran/)、[jpeg-recompress](https://github.com/danielgtaylor/jpeg-archive)和[imagemin](https://github.com/imagemin/imagemin)这些工具和库都支持导出渐进式JPEG。如果你有一个现有的图像优化管道，添加渐进加载支持很可能是很直截了当的：
+像[ImageMagick](https://www.imagemagick.org/)、[libjpeg](http://libjpeg.sourceforge.net/)、[jpegtran](http://jpegclub.org/jpegtran/)、[jpeg-recompress](https://github.com/danielgtaylor/jpeg-archive)和[imagemin](https://github.com/imagemin/imagemin)这些工具和库都支持导出渐进式JPEG。如果你有一个现有的图像优化管道，添加渐进加载支持很可能是直截了当的：
 
 ```JavaScript
 const gulp = require('gulp');
@@ -208,11 +212,11 @@ gulp.task('images', function () {
 
 ![Performance](https://images.guide/images/book-images/photoshop-medium.jpg)
 
-大多数图像编辑工具默认将图像保存为基线JPEG文件。你可以在Photoshop中创建的任何图像保存为渐进式JPEG，方法是点击文件 -> 导出 -> 保存为Web（旧版），然后单击渐进式选项。Sketch也支持导出渐进式JPEG —— 导出为JPG，并在保存图像时选中“渐进式”复选框。
+> 大多数图像编辑工具默认将图像保存为基线JPEG文件。你可以在Photoshop中创建的任何图像保存为渐进式JPEG，方法是点击文件 -> 导出 -> 保存为Web（旧版），然后单击渐进式选项。Sketch也支持导出渐进式JPEG — 导出为JPG，并在保存图像时选中“渐进式”复选框。
 
 <h3 id="chroma-subsampling"><a href="https://images.guide/#chroma-subsampling">5.5 色度(或颜色)子采样</a></h3>
 
-我们的眼睛对图像(色度)中颜色细节的丢失比亮度(简称亮度——亮度的度量)更宽容。[色度子采样](https://en.wikipedia.org/wiki/Chroma_subsampling)是一种压缩形式，它降低了有利于亮度的信号中颜色的精度。这可以减少文件大小(在某些情况下减少了[15%-17%](https://calendar.perfplanet.com/2015/why-arent-your-images-using-chroma-subsampling/))，而不会对图像质量产生负面影响，并且可以用于JPEG图像。子采样还可以减少图像的使用内存。
+我们的眼睛对图像(色度)中颜色细节的丢失比亮度(简称亮度—亮度的度量)更宽容。[色度子采样](https://en.wikipedia.org/wiki/Chroma_subsampling)是一种压缩形式，它降低了有利于亮度的信号中颜色的精度。这可以减少文件大小(在某些情况下减少了[15%-17%](https://calendar.perfplanet.com/2015/why-arent-your-images-using-chroma-subsampling/))，而不会对图像质量产生负面影响，并且可以用于JPEG图像。子采样还可以减少图像的使用内存。
 
 ![Performance](https://images.guide/images/book-images/luma-signal-medium.jpg)
 
@@ -220,7 +224,7 @@ gulp.task('images', function () {
 
 ![Performance](https://images.guide/images/book-images/no-subsampling-medium.jpg)
 
-JPEG支持许多不同的子采样类型：none、horizontal、horizontal和vertical。这张图表来自Frédéric Kayser的**[马蹄蟹的JPEG](http://frdx.free.fr/JPEG_for_the_horseshoe_crabs.pdf)**。
+> JPEG支持许多不同的子采样类型：none、horizontal、horizontal和vertical。这张图表来自Frédéric Kayser的**[马蹄蟹的JPEG](http://frdx.free.fr/JPEG_for_the_horseshoe_crabs.pdf)**。
 
 在讨论子采样时，有许多常见的样本。通常，```4:4:4```,```4:2:2```和```4:2:0```。但是这些代表什么呢？假设一个子样本的格式是A:B:C。A是一行中的像素数，对于JPEG，通常是4。B表示第一行的颜色量，C表示第二行的颜色量。
 
@@ -230,13 +234,15 @@ JPEG支持许多不同的子采样类型：none、horizontal、horizontal和vert
 
 + ```4:2:0```从第一行的一半像素中采样颜色，忽略第二行。
 
-> **注意:**jpegtran和cjpeg支持亮度和色度独立配置质量。可以添加```-sample```标志(例如```-sample 2x1```)。一些好的通用规则：子采样(```-sample 2x2```)对于照片来说非常好。无子采样(```-sample 1x1```)是最适合截图，横幅和按钮。最后一个折中方式(```2x1```)是你不确定用什么时候的选择。
+| 注意 |
+| :--- |
+| jpegtran和cjpeg支持亮度和色度独立配置质量。可以添加```-sample```标志(例如```-sample 2x1```)。一些好的通用规则：子采样(```-sample 2x2```)对于照片来说非常好。无子采样(```-sample 1x1```)是最适合截图，横幅和按钮。你不确定用什么的时候折中方式(```2x1```)是最后一个选择。
 
 通过减少色度组件中的像素，可以显著减少颜色组件的大小，最终减少字节大小。
 
 ![Performance](https://images.guide/images/book-images/subsampling-medium.jpg)
 
-Chrome子采样配置的JPEG是质量为80。
+> Chrome子采样配置的JPEG是质量为80。
 
 对于大多数类型的图像，色度子采样是值得考虑的。 它确实有一些值得注意的例外：由于子采样依赖于我们眼睛的局限性，它并不适用于压缩那些颜色细节可能与亮度同样重要的图像(例如医学图像)。
 
@@ -244,14 +250,17 @@ Chrome子采样配置的JPEG是质量为80。
 
 ![Performance](https://images.guide/images/book-images/Screen_Shot_2017-08-25_at_11.06.27_AM-medium.jpg)
 
-[理解JPEG](http://compress-or-die.com/Understanding-JPG/)推荐坚持使用4:4:4(1×1)的子采样处理包含文本的图像。
+> [理解JPEG](http://compress-or-die.com/Understanding-JPG/)推荐坚持使用4:4:4(1×1)的子采样处理包含文本的图像。
 
 了解更多：在JPEG规范中没有指定色度子采样的确切方法，因此不同的解码器处理它的方式不同。MozJPEG和libjpeg-turbo使用相同的缩放方法。旧版本的libjpeg使用了一种不同的方法，该方法以颜色添加边缘振荡效应。
 
-> ** 注意：**Photoshop在使用“Save for web”功能时自动设置色度子采样。当图像质量设置在51-100之间时，完全不使用子采样(4:4:4)。当质量低于此值时，将使用4:2:0子采样。这就是为什么在将质量从51切换到50时可以观察到更大的文件大小缩减。  
-<br>
+| 注意 |
+| :--- |
+| Photoshop在使用“Save for Web”功能时自动设置色度子采样。当图像质量设置在51-100之间时，完全不使用子采样(4:4:4)。当质量低于此值时，将使用4:2:0子采样。这就是为什么在将质量从51切换到50时可以观察到更大的文件大小缩减。  
 
-> **注意: **在子采样讨论中，经常提到[YCbCr](https://en.wikipedia.org/wiki/YCbCr)这个术语。这个模型可以表示经过伽玛校正的[RGB](https://en.wikipedia.org/wiki/RGB_color_model)颜色空间。Y为伽玛校正亮度，Cb为蓝色的色度分量，Cr为红色的色度分量。如果查看ExifData，你将看到YCbCr接近于抽样级别。
+| 注意 |
+| :--- |
+| 在子采样讨论中，经常提到[YCbCr](https://en.wikipedia.org/wiki/YCbCr)这个术语。这个模型可以表示经过伽玛校正的[RGB](https://en.wikipedia.org/wiki/RGB_color_model)颜色空间。Y为伽玛校正亮度，Cb为蓝色的色度分量，Cr为红色的色度分量。如果查看ExifData，你将看到YCbCr接近于抽样级别。
 
 有关色度子采样的进一步阅读，请参见[为什么你的图像不使用色度子采样？](https://calendar.perfplanet.com/2015/why-arent-your-images-using-chroma-subsampling/)。
 
@@ -259,25 +268,25 @@ Chrome子采样配置的JPEG是质量为80。
 
 **以下是网络上图像格式的现状:**
 
-*摘要 —— 我们经常需要有条件地为不同的浏览器提供不同的格式，以享受任何现代的东西的好处。*
+*摘要 — 我们经常需要有条件地为不同的浏览器提供不同的格式，以享受任何现代的东西的好处。*
 
 ![Performance](https://images.guide/images/book-images/format-comparison-medium.jpg)
 
-不同的现代图像格式(和优化器)用于演示在目标文件大小为26KB时可以实现的功能。我们可以使用[SSIM](https://en.wikipedia.org/wiki/Structural_similarity)(结构相似性)或[Butteraugli](https://github.com/google/butteraugli)来比较质量，稍后我们将更详细地介绍这两种方法。
+> 不同的现代图像格式(和优化器)用于演示在目标文件大小为26KB时可以实现的功能。我们可以使用[SSIM](https://en.wikipedia.org/wiki/Structural_similarity)(结构相似性)或[Butteraugli](https://github.com/google/butteraugli)来比较质量，稍后我们将更详细地介绍这两种方法。
 
-+ **[JPEG 2000](https://en.wikipedia.org/wiki/JPEG_2000) (2000)** —— 从基于离散余弦变换到基于小波方法的JPEG切换改进。**浏览器支持：Safari桌面版和iOS**
++ **[JPEG 2000](https://en.wikipedia.org/wiki/JPEG_2000) (2000)** — 从基于离散余弦变换到基于小波方法的JPEG切换改进。**浏览器支持：Safari桌面版和iOS**
 
-+ **[JPEG XR](https://en.wikipedia.org/wiki/JPEG_XR) (2009)** —— 替代JPEG和JPEG 2000支持[HDR](http://wikivisually.com/wiki/High_dynamic_range_imaging)和宽[色域](http://wikivisually.com/wiki/Gamut)空间。以稍慢的编码/解码速度生成比JPEG更小的文件。**浏览器支持: Edge, IE**。
++ **[JPEG XR](https://en.wikipedia.org/wiki/JPEG_XR) (2009)** — 替代JPEG和JPEG 2000支持[HDR](http://wikivisually.com/wiki/High_dynamic_range_imaging)和宽[色域](http://wikivisually.com/wiki/Gamut)空间。以稍慢的编码/解码速度生成比JPEG更小的文件。**浏览器支持: Edge, IE**。
 
-+ **[WebP](https://en.wikipedia.org/wiki/WebP) (2010)** —— 基于块预测的格式，谷歌支持有损和无损压缩方式。通常用于提供与JPEG相关的字节节省和透明支持字节密集型PNG。缺乏色度子采样配置和渐进式加载。解码时间也比JPEG解码慢。**浏览器支持：Chrome, Opera。用Safari和Firefox做过实验**。
++ **[WebP](https://en.wikipedia.org/wiki/WebP) (2010)** — 基于块预测的格式，谷歌支持有损和无损压缩方式。通常用于提供与JPEG相关的字节节省和透明支持字节密集型PNG。缺乏色度子采样配置和渐进式加载。解码时间也比JPEG解码慢。**浏览器支持：Chrome, Opera。用Safari和Firefox做过实验**。
 
-+ **[FLIF](https://en.wikipedia.org/wiki/Free_Lossless_Image_Format) (2015)** —— 无损图像格式声称优于PNG、无损WebP、无损BPG和无损JPEG 2000的压缩比。**没有浏览器支持。值得一提的是，有一个[浏览器中的JS解码器](https://github.com/UprootLabs/poly-flif)支持**。
++ **[FLIF](https://en.wikipedia.org/wiki/Free_Lossless_Image_Format) (2015)** — 无损图像格式声称优于PNG、无损WebP、无损BPG和无损JPEG 2000的压缩比。**没有浏览器支持。值得一提的是，有一个[浏览器中的JS解码器](https://github.com/UprootLabs/poly-flif)支持**。
 
 + **HEIF and BPG** 从压缩的角度来看，它们是相同的，但是有不同的包装:
 
-+ **[BPG](https://en.wikipedia.org/wiki/Better_Portable_Graphics) (2015)** —— 旨在基于HEVC([高效视频编码](http://wikivisually.com/wiki/High_Efficiency_Video_Coding))，更高效地替代JPEG。与MozJPEG和WebP相比，它提供了更好的文件大小。由于许可证问题，不太可能获得广泛关注。**没有浏览器支持。值得一提的是，有一个[浏览器中JS解码器](https://bellard.org/bpg/)支持**。
++ **[BPG](https://en.wikipedia.org/wiki/Better_Portable_Graphics) (2015)** — 旨在基于HEVC([高效视频编码](http://wikivisually.com/wiki/High_Efficiency_Video_Coding))，更高效地替代JPEG。与MozJPEG和WebP相比，它提供了更好的文件大小。由于许可证问题，不太可能获得广泛关注。**没有浏览器支持。值得一提的是，有一个[浏览器中JS解码器](https://bellard.org/bpg/)支持**。
 
-+ **[HEIF](https://en.wikipedia.org/wiki/High_Efficiency_Image_File_Format) (2015)** —— 用于存储具有约束内部预测HEVC编码的图像和图像序列格式。苹果公司在[WWDC](https://www.cnet.com/news/apple-ios-boosts-heif-photos-over-jpeg-wwdc/)宣布，他们会在iOS上探索从JPEG切换到使用HEIF，引用文件大小可节省2倍。**浏览器支持：编写本文时不支持。Safari桌面版和iOS 11以及更新版本支持**。
++ **[HEIF](https://en.wikipedia.org/wiki/High_Efficiency_Image_File_Format) (2015)** — 用于存储具有约束内部预测HEVC编码的图像和图像序列格式。苹果公司在[WWDC](https://www.cnet.com/news/apple-ios-boosts-heif-photos-over-jpeg-wwdc/)宣布，他们会在iOS上探索从JPEG切换到使用HEIF，引用文件大小可节省2倍。**浏览器支持：编写本文时不支持。Safari桌面版和iOS 11以及更新版本支持**。
 
 如果你更在意视觉效果，你可能会喜欢上面[这些](http://xooyoozoo.github.io/yolo-octo-bugfixes/#cologne-cathedral&jpg=s&webp=s)可视化比较工具中的[一个](https://people.xiph.org/~xiphmont/demo/daala/update1-tool2b.shtml)。
 
@@ -295,15 +304,15 @@ Chrome子采样配置的JPEG是质量为80。
 
 + 一般的web资源: MozJPEG
 
-+ 质量是你主要关心的问题，你不介意编码时间长: 使用Guetzli
++ 质量是你主要关心的问题，如果你不介意编码时间长，可以使用Guetzli
 
 + 如果你需要更多选项可配置:
 
     - [JPEGRecompress](https://github.com/danielgtaylor/jpeg-archive)(它在底层使用的是MozJPEG)
 
-    - [JPEGMini](http://www.jpegmini.com/) 它类似于Guetzli —— 自动选择最好的质量。它在技术上没有Guetzli那么复杂，但速度更快，目标是输出更适合web的质量范围的图像。
+    - [JPEGMini](http://www.jpegmini.com/) 它类似于Guetzli — 自动选择最好的质量。它在技术上没有Guetzli那么复杂，但速度更快，目标是输出更适合Web的质量范围的图像。
 
-    - [ImageOptim API](https://imageoptim.com/api) ([这里](https://imageoptim.com/online)有免费的在线界面工具) —— 它在处理颜色方面是独一无二的。你可以选择颜色质量与整体质量分开。它会自动选择色度子采样级别，以在截图中保留高分辨率的颜色，但避免在自然照片的平滑颜色上浪费字节。
+    - [ImageOptim API](https://imageoptim.com/api) ([这里](https://imageoptim.com/online)有免费的在线界面工具) — 它在处理颜色方面是独一无二的。你可以选择颜色质量与整体质量分开。它会自动选择色度子采样级别，以在截图中保留高分辨率的颜色，但避免在自然照片的平滑颜色上浪费字节。
 
 <h3 id="what-is-mozjpeg"><a href="https://images.guide/#what-is-mozjpeg">5.8 MozJPEG是什么？</a></h3>
 
@@ -329,13 +338,15 @@ gulp.task('mozjpeg', () =>
 
 ![Performance](https://images.guide/images/book-images/Modern-Image11-large.jpg)
 
-MozJPEG: 比较文件大小和不同质量视觉相似度的得分。
+> MozJPEG: 比较文件大小和不同质量视觉相似度的得分。
 
 我使用[jpeg-archive](https://github.com/imagemin/imagemin-jpeg-recompress)项目中的[jpeg-compress](https://github.com/danielgtaylor/jpeg-archive)来计算源图像的SSIM(结构相似性)分数。SSIM是一种测量两幅图像之间相似度的方法，其中SSIM评分是一幅图像在另一幅图像被认为“完美”的情况下的质量度量。
 
 根据我的经验，MozJPEG是一个很好的选择，可以在高视觉质量下压缩网络图像，同时减少文件大小。 对于中小尺寸的图像，我发现MozJPEG (quality=80-85)可以节省30%-40％的文件大小，同时保持可接受的SSIM，比jpeg-turbo提高了5%-6%。它确实比基线JPEG的[编码成本要低](http://www.libjpeg-turbo.org/About/Mozjpeg)，但是你可能不会发现这也是一个问题。
 
-> **注意：**如果你需要一个支持MozJPEG的工具，该工具支持额外的配置和一些免费、实用的图像比较，请查看[jpeg-recompress](https://github.com/danielgtaylor/jpeg-archive)。《Web性能实践》一书的作者Jeremy Wagner在使用[这种](https://twitter.com/malchata/status/884836650563579904)配置时取得了一些成功。
+| 注意 |
+| :--- |
+| 如果你需要一个支持MozJPEG的工具，该工具支持额外的配置和一些免费、实用的图像比较，请查看[jpeg-recompress](https://github.com/danielgtaylor/jpeg-archive)。《Web性能实践》一书的作者Jeremy Wagner在使用[这种](https://twitter.com/malchata/status/884836650563579904)配置时取得了一些成功。
 
 <h3 id="what-is-guetzli"><a href="https://images.guide/#what-is-guetzli">5.9 Guetzli是什么？</a></h3>
 
@@ -343,11 +354,15 @@ MozJPEG: 比较文件大小和不同质量视觉相似度的得分。
 
 为了测量图像之间的差异，Guetzli使用[Butteraugli](https://github.com/google/butteraugli)，一种基于人类感知的图像差异测量模型(下文讨论)。Guetzli可以考虑一些其他JPEG编码器所没有的视觉特性。例如，看到的绿光的数量和对蓝色的敏感度之间存在关系，所以在绿色附近的蓝色变化可以不那么精确地编码。
 
-> **注意**：图像文件大小更依赖于**质量**的选择，而不是**编解码器**的选择。与通过切换编解码器可能节省的文件大小相比，最低质量的JPEG和最高质量的JPEG之间的文件大小差异要大得多。使用最低可接受质量是非常重要的。如果不太重要，请避免将质量设置得过高。
+| 注意 |
+| :--- |
+| 图像文件大小更依赖于**质量**的选择，而不是**编解码器**的选择。与通过切换编解码器可能节省的文件大小相比，最低质量的JPEG和最高质量的JPEG之间的文件大小差异要大得多。使用最低可接受质量是非常重要的。如果不太重要，请避免将质量设置得过高。
 
-Guetzli[声称](https://research.googleblog.com/2017/03/announcing-guetzli-new-open-source-jpeg.html)，与其他压缩器相比，Butteraugli给图像定的评分数据大小可以减少20%-30%。使用Guetzli需要注意的是，它非常非常慢，目前只适用于静态内容。从README可以看出，Guetzli需要大量的内存 —— 每百万像素需要1分钟和200MB内存。在[这个GitHub线程](https://github.com/google/guetzli/issues/50)中有一个关于Guetzli的真实体验的很好的线程。当你将优化图像作为静态站点构建过程的一部分时，它是理想的，但是在按需执行时，它就不那么理想了。
+Guetzli[声称](https://research.googleblog.com/2017/03/announcing-guetzli-new-open-source-jpeg.html)，与其他压缩器相比，Butteraugli给图像定的评分数据大小可以减少20%-30%。使用Guetzli需要注意的是，它非常非常慢，目前只适用于静态内容。从README可以看出，Guetzli需要大量的内存 — 每百万像素需要1分钟和200MB内存。在[这个GitHub线程](https://github.com/google/guetzli/issues/50)中有一个关于Guetzli的真实体验的很好的线程。当你将优化图像作为静态站点构建过程的一部分时，它是理想的，但是在按需执行时，它就不那么理想了。
 
-> **注意：**当你把图像优化作为静态网站的构建过程的一部分时，或者不需要按需执行图像优化时，Guetzli可能更适合。
+| 注意 |
+| :--- |
+| 当你把图像优化作为静态网站的构建过程的一部分时，或者不需要按需执行图像优化时，Guetzli可能更适合。
 
 像ImageOptim这样的工具支持Guetzli优化（在[最新版本](https://imageoptim.com/)中）。
 
@@ -374,11 +389,13 @@ gulp.task('guetzli', () =>
 
 ![Performance](https://images.guide/images/book-images/Modern-Image13-large.jpg)
 
-Guetzli：比较不同质量的文件大小和视觉相似度的得分。
+> Guetzli：比较不同质量的文件大小和视觉相似度的得分。
 
-> **注意：**建议在高质量的图像(例如输入未压缩的图像、PNG源和100%质量的JPEG)上运行Guetzli。虽然它可以用于其他图像(例如质量为84或更低的JPEG)，但效果可能较差。
+| 注意 |
+| :--- |
+| 建议在高质量的图像(例如输入未压缩的图像、PNG源和100%质量的JPEG)上运行Guetzli。虽然它可以用于其他图像(例如质量为84或更低的JPEG)，但效果可能较差。
 
-虽然用Guetzli压缩图像非常(非常)耗时，而且会让你的粉丝晕头转向，但对于大图像来说，这是值得的。我看到过很多例子，在保持视觉保真度的情况下，它可以在任何地方节省40%的文件大小。这使得它非常适合存档照片。在中小型图像上，我仍然看到了一些节省(在10-15KB范围内)，但是它们没有那么明显。Guetzli可以在压缩较小的图像时引入更多的流体式失真。
+虽然用Guetzli压缩图像非常(非常)耗时，而且会让你的粉丝晕头转向，但对于大的图像来说，这是值得的。我看到过很多例子，在保持视觉保真度的情况下，它可以在任何地方节省40%的文件大小。这使得它非常适合存档照片。在中小型图像上，我仍然看到了一些节省(在10-15KB范围内)，但是它们没有那么明显。Guetzli可以在压缩较小的图像时引入更多的流体式失真。
 
 你可能还对Eric Portis研究感兴趣，将Guetzli与Cloudinary的自动压缩进行[比较](https://cloudinary.com/blog/a_closer_look_at_guetzli)，以获得有效的不同数据点。
 
@@ -402,13 +419,13 @@ MozJPEG与Guetzli相比如何？ – Kornel的观点:
 
 ![Performance](https://images.guide/images/book-images/Modern-Image14-medium.jpg)
 
-上面的例子使用Butteraugli找到了JPEG质量阈值的最小值，而此时用户还没有注意到一些不清楚的地方。它使总文件大小减少了65%。
+> 上面的例子使用Butteraugli找到了JPEG质量阈值的最小值，而此时用户还没有注意到一些不清楚的地方。它使总文件大小减少了65%。
 
 在实践中，你将为视觉质量定义一个目标，然后运行许多不同的图像优化策略，查看Butteraugli评分，然后选择最适合文件大小和压缩级别的平衡点。
 
 ![Performance](https://images.guide/images/book-images/Modern-Image15-large.jpg)
 
-总而言之,我花了大约30分钟安装后启动本地Butteraugli和在我的MAC上正确地编译C++源码构建。然后使用它相对简单: 指定两个图像比较(源和压缩版),它会给你一个分数。
+> 总而言之,我花了大约30分钟安装后启动本地Butteraugli和在我的MAC上正确地编译C++源码构建。然后使用它相对简单: 指定两个图像比较(源和压缩版),它会给你一个分数。
 
 **Butteraugli与其他视觉相似性的方法比较有何不同？**
 
@@ -428,7 +445,7 @@ MozJPEG是一个对初学者友好的网络资源编码器，它的速度相对�
 
 ![Performance](https://images.guide/images/book-images/Modern-Image16-large.jpg)
 
-WebP: 比较文件大小和不同质量下的视觉相似度的得分。
+> WebP: 比较文件大小和不同质量下的视觉相似度的得分。
 
 <h3 id="how-does-webp-perform"><a href="https://images.guide/#how-does-webp-perform">6.1 WebP的性能如何?</a></h3>
 
@@ -450,9 +467,11 @@ WebP有一个无损的8位透明通道，仅比PNG多22%的字节。它还支持
 
 WebP文件格式支持EXIF照片元数据和XMP数字文档元数据。它还包含ICC颜色配置文件。
 
-WebP提供了更好的压缩，但代价是CPU更密集。早在2013年，WebP的压缩速度比JPEG慢了大约10倍，只是现在可以忽略不计(一些像的压缩速度可能是慢了2倍)。进行处理的静态图像作为构建的一部分，这应该不是一个大问题。动态生成的映像可能会造成额外可感知的CPU开销，你需要对其进行评估。
+WebP提供了更好的压缩，但代价是CPU更密集。早在2013年，WebP的压缩速度比JPEG慢了大约10倍，只是现在可以忽略不计(一些图像的压缩速度可能是慢了2倍)。进行处理的静态图像作为构建的一部分，这应该不是一个大问题。动态生成的映像可能会造成额外可感知的CPU开销，你需要对其进行评估。
 
-> **注意：**WebP有损质量设置不能与JPEG直接比较。“70%质量”的JPEG与“70%质量”的WebP图像大不相同，因为WebP通过丢弃更多的数据来实现更小的文件大小。
+| 注意 |
+| :--- |
+| WebP有损质量设置不能与JPEG直接比较。“70%质量”的JPEG与“70%质量”的WebP图像大不相同，因为WebP通过丢弃更多的数据来实现更小的文件大小。
 
 <h3 id="whos-using-webp-in-production"><a href="https://images.guide/#whos-using-webp-in-production">6.2 谁在生产中使用WebP?</a></h3>
 
@@ -466,7 +485,7 @@ Netflix、Amazon、Quora、Yahoo、Walmart、Ebay、The Guardian、Fortune和USA
 
 ![Performance](https://images.guide/images/book-images/webp-conversion-large.jpg)
 
-Google使用WebP：每天在YouTube，Google Play，Chrome数据保护程序和G+上的WebP图像请求每天达到430亿次。
+> Google使用WebP：每天在YouTube，Google Play，Chrome数据保护程序和G+上的WebP图像请求每天达到430亿次。
 
 <h3 id="how-does-webp-encoding-work"><a href="https://images.guide/#how-does-webp-encoding-work">6.3 WebP编码是如何工作的?</a></h3>
 
@@ -514,7 +533,9 @@ WebP并非没有缺点。它缺乏全分辨率的色彩空间选项，不支持�
 
 一些商业和开源的图像编辑和处理包都支持WebP。XnConvert是一个特别有用的应用程序: 它是一个免费的、跨平台的批处理图像转换器。
 
-> **注意：**避免将低质量或平均质量的JPEG转换为WebP非常重要。 使用JPEG压缩过的图像生成WebP图像是一个常见的错误。 这可能导致WebP效率降低，因为它必须保存图像和JPEG添加的伪像，导致你在质量上损失两次。 原始文件是最好的提供给转换应用程序可用的最佳质量的源文件。
+| 注意 |
+| :--- |
+| 避免将低质量或平均质量的JPEG转换为WebP非常重要。 使用JPEG压缩过的图像生成WebP图像是一个常见的错误。 这可能导致WebP效率降低，因为它必须保存图像和JPEG添加的伪像，导致你在质量上损失两次。 原始文件是最好的提供给转换应用程序可用的最佳质量的源文件。
 
 **[XnConvert](http://www.xnview.com/en/xnconvert/)**
 
@@ -522,7 +543,9 @@ XnConvert支持批处理图像，兼容500多种图像格式。你可以组合80
 
 ![Performance](https://images.guide/images/book-images/Modern-Image20-large.png)
 
-XnConvert支持批处理图像优化，允许直接从源文件转换为WebP和其他格式。除了压缩，XnConvert还可以帮助图像进行元数据的剥离、裁剪、颜色深度定制和其他转换。xnview网站上列出的一些选项包括:
+> XnConvert支持批处理图像优化，允许直接从源文件转换为WebP和其他格式。除了压缩，XnConvert还可以帮助图像进行元数据的剥离、裁剪、颜色深度定制和其他转换。
+
+xnview网站上列出的一些选项包括:
 
 + 元数据: 编辑
 
@@ -674,11 +697,11 @@ Jeremy Wagner有一篇关于[使用Bash进行图像优化](https://jeremywagner.
 
 ![Performance](https://images.guide/images/book-images/play-format-webp-large.jpg)
 
-Chrome DevTools网络面板的“Type”列下，选择性为基于Blink的浏览器提供WebP文件的高亮显示。
+> Chrome DevTools网络面板的“Type”列下，选择性为基于Blink的浏览器提供WebP文件的高亮显示。
 
 ![Performance](https://images.guide/images/book-images/play-format-type-large.jpg)
 
-当Play store向Blink提供WebP时，它又回到了Firefox等浏览器的JPEG模式。
+> 当Play store向Blink提供WebP时，它又回到了Firefox等浏览器的JPEG模式。
 
 以下是从服务器向用户提供WebP图像的一些可选配置：
 
@@ -690,7 +713,7 @@ Vincent Orback推荐这种方法:
 
 浏览器可以通过[Accept头](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept)[显式地发出WebP支持的信号](http://vincentorback.se/blog/using-webp-images-with-htaccess/)。如果你控制后端，则可以返回存在于磁盘上的图像的WebP版本，而不是JPEG或PNG等格式。但是这并不总是可能的(例如，对于静态主机，如GitHub pages或S3)，所以在考虑这个选项之前一定要检查一下服务器是否支持。
 
-下面是Apache web服务器的.htaccess文件示例:
+下面是Apache Web服务器的.htaccess文件示例:
 
 ```XML
 <IfModule mod_rewrite.c>
@@ -733,13 +756,17 @@ Nginx: 将以下代码添加到mime.types文件中：
 image/webp webp;
 ```
 
-> **注意：** Vincent Orback有一个用于服务WebP的[htaccess配置](https://github.com/vincentorback/WebP-images-with-htaccess)示例供参考，Ilya Grigorik维护了一组[用于服务WebP的配置脚本](https://github.com/igrigorik/webp-detect)，这些脚本是很有用的。
+| 注意 |
+| :--- |
+| Vincent Orback有一个用于服务WebP的[htaccess配置](https://github.com/vincentorback/WebP-images-with-htaccess)示例供参考，Ilya Grigorik维护了一组[用于服务WebP的配置脚本](https://github.com/igrigorik/webp-detect)，这些脚本是很有用的。
 
 **使用 ```<picture>``` 标签**
 
 浏览器本身可以通过使用```<picture>```标记来选择要显示的图像格式。```<picture>```标签使用多个```<source>```元素，使用一个```<img>```标签是包含图像的实际DOM元素。浏览器循环遍历源并检索第一个匹配项。如果用户浏览器中不支持```<picture>```标记，则呈现```<div>```并使用```<img>```标记。
 
-> **注意：**因为顺序的关系需要注意```<source>```的位置。不要将iamge/webp源放在遗留格式之后，而是将它们放在前面。理解它的浏览器将使用它们，不理解它的浏览器将转移到更广泛支持的框架上。如果图像的物理大小相同(不使用media属性时)，也可以将它们按文件大小排序。通常，这与放在最后的文件顺序相同。
+| 注意 |
+| :--- |
+| 因为顺序的关系需要注意```<source>```的位置。不要将iamge/webp源放在遗留格式之后，而是将它们放在前面。理解它的浏览器将使用它们，不理解它的浏览器将转移到更广泛支持的框架上。如果图像的物理大小相同(不使用media属性时)，也可以将它们按文件大小排序。通常，这与放在最后的文件顺序相同。
 
 下面是一些HTML示例:
 
@@ -782,7 +809,7 @@ GIF动画的格式非常有限，但是它仍然得到了广泛的使用。尽�
 
 ![Performance](https://images.guide/images/book-images/animated-gif-large.jpg)
 
-GIF动画与视频: 不同格式的文件大小在大约相等质量下的比较。
+> GIF动画与视频: 不同格式的文件大小在大约相等质量下的比较。
 
 **MP4视频与GIF动画相比传输相同的文件通常可以减少80%或更多的文件大小。**GIF不仅常常浪费大量带宽，而且加载时间更长，包含的颜色更少，而且通常只提供了部分的用户体验。你可能已经注意到上传到Twitter的动态GIF，在Twitter上的表现比在其他网站上要好。[Twitter上的GIF动画实际上并不是GIF](http://mashable.com/2014/06/20/twitter-gifs-mp4/#fiiFE85eQZqW)。为了改善用户体验和减少带宽消耗，上传到Twitter的GIF动画实际上被转换成了视频。类似地，在上传时[Imgur将GIF图像转换成视频](https://thenextweb.com/insider/2014/10/09/imgur-begins-converting-gif-uploads-mp4-videos-new-gifv-format/)，并悄无声息地将其转换成MP4格式。
 
@@ -808,7 +835,7 @@ GIF动画与视频: 不同格式的文件大小在大约相等质量下的比较
 
 ![Performance](https://images.guide/images/book-images/Modern-Image26-large.jpg)
 
-由Jake Archibald创建的[SVGOMG](https://jakearchibald.github.io/svgomg/)是一个GUI界面工具，通过选择优化，通过输出标记的实时预览，你可以根据自己的喜好优化SVG。
+> 由Jake Archibald创建的[SVGOMG](https://jakearchibald.github.io/svgomg/)是一个GUI界面工具，通过选择优化，通过输出标记的实时预览，你可以根据自己的喜好优化SVG。
 
 **一般的SVG优化(SVGO)规则：**
 
@@ -826,17 +853,17 @@ GIF动画与视频: 不同格式的文件大小在大约相等质量下的比较
 
 + 仔细检查任何不支持SVG的嵌入式光栅图像
 
-+ 使用工具优化你的SVG。[SVGOMG](https://jakearchibald.github.io/svgomg/)是一个非常方便的基于web的GUI，由Jake Archibald为[SVGO](https://github.com/svg/svgo)开发，我发现它非常有价值。如果使用Sketch，可以在导出文件时使用[运行SVGO的Sketch插件](https://www.sketchapp.com/extensions/plugins/svgo-compressor/)来缩小文件大小。
++ 使用工具优化你的SVG。[SVGOMG](https://jakearchibald.github.io/svgomg/)是一个非常方便的基于Web的GUI，由Jake Archibald为[SVGO](https://github.com/svg/svgo)开发，我发现它非常有价值。如果使用Sketch，可以在导出文件时使用[运行SVGO的Sketch插件](https://www.sketchapp.com/extensions/plugins/svgo-compressor/)来缩小文件大小。
 
 ![Performance](https://images.guide/images/book-images/svgo-precision-large.jpg)
 
-通过SVGO以高精度模式运行SVG源（可以让文件大小节省29%）与低精度模式（可以让文件大小节省38%）的示例。
+> 通过SVGO以高精度模式运行SVG源（可以让文件大小节省29%）与低精度模式（可以让文件大小节省38%）的示例。
 
 [SVGO](https://www.sketchapp.com/extensions/plugins/svgo-compressor/)是一种基于节点的SVG优化工具。SVGO可以通过降低定义中数字的精度来减少文件大小。一个点之后的每一位数字都会增加一个字节，这就是为什么改变精度(位数)会严重影响文件大小的原因。但是，要非常非常小心地更改精度，因为它会在视觉上影响形状的外观。
 
 ![Performance](https://images.guide/images/book-images/Modern-Image28-large.jpg)
 
-需要注意的是，虽然SVGO在前面的示例中没有过度简化路径和形状，但在很多情况下可能不是这样。观察上面火箭上的光带是如何以较低的精度扭曲的。
+> 需要注意的是，虽然SVGO在前面的示例中没有过度简化路径和形状，但在很多情况下可能不是这样。观察上面火箭上的光带是如何以较低的精度扭曲的。
 
 **在命令行使用SVGO:**
 
@@ -880,7 +907,7 @@ SVG可以为图标提供[强大的](https://css-tricks.com/icon-fonts-vs-svg/)�
 
 **了解更多**
 
-Sara Soueidan的《[web优化SVG交付的技巧](https://calendar.perfplanet.com/2014/tips-for-optimising-svg-delivery-for-the-web/)》和Chris Coyier的《[SVG实践](https://abookapart.com/products/practical-svg)》都非常优秀。
+Sara Soueidan的《[Web优化SVG交付的技巧](https://calendar.perfplanet.com/2014/tips-for-optimising-svg-delivery-for-the-web/)》和Chris Coyier的《[SVG实践](https://abookapart.com/products/practical-svg)》都非常优秀。
 我还发现Andreas Larsen的SVG优化文章([第1部分](https://medium.com/larsenwork-andreas-larsen/optimising-svgs-for-web-use-part-1-67e8f2d4035)和[第2部分](https://medium.com/larsenwork-andreas-larsen/optimising-svgs-for-web-use-part-2-6711cc15df46))很有启发。《[在Sketch中准备和导出SVG图标](https://medium.com/sketch-app-sources/preparing-and-exporting-svg-icons-in-sketch-1a3d65b239bb)》也是一个不错的文章。
 
 ## [8.避免使用有损编解码器重新压缩图像](https://images.guide/#avoid-recompressing-images-lossy-codecs)
@@ -893,7 +920,7 @@ Sara Soueidan的《[web优化SVG交付的技巧](https://calendar.perfplanet.com
 
 ![Performance](https://images.guide/images/book-images/generational-loss-large.jpg)
 
-上面，从Jon Sneyers的这段[优秀的视频](https://www.youtube.com/watch?v=w7vXJbLhTyI)和[附带的文章](http://cloudinary.com/blog/why_jpeg_is_like_a_photocopier)中，我们可以看到使用这几种格式进行重新压缩的世代损失影响。如果从社交网络中保存(已压缩)图像并重新上传(导致重新压缩)，你可能会遇到这个问题。质量损失会增加。
+> 上面，从Jon Sneyers的这段[优秀的视频](https://www.youtube.com/watch?v=w7vXJbLhTyI)和[附带的文章](http://cloudinary.com/blog/why_jpeg_is_like_a_photocopier)中，我们可以看到使用这几种格式进行重新压缩的世代损失影响。如果从社交网络中保存(已压缩)图像并重新上传(导致重新压缩)，你可能会遇到这个问题。质量损失会增加。
 
 由于网格量化，MozJPEG（可能是偶然的）对再压缩降级具有更好的抵抗力。 它不是精确地压缩所有DCT值，而是检查+1/-1范围内的接近值，以查看类似值是否压缩为更少的字节。有损FLIF有一个类似于有损PNG的hack，在(重新)压缩之前，它可以查看数据并决定丢弃什么。它可以检测重新压缩的PNG是否有“漏洞”，以避免进一步改变数据。
 
@@ -913,19 +940,19 @@ Sara Soueidan的《[web优化SVG交付的技巧](https://calendar.perfplanet.com
 
 ![Performance](https://images.guide/images/book-images/devtools-decode-large.jpg)
 
-浏览器必须经过许多步骤才能在屏幕上绘制图像。除了获取图像外，还需要对图像进行解码并经常调整大小。这些事件可以在Chrome DevTools [Timeline](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/performance-reference)中进行审查。
+> 浏览器必须经过许多步骤才能在屏幕上绘制图像。除了获取图像外，还需要对图像进行解码并经常调整大小。这些事件可以在Chrome DevTools [Timeline](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/performance-reference)中进行审查。
 
 较大的图像还会增加内存大小成本。解码后的图像每像素约4个字节。如果你并不关心，你会让浏览器崩溃；在低端设备上，启动内存交换并不需要那么多。因此，请关注你的图像解码、调整大小和内存的成本。
 
 ![Performance](https://images.guide/images/book-images/image-decoding-mobile-large.jpg)
 
-在普通和低端手机上解码图像的成本非常高。 在某些情况下，解码速度可能会慢5倍（甚至更长）。
+> 在普通和低端手机上解码图像的成本非常高。 在某些情况下，解码速度可能会慢5倍（甚至更长）。
 
 在构建新的[移动网络体验](https://medium.com/@paularmstrong/twitter-lite-and-high-performance-react-progressive-web-apps-at-scale-d28a00e780a3)时，Twitter通过确保为用户提供适当大小的图像来提高图像的解码性能。 Twitter可以把很多图像的解码时间Timeline从大约400毫秒一直降到大约19毫秒！
 
 ![Performance](https://images.guide/images/book-images/image-decoding-large.jpg)
 
-Chrome DevTools Timeline和Performance面板突出显示了Twitter的Lite优化其图像管道之前和之后的图像解码时间（绿色）。
+> Chrome DevTools Timeline和Performance面板突出显示了Twitter的Lite优化其图像管道之前和之后的图像解码时间（绿色）。
 
 <h3 id="delivering-hidpi-with-srcset"><a href="https://images.guide/#delivering-hidpi-with-srcset">9.1 使用```srcset``提供高分辨率图像`</a></h3>
 
@@ -935,7 +962,7 @@ Chrome DevTools Timeline和Performance面板突出显示了Twitter的Lite优化�
 
 ![Performance](https://images.guide/images/book-images/device-pixel-ratio-large.jpg)
 
-设备像素比率：许多网站都会跟踪常用设备的分辨率，包括[material.io](https://material.io/devices/)和[mydevice.io](https://mydevice.io/devices/)。
+> 设备像素比率：许多网站都会跟踪常用设备的分辨率，包括[material.io](https://material.io/devices/)和[mydevice.io](https://mydevice.io/devices/)。
 
 [srcset](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)允许浏览器为每个设备选择最佳可用图像,例如为一个2倍分辨率的移动设备显示器选择一个2倍分辨率的图像。不支持```srcset```的浏览器可以退回到```<img>```标签中指定的默认```src```属性。
 
@@ -948,7 +975,9 @@ Chrome DevTools Timeline和Performance面板突出显示了Twitter的Lite优化�
 
 像[Cloudinary](http://cloudinary.com/blog/how_to_automatically_adapt_website_images_to_retina_and_hidpi_devices)和[Imgix](https://docs.imgix.com/apis/url/dpr)这样的图像CDN服务都支持控制图像的分辨率，以便从单一规范源向用户提供最佳分辨率的图像。
 
-> **注意：**在这个免费的Udacity课程和Web基础上的图像指南中，你可以了解更多关于设备像素比和响应式图像的信息。一个友好的提醒，[客户端提示](https://www.smashingmagazine.com/2016/01/leaner-responsive-images-client-hints/)也可以提供一种替代方案，在你的响应式图像标记中指定每个可能的像素密度和格式。相反，它们将这些信息附加到HTTP请求中，以便web服务器能够选择最适合当前设备屏幕密度的信息。
+| 注意 |
+| :--- |
+| 在这个免费的Udacity课程和Web基础上的图像指南中，你可以了解更多关于设备像素比和响应式图像的信息。一个友好的提醒，[客户端提示](https://www.smashingmagazine.com/2016/01/leaner-responsive-images-client-hints/)也可以提供一种替代方案，在你的响应式图像标记中指定每个可能的像素密度和格式。相反，它们将这些信息附加到HTTP请求中，以便web服务器能够选择最适合当前设备屏幕密度的信息。
 
 <h3 id="dart-direction"><a href="https://images.guide/#art-direction">9.2 艺术指导</a></h3>
 
@@ -956,13 +985,13 @@ Chrome DevTools Timeline和Performance面板突出显示了Twitter的Lite优化�
 
 ![Performance](https://images.guide/images/book-images/responsive-art-direction-large.jpg)
 
-艺术指导：埃里克·波蒂斯（Eric Portis）汇集了一个优秀的[样本](https://ericportis.com/etc/cloudinary/)，展示了在艺术指导上将如何呈现响应式图像。 此示例主要调整横幅在不同断点处的视觉特征，以充分利用可用空间。
+> 艺术指导：埃里克·波蒂斯（Eric Portis）汇集了一个优秀的[样本](https://ericportis.com/etc/cloudinary/)，展示了在艺术指导上将如何呈现响应式图像。 此示例主要调整横幅在不同断点处的视觉特征，以充分利用可用空间。
 
 ## [10.颜色管理](https://images.guide/#color-management)
 
 颜色至少有三种不同的视角：生物、物理和印刷。在生物学中，颜色是一种[感知现象](http://hubel.med.harvard.edu/book/ch8.pdf)。物体反射不同波长的光。我们眼睛中的光感受器将这些波长转换成我们所知道的颜色。在物理学中，光（光的频率和亮度）很重要。印刷中更多的是关于色论、油墨和艺术模型。  
 
-理想情况下，世界上的每个屏幕和web浏览器显示的颜色完全相同。不幸的是，由于一些固有的不一致，它们做不到完全相同。颜色管理允许我们通过颜色模型、颜色空间和颜色配置文件在显示颜色方面达成妥协。  
+理想情况下，世界上的每个屏幕和Web浏览器显示的颜色完全相同。不幸的是，由于一些固有的不一致，它们做不到完全相同。颜色管理允许我们通过颜色模型、颜色空间和颜色配置文件在显示颜色方面达成妥协。  
 
 **颜色模型**  
 
@@ -972,7 +1001,7 @@ Chrome DevTools Timeline和Performance面板突出显示了Twitter的Lite优化�
 
 ![Performance](https://images.guide/images/book-images/colors_ept6f2-large.jpg)  
 
-在RGB中，红色、绿色和蓝色的光以不同的组合方式被加入，以产生广泛的颜色空间。CYMK(青色、品红、黄色和黑色)通过不同颜色的墨水从白纸上减去亮度来工作。  
+> 在RGB中，红色、绿色和蓝色的光以不同的组合方式被加入，以产生广泛的颜色空间。CYMK(青色、品红、黄色和黑色)通过不同颜色的墨水从白纸上减去亮度来工作。  
 
 [了解颜色模型和专色系统](https://www.designersinsights.com/designer-resources/understanding-color-models/)对其他颜色模型和模式有很好的描述，如HSL、HSV和LAB。  
 
@@ -980,23 +1009,25 @@ Chrome DevTools Timeline和Performance面板突出显示了Twitter的Lite优化�
 
 [颜色空间](http://www.dpbestflow.org/color/color-space-and-color-profiles#space)是一个特定的颜色范围，可以表示为给定的图像。例如，如果一幅图像包含多达1670万种颜色，不同的颜色空间允许使用这些颜色的更窄或者更宽的范围。一些开发人员将颜色模型和颜色空间视为同一事物。  
 
-[sRGB](https://en.wikipedia.org/wiki/SRGB)是为web设计的[标准](https://www.w3.org/Graphics/Color/sRGB.html)颜色空间，它基于RGB。它是一个很小的颜色空间，通常被认为是跨浏览器颜色管理的最小公分母，也是最安全的选项。其他颜色空间(如[Adobe RGB](https://en.wikipedia.org/wiki/Adobe_RGB_color_space)或[ProPhoto RGB](https://en.wikipedia.org/wiki/ProPhoto_RGB_color_space) —— 在Photoshop和Lightroom中使用)可以比sRGB表示更鲜艳的颜色，但由于后者在大多数web浏览器、游戏和显示器中更普遍，所以通常它是人们关注的焦点。  
+[sRGB](https://en.wikipedia.org/wiki/SRGB)是为Web设计的[标准](https://www.w3.org/Graphics/Color/sRGB.html)颜色空间，它基于RGB。它是一个很小的颜色空间，通常被认为是跨浏览器颜色管理的最小公分母，也是最安全的选项。其他颜色空间(如[Adobe RGB](https://en.wikipedia.org/wiki/Adobe_RGB_color_space)或[ProPhoto RGB](https://en.wikipedia.org/wiki/ProPhoto_RGB_color_space) —— 在Photoshop和Lightroom中使用)可以比sRGB表示更鲜艳的颜色，但由于后者在大多数web浏览器、游戏和显示器中更普遍，所以通常它是人们关注的焦点。  
 
 ![Performance](https://images.guide/images/book-images/color-wheel_hazsbk-large.jpg)
 
-上面我们可以看到色域的可视化 —— 颜色空间可以定义的颜色范围。  
+> 上面我们可以看到色域的可视化 —— 颜色空间可以定义的颜色范围。  
 
 颜色空间有三个通道(红色、绿色和蓝色)。在8位模式下，每个通道可以有255种颜色，总共1670万种。16位图像可以显示数万亿种颜色。  
 
 ![Performance](https://images.guide/images/book-images/srgb-rgb_ntuhi4-large.jpg)  
 
-使用图像中的[标尺](https://yardstick.pictures/tags/img%3Adci-p3)比较sRGB、Adobe RGB和ProPhoto RGB。在sRGB中显示这个概念是非常困难的，因为无法显示看不到的颜色。一张普通的sRGB和宽色域的照片应该所有的东西都相同，除了大多数饱和“多汁”的颜色。   
+> 使用图像中的[标尺](https://yardstick.pictures/tags/img%3Adci-p3)比较sRGB、Adobe RGB和ProPhoto RGB。在sRGB中显示这个概念是非常困难的，因为无法显示看不到的颜色。一张普通的sRGB和宽色域的照片应该所有的东西都相同，除了大多数饱和“多汁”的颜色。   
 
 颜色空间(如sRGB、Adobe RGB和ProPhoto RGB)的差异在于它们的色域(它们可以通过阴影再现的颜色范围)、光源和[伽马](http://blog.johnnovak.net/2016/09/21/what-every-coder-should-know-about-gamma/)曲线。sRGB比Adobe RGB小~20%，ProPhoto RGB比Adobe RGB大大约[50%](http://www.petrvodnakphotography.com/Articles/ColorSpace.htm)。上面的图像源自[剪切路径](http://clippingpathzone.com/blog/essential-photoshop-color-settings-for-photographers)。  
 
 [宽色域](http://www.astramael.com/)是描述色域大于sRGB的颜色空间的术语。这种类型的显示器正在变得越来越普遍。也就是说，许多数字显示器仍然无法显示明显优于sRGB的颜色配置文件。在Photoshop中保存网页时，除非用户使用的是更高端的宽屏幕才会考虑使用“转换到sRGB”选项。  
 
-> **注意：**在使用原始照片时，避免使用sRGB作为基本颜色空间。它比大多数相机支持的颜色空间要小，还会造成剪切。相反，你可以在更大的颜色空间(如ProPhoto RGB)上工作，并在导出Web图像时输出到sRGB。     
+| 注意 |
+| :--- |
+| 在使用原始照片时，避免使用sRGB作为基本颜色空间。它比大多数相机支持的颜色空间要小，还会造成剪切。相反，你可以在更大的颜色空间(如ProPhoto RGB)上工作，并在导出Web图像时输出到sRGB。     
 
 **在任何情况下，广泛的颜色范围对Web的内容都有意义吗?**   
 
@@ -1014,7 +1045,9 @@ Chrome DevTools Timeline和Performance面板突出显示了Twitter的Lite优化�
 
 即使在这两种情况下，物理上，增加的光量是完全相同的。因此，由于眼睛对明亮的光线不那么敏感，伽玛压缩“压缩”了明亮的值，所以从物理角度来说，明亮的级别不那么精确，但是尺度是为人类调整的，所以从人类的角度来看，所有的值都是一样精确的。  
 
-> **注意：**这里的伽马压缩和校正可能不同于你在Photoshop中配置的伽马曲线图像。当伽马压缩正常工作时，它看起来不像任何东西。   
+| 注意 |
+| :--- |
+| 这里的伽马压缩和校正可能不同于你在Photoshop中配置的伽马曲线图像。当伽马压缩正常工作时，它看起来不像任何东西。   
 
 **颜色配置文件**  
 
@@ -1022,7 +1055,9 @@ Chrome DevTools Timeline和Performance面板突出显示了Twitter的Lite优化�
 
 图像可以像[国际颜色协会](http://www.color.org/icc_specs2.xalter)(ICC)所描述的那样嵌入颜色配置文件，以精确地表示颜色应该如何显示。包括JPEG、PNG、SVG和[WebP](https://developers.google.com/speed/webp/docs/riff_container)在内的不同格式都支持这一点，大多数主流浏览器都支持嵌入式ICC配置文件。当一个图像显示在一个应用程序中，它知道显示器的功能，这些颜色可以根据颜色配置文件进行调整。   
 
-> **注意：**有些监视器的颜色配置文件类似于sRGB，不能显示更好的配置文件，因此根据目标用户的需要显示，嵌入这些配置文件的价值就有限。需要衡量你的目标用户是谁。  
+| 注意 |
+| :--- |
+| 有些监视器的颜色配置文件类似于sRGB，不能显示更好的配置文件，因此根据目标用户的需要显示，嵌入这些配置文件的价值就有限。需要衡量你的目标用户是谁。  
 嵌入的颜色配置文件也会大大增加图像的大小(偶尔会增加100KB以上)，所以要小心嵌入。像ImageOptim这样的工具如果找到颜色配置文件，就会[自动](https://imageoptim.com/color-profiles.html)删除它们。相反，如果以减小大小的名义删除ICC配置文件，浏览器将被迫在监视器的颜色空间中显示图像，这可能导致预期的饱和度和对比度有差异。权衡这个对你的用例也是有意义的。  
 
 如果你有兴趣了解更多关于配置文件的信息，[下面的9个Degree](https://ninedegreesbelow.com/photography/articles.html)提供了一组颜色管理关于ICC配置文件的优秀资源。     
@@ -1031,7 +1066,9 @@ Chrome DevTools Timeline和Performance面板突出显示了Twitter的Lite优化�
 
 早期版本的Chrome对颜色管理的支持不是很好，但随着2017年[颜色正确渲染](https://groups.google.com/a/chromium.org/forum/#!topic/blink-dev/ptuKdRQwPAo)的出现，这一功能正在改善。不是sRGB(新款MacBook pro)的显示器将把颜色从sRGB转换为显示配置文件。这意味着在不同的系统和浏览器中颜色应该看起来更相似。Safari、Edge和Firefox现在也可以将ICC配置文件考虑在内，因此具有不同颜色的配置文件(例如ICC)的图像现在可以正确地显示它们，无论你的屏幕是否具有广域。  
 
-> **注意：**有关如何将颜色应用于更广泛的Web工作方式指南，请参阅由Sarah Drasner编写的《[书呆子颜色指南](https://css-tricks.com/nerds-guide-color-web/)》。   
+| 注意 |
+| :--- |
+| 有关如何将颜色应用于更广泛的Web工作方式指南，请参阅由Sarah Drasner编写的《[书呆子颜色指南](https://css-tricks.com/nerds-guide-color-web/)》。   
 
 ## [11.图像精灵](https://images.guide/#image-sprites)
 
@@ -1039,7 +1076,7 @@ Chrome DevTools Timeline和Performance面板突出显示了Twitter的Lite优化�
 
 ![Performance](https://images.guide/images/book-images/i2_2ec824b0_1-large.jpg)
 
-图像精灵仍然广泛应用于大型生产环境站点，包括谷歌主页。
+> 图像精灵仍然广泛应用于大型生产环境站点，包括谷歌主页。
 
 在HTTP/1.x下，一些开发人员使用图像精灵来减少HTTP请求。这样做有很多好处，但是需要小心，因为你很快就会遇到缓存失效的挑战 —— 对图像精灵的任何一小部分的更改都会使用户缓存中的整个图像无效。
 
@@ -1047,11 +1084,11 @@ Chrome DevTools Timeline和Performance面板突出显示了Twitter的Lite优化�
 
 ## [12.延迟加载非关键图像](https://images.guide/#lazy-load-non-critical-images)
 
-延迟加载是一种web性能模式，它会延迟浏览器中图像的加载，直到用户需要看到它为止。例如，在滚动时，图像按需异步加载。这可以进一步补充使用图像压缩策略所节省的字节数。
+延迟加载是一种Web性能模式，它会延迟浏览器中图像的加载，直到用户需要看到它为止。例如，在滚动时，图像按需异步加载。这可以进一步补充使用图像压缩策略所节省的字节数。
 
 ![Performance](https://images.guide/images/book-images/scrolling-viewport-large.jpg)
 
-必须出现在“折叠上方”的图像，或者当web页面首次出现时立即加载。然而，“折叠下方”的图像对用户来说还不可见。它们不必立即加载到浏览器中。只有当用户向下滚动并需要显示它们时，才可以稍后加载它们，或者延迟加载它们。
+必须出现在“折叠上方”的图像，或者当Web页面首次出现时立即加载。然而，“折叠下方”的图像对用户来说还不可见。它们不必立即加载到浏览器中。只有当用户向下滚动并需要显示它们时，才可以稍后加载它们，或者延迟加载它们。
 
 浏览器本身还不支持延迟加载(尽管过去已经[讨论](https://discourse.wicg.io/t/a-standard-way-to-lazy-load-images/1153/10)过)。相反，我们使用JavaScript添加此功能。
 
@@ -1077,7 +1114,7 @@ Chrome DevTools Timeline和Performance面板突出显示了Twitter的Lite优化�
 
 ![Performance](https://images.guide/images/book-images/Modern-Image35-large.jpg)
 
-一个高斯模糊内联预览图像在Medium.com的例子
+> 一个高斯模糊内联预览图像在Medium.com的例子
 
 许多站点(如Medium)显示一个很小的、高斯模糊的内联预览(只有100多字节)，它在获取后(延迟加载)转换为高质量的图像。
 
@@ -1123,7 +1160,7 @@ Lazysizes是一个JavaScript库。它不需要配置。下载压缩过的js文�
 </iframe>
 ```
 
-在这本书的web版本中，我将Lazysizes(尽管你可以使用任何替代方案)与Cloudinary配对，用于按需响应图像。这让我可以自由地尝试不同的规模、质量、格式的值，以及是否以最小的价值逐步加载:
+在这本书的Web版本中，我将Lazysizes(尽管你可以使用任何替代方案)与Cloudinary配对，用于按需响应图像。这让我可以自由地尝试不同的规模、质量、格式的值，以及是否以最小的价值逐步加载:
 
 ![Performance](https://images.guide/images/book-images/cloudinary-responsive-images-large.jpg)
 
@@ -1135,7 +1172,7 @@ Lazysizes是一个JavaScript库。它不需要配置。下载压缩过的js文�
 
 + 为媒体查询功能添加自动大小计算和别名
 
-+ 可以使用数百图像或者iframe的包含CSS和js很多的网页或web应用程序
++ 可以使用数百图像或者iframe的包含CSS和js很多的网页或Web应用程序
 
 + 可扩展:支持插件
 
@@ -1192,7 +1229,7 @@ Lazysizes不是你唯一的选择。这里有更多的懒加载库:
 <img src=“img-hidden.jpg" class="hidden">
 ```
 
-对Chrome DevTools的Network面板的快速检查将验证使用这些方法隐藏的图像仍然会被获取，即使我们预期是它们不会被获取。根据嵌入式资源规范，这种行为实际上是正确的。
+对Chrome DevTools的network面板的快速检查将验证使用这些方法隐藏的图像仍然会被获取，即使我们预期是它们不会被获取。根据嵌入式资源规范，这种行为实际上是正确的。
 
 ![Performance](https://images.guide/images/book-images/display-none-images-large.jpg)
 
@@ -1252,7 +1289,7 @@ Jake Archibald的[Request Quest](https://jakearchibald.github.io/request-quest/)
 
 ![Performance](https://images.guide/images/book-images/Modern-Image36-large.jpg)
 
-Cloudinary媒体库: 默认情况下，Cloudinary对[非渐进式JPEG](http://cloudinary.com/blog/progressive_jpegs_and_green_martians)进行编码。要选择生成它们，请检查“More options”中的“Progressive”选项或传递“fl_progressive”标志。
+> Cloudinary媒体库: 默认情况下，Cloudinary对[非渐进式JPEG](http://cloudinary.com/blog/progressive_jpegs_and_green_martians)进行编码。要选择生成它们，请检查“More options”中的“Progressive”选项或传递“fl_progressive”标志。
 
 Cloudinary列出了[7个广泛的图像转换](http://cloudinary.com/documentation/image_transformations)类别，其中共有48个子类别。Imgix广告超过[100个图像处理操作](https://docs.imgix.com/apis/url?_ga=2.52377449.1538976134.1501179780-2118608066.1501179780)。
 
@@ -1309,7 +1346,7 @@ cdn需要成本。一个大量图像、大流量的网站每月的CDN费用可�
 
 ## [15.缓存图像资源](https://images.guide/#caching-image-assets)
 
-资源可以使用HTTP缓存标头指定缓存策略。 具体来说，Cache-Control可以定义谁可以缓存响应以及响应时间。
+资源可以使用HTTP缓存标头指定缓存策略。 具体来说，Cache-Control可以定义谁可以缓存响应以及响应时间
 
 资源可以使用[HTTP缓存标头](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/http-caching#cache-control)指定缓存策略。具体来说，```Cache-Control```可以定义谁可以缓存响应多长时间。
 
@@ -1317,7 +1354,9 @@ cdn需要成本。一个大量图像、大流量的网站每月的CDN费用可�
 
 设置HTTP缓存头文件时，设置Cache-Control的最大使用年限为一年(例如: ```Cache-Control: public; max-age = 31536000```)。这种类型的主动缓存对于大多数类型的图像都很有效，特别是那些长时间存在的图像，比如头像和标题图像。
 
-> 注意：如果你使用PHP提供图像，则由于默认的[session_cache_limiter](http://php.net/manual/en/function.session-cache-limiter.php)设置，它可能会破坏缓存。 这可能是图像缓存的灾难，你可能希望通过设置session_cache_limiter（'public'）来[解决此问题](https://stackoverflow.com/a/3905468)，该会话将设置public，max-age =。 禁用和设置自定义缓存控制标头也很好。
+| 注意 |
+| :--- |
+| 如果你使用PHP提供图像，则由于默认的[session_cache_limiter](http://php.net/manual/en/function.session-cache-limiter.php)设置，它可能会破坏缓存。 这可能是图像缓存的灾难，你可能希望通过设置session_cache_limiter（'public'）来[解决此问题](https://stackoverflow.com/a/3905468)，该会话将设置public，max-age =。 禁用和设置自定义缓存控制标头也很好。
 
 ## [16.预加载关键图像资源](https://images.guide/#preload-critical-image-assets)
 
@@ -1333,7 +1372,9 @@ cdn需要成本。一个大量图像、大流量的网站每月的CDN费用可�
 
 对于```<img>```， ```<picture>```， ```srcset```和SVG的图像资源都可以利用这种优化。
 
-> 注意：```<link rel="preload">```在Chrome和基于Blink的浏览器(如Opera, [Safari Tech Preview](https://developer.apple.com/safari/technology-preview/release-notes/))中是被[支持](http://caniuse.com/#search=preload)的，并且已经在Firefox中[实现](https://bugzilla.mozilla.org/show_bug.cgi?id=1222633)。
+| 注意 |
+| :--- |
+| ```<link rel="preload">```在Chrome和基于Blink的浏览器(如Opera, [Safari Tech Preview](https://developer.apple.com/safari/technology-preview/release-notes/))中是被[支持](http://caniuse.com/#search=preload)的，并且已经在Firefox中[实现](https://bugzilla.mozilla.org/show_bug.cgi?id=1222633)。
 
 像[Philips](https://www.usa.philips.com/)、[Flipkart](https://www.flipkart.com/)和[Xerox](https://www.xerox.com/)这样的网站使用```<link rel=preload>```来预加载他们的主要logo资源(通常在文档的早期使用)。[Kayak](https://kayak.com/)还使用preload来确保他们的头部的英雄图像被尽快加载。
 
@@ -1353,7 +1394,7 @@ Link: <https://example.com/logo-hires.jpg>; rel=preload; as=image
 
 ![Performance](https://images.guide/images/book-images/preload-financial-times-large.jpg)
 
-底部:带```<link rel="preload">```，顶部:不带。在WebPageTest上比较Moto G4在3G以上的使用[前](https://www.webpagetest.org/result/170319_Z2_GFR/)[后](https://www.webpagetest.org/result/170319_R8_G4Q/)。
+> 底部:带```<link rel="preload">```，顶部:不带。在WebPageTest上比较Moto G4在3G以上的使用[前](https://www.webpagetest.org/result/170319_Z2_GFR/)[后](https://www.webpagetest.org/result/170319_R8_G4Q/)。
 
 类似地，Wikipedia通过[案例研究](https://phabricator.wikimedia.org/phame/post/view/19/improving_time-to-logo_performance_with_preload_links/)中介绍的链接预加载标题改进了标记的时间性能。
 
@@ -1365,13 +1406,13 @@ Link: <https://example.com/logo-hires.jpg>; rel=preload; as=image
 
 要了解有关预加载的更多信息，请参阅[Chrome和预装中的预加载](https://medium.com/reloading/preload-prefetch-and-priorities-in-chrome-776165961bbf)和[预取和优先级：它有什么用？](https://www.smashingmagazine.com/2016/02/preload-what-is-it-good-for/).
 
-## [17.图像的性能预算](https://images.guide/#performance-budgets)
+##[17.图像的性能预算](https://images.guide/#performance-budgets)
 
 性能预算是团队尝试不超过的网页性能的“预算”。 例如，“任何页面上的图像不会超过200KB”或“用户体验必须在3秒内可用”。 如果没有达到预算，请探究原因以及如何回到目标上。
 
 预算为与利益相关者讨论绩效提供了有用的框架。 如果设计或业务决策可能会影响网站性能，请参阅预算。 它们是在可能损害网站用户体验时延迟或重新考虑更改的参考。
 
-我发现在监控自动化时，团队在绩效预算方面取得了最大的成功。 自动化可以标记何时超出预算，而不是手动检查网络瀑布的预算回归。 对性能预算跟踪有用的两个此类服务是[Calibre](https://calibreapp.com/docs/metrics/budgets)和[SpeedCurve](https://speedcurve.com/blog/tag/performance-budgets/)。
+我发现在监控自动化时，团队在预算方面取得了最大的成功。 自动化可以标记何时超出预算，而不是手动检查网络瀑布的预算回归。 对性能预算跟踪有用的两个此类服务是[Calibre](https://calibreapp.com/docs/metrics/budgets)和[SpeedCurve](https://speedcurve.com/blog/tag/performance-budgets/)。
 
 一旦定义了图像大小的性能预算，SpeedCurve就会开始监控并在超出预算时提醒你：
 
@@ -1391,7 +1432,7 @@ Calibre提供了类似的功能，支持为你定位的每个设备级设置预�
 
 + Guetzli + MozJPEG的jpegtran是JPEG质量>90的优秀优化器。
 
-    - 对于web, ```q=90```是非常浪费的。你可以尝试```q=80```, 2倍屏显示即使```q=50```。因为Guetzli没有那么低，对于web，你可以使用MozJPEG。
+    - 对于Web, ```q=90```是非常浪费的。你可以尝试```q=80```, 2倍屏显示即使```q=50```。因为Guetzli没有那么低，对于web，你可以使用MozJPEG。
 
     - Kornel Lesiński最近改善mozjpeg的cjpeg命令来添加小sRGB概要文件来帮助Chrome在屏幕上显示自然色
 
@@ -1412,7 +1453,9 @@ Calibre提供了类似的功能，支持为你定位的每个设备级设置预�
 
 压缩快乐!
 
-> 注意：有关如何优化图像的更实用的指导，我强烈推荐Jeremy Wagner的[Web Performance in Action](https://www.manning.com/books/web-performance-in-action)。 [高性能图像](http://shop.oreilly.com/product/0636920039730.do)也充满了关于这个主题的优秀、细致的建议。
+| 注意 |
+| :--- |
+| 有关如何优化图像的更实用的指导，我强烈推荐Jeremy Wagner的[Web Performance in Action](https://www.manning.com/books/web-performance-in-action)。 [高性能图像](http://shop.oreilly.com/product/0636920039730.do)也充满了关于这个主题的优秀、细致的建议。
 
 ## [19.了解更多](https://images.guide/#trivia)
 

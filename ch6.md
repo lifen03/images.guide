@@ -6,7 +6,7 @@
 
 ![Performance](https://images.guide/images/book-images/Modern-Image16-large.jpg)
 
-WebP: 比较文件大小和不同质量下的视觉相似度的得分。
+> WebP: 比较文件大小和不同质量下的视觉相似度的得分。
 
 <h3 id="how-does-webp-perform"><a href="https://images.guide/#how-does-webp-perform">6.1 WebP的性能如何?</a></h3>
 
@@ -30,7 +30,9 @@ WebP文件格式支持EXIF照片元数据和XMP数字文档元数据。它还包
 
 WebP提供了更好的压缩，但代价是CPU更密集。早在2013年，WebP的压缩速度比JPEG慢了大约10倍，只是现在可以忽略不计(一些图像的压缩速度可能是慢了2倍)。进行处理的静态图像作为构建的一部分，这应该不是一个大问题。动态生成的映像可能会造成额外可感知的CPU开销，你需要对其进行评估。
 
-> **注意：**WebP有损质量设置不能与JPEG直接比较。“70%质量”的JPEG与“70%质量”的WebP图像大不相同，因为WebP通过丢弃更多的数据来实现更小的文件大小。
+| 注意 |
+| :--- |
+| WebP有损质量设置不能与JPEG直接比较。“70%质量”的JPEG与“70%质量”的WebP图像大不相同，因为WebP通过丢弃更多的数据来实现更小的文件大小。
 
 <h3 id="whos-using-webp-in-production"><a href="https://images.guide/#whos-using-webp-in-production">6.2 谁在生产中使用WebP?</a></h3>
 
@@ -44,7 +46,7 @@ Netflix、Amazon、Quora、Yahoo、Walmart、Ebay、The Guardian、Fortune和USA
 
 ![Performance](https://images.guide/images/book-images/webp-conversion-large.jpg)
 
-Google使用WebP：每天在YouTube，Google Play，Chrome数据保护程序和G+上的WebP图像请求每天达到430亿次。
+> Google使用WebP：每天在YouTube，Google Play，Chrome数据保护程序和G+上的WebP图像请求每天达到430亿次。
 
 <h3 id="how-does-webp-encoding-work"><a href="https://images.guide/#how-does-webp-encoding-work">6.3 WebP编码是如何工作的?</a></h3>
 
@@ -92,7 +94,9 @@ WebP并非没有缺点。它缺乏全分辨率的色彩空间选项，不支持�
 
 一些商业和开源的图像编辑和处理包都支持WebP。XnConvert是一个特别有用的应用程序: 它是一个免费的、跨平台的批处理图像转换器。
 
-> **注意：**避免将低质量或平均质量的JPEG转换为WebP非常重要。 使用JPEG压缩过的图像生成WebP图像是一个常见的错误。 这可能导致WebP效率降低，因为它必须保存图像和JPEG添加的伪像，导致你在质量上损失两次。 原始文件是最好的提供给转换应用程序可用的最佳质量的源文件。
+| 注意 |
+| :--- |
+| 避免将低质量或平均质量的JPEG转换为WebP非常重要。 使用JPEG压缩过的图像生成WebP图像是一个常见的错误。 这可能导致WebP效率降低，因为它必须保存图像和JPEG添加的伪像，导致你在质量上损失两次。 原始文件是最好的提供给转换应用程序可用的最佳质量的源文件。
 
 **[XnConvert](http://www.xnview.com/en/xnconvert/)**
 
@@ -100,7 +104,9 @@ XnConvert支持批处理图像，兼容500多种图像格式。你可以组合80
 
 ![Performance](https://images.guide/images/book-images/Modern-Image20-large.png)
 
-XnConvert支持批处理图像优化，允许直接从源文件转换为WebP和其他格式。除了压缩，XnConvert还可以帮助图像进行元数据的剥离、裁剪、颜色深度定制和其他转换。xnview网站上列出的一些选项包括:
+> XnConvert支持批处理图像优化，允许直接从源文件转换为WebP和其他格式。除了压缩，XnConvert还可以帮助图像进行元数据的剥离、裁剪、颜色深度定制和其他转换。
+
+xnview网站上列出的一些选项包括:
 
 + 元数据: 编辑
 
@@ -252,11 +258,11 @@ Jeremy Wagner有一篇关于[使用Bash进行图像优化](https://jeremywagner.
 
 ![Performance](https://images.guide/images/book-images/play-format-webp-large.jpg)
 
-Chrome DevTools网络面板的“Type”列下，选择性为基于Blink的浏览器提供WebP文件的高亮显示。
+> Chrome DevTools网络面板的“Type”列下，选择性为基于Blink的浏览器提供WebP文件的高亮显示。
 
 ![Performance](https://images.guide/images/book-images/play-format-type-large.jpg)
 
-当Play store向Blink提供WebP时，它又回到了Firefox等浏览器的JPEG模式。
+> 当Play store向Blink提供WebP时，它又回到了Firefox等浏览器的JPEG模式。
 
 以下是从服务器向用户提供WebP图像的一些可选配置：
 
@@ -311,13 +317,17 @@ Nginx: 将以下代码添加到mime.types文件中：
 image/webp webp;
 ```
 
-> **注意：** Vincent Orback有一个用于服务WebP的[htaccess配置](https://github.com/vincentorback/WebP-images-with-htaccess)示例供参考，Ilya Grigorik维护了一组[用于服务WebP的配置脚本](https://github.com/igrigorik/webp-detect)，这些脚本是很有用的。
+| 注意 |
+| :--- |
+| Vincent Orback有一个用于服务WebP的[htaccess配置](https://github.com/vincentorback/WebP-images-with-htaccess)示例供参考，Ilya Grigorik维护了一组[用于服务WebP的配置脚本](https://github.com/igrigorik/webp-detect)，这些脚本是很有用的。
 
 **使用 ```<picture>``` 标签**
 
 浏览器本身可以通过使用```<picture>```标记来选择要显示的图像格式。```<picture>```标签使用多个```<source>```元素，使用一个```<img>```标签是包含图像的实际DOM元素。浏览器循环遍历源并检索第一个匹配项。如果用户浏览器中不支持```<picture>```标记，则呈现```<div>```并使用```<img>```标记。
 
-> **注意：**因为顺序的关系需要注意```<source>```的位置。不要将iamge/webp源放在遗留格式之后，而是将它们放在前面。理解它的浏览器将使用它们，不理解它的浏览器将转移到更广泛支持的框架上。如果图像的物理大小相同(不使用media属性时)，也可以将它们按文件大小排序。通常，这与放在最后的文件顺序相同。
+| 注意 |
+| :--- |
+| 因为顺序的关系需要注意```<source>```的位置。不要将iamge/webp源放在遗留格式之后，而是将它们放在前面。理解它的浏览器将使用它们，不理解它的浏览器将转移到更广泛支持的框架上。如果图像的物理大小相同(不使用media属性时)，也可以将它们按文件大小排序。通常，这与放在最后的文件顺序相同。
 
 下面是一些HTML示例:
 
@@ -360,7 +370,7 @@ GIF动画的格式非常有限，但是它仍然得到了广泛的使用。尽�
 
 ![Performance](https://images.guide/images/book-images/animated-gif-large.jpg)
 
-GIF动画与视频: 不同格式的文件大小在大约相等质量下的比较。
+> GIF动画与视频: 不同格式的文件大小在大约相等质量下的比较。
 
 **MP4视频与GIF动画相比传输相同的文件通常可以减少80%或更多的文件大小。**GIF不仅常常浪费大量带宽，而且加载时间更长，包含的颜色更少，而且通常只提供了部分的用户体验。你可能已经注意到上传到Twitter的动态GIF，在Twitter上的表现比在其他网站上要好。[Twitter上的GIF动画实际上并不是GIF](http://mashable.com/2014/06/20/twitter-gifs-mp4/#fiiFE85eQZqW)。为了改善用户体验和减少带宽消耗，上传到Twitter的GIF动画实际上被转换成了视频。类似地，在上传时[Imgur将GIF图像转换成视频](https://thenextweb.com/insider/2014/10/09/imgur-begins-converting-gif-uploads-mp4-videos-new-gifv-format/)，并悄无声息地将其转换成MP4格式。
 
