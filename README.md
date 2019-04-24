@@ -1,4 +1,4 @@
-# [图像优化](https://images.guide/)
+# [图像优化自动化实用指南](https://www.yuque.com/ysfe/ykx/imgopt)
 
 [原文地址](https://images.guide/)
 
