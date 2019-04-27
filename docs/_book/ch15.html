@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>18.写在最后 · GitBook</title>
+        <title>15.缓存图像资源 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="ch19.html" />
+    <link rel="next" href="ch16.html" />
     
     
-    <link rel="prev" href="ch17.html" />
+    <link rel="prev" href="ch14.html" />
     
 
     </head>
@@ -310,7 +310,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.18" data-path="ch15.html">
+        <li class="chapter active" data-level="1.18" data-path="ch15.html">
             
                 <a href="ch15.html">
             
@@ -349,7 +349,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.21" data-path="ch18.html">
+        <li class="chapter " data-level="1.21" data-path="ch18.html">
             
                 <a href="ch18.html">
             
@@ -418,7 +418,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >18.写在最后</a>
+        <a href="." >15.缓存图像资源</a>
     </h1>
 </div>
 
@@ -433,39 +433,11 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="18&#x5199;&#x5728;&#x6700;&#x540E;"><a href="https://images.guide/#closing-recommendations" target="_blank">18.&#x5199;&#x5728;&#x6700;&#x540E;</a></h2>
-<p>&#x6700;&#x7EC8;&#xFF0C;&#x9009;&#x62E9;&#x56FE;&#x50CF;&#x4F18;&#x5316;&#x7B56;&#x7565;&#x5C06;&#x5F52;&#x7ED3;&#x4E3A;&#x4F60;&#x5411;&#x7528;&#x6237;&#x63D0;&#x4F9B;&#x7684;&#x56FE;&#x50CF;&#x7C7B;&#x578B;&#xFF0C;&#x4EE5;&#x53CA;&#x4F60;&#x51B3;&#x5B9A;&#x7684;&#x4E00;&#x7EC4;&#x5408;&#x7406;&#x7684;&#x8BC4;&#x4F30;&#x6807;&#x51C6;&#x3002; &#x5B83;&#x53EF;&#x80FD;&#x6B63;&#x5728;&#x4F7F;&#x7528;SSIM&#x6216;Butteraugli&#xFF0C;&#x6216;&#x8005;&#xFF0C;&#x5982;&#x679C;&#x5B83;&#x662F;&#x4E00;&#x7EC4;&#x8DB3;&#x591F;&#x5C0F;&#x7684;&#x56FE;&#x50CF;&#xFF0C;&#x90A3;&#x4E48;&#x4EBA;&#x7C7B;&#x7684;&#x611F;&#x77E5;&#x5C31;&#x4F1A;&#x53D8;&#x5F97;&#x6700;&#x6709;&#x610F;&#x4E49;&#x3002;</p>
-<p><strong>&#x4EE5;&#x4E0B;&#x662F;&#x6211;&#x6700;&#x540E;&#x7684;&#x5EFA;&#x8BAE;:</strong></p>
-<p>&#x5982;&#x679C;&#x4F60;<strong>&#x4E0D;&#x80FD;</strong>&#x57FA;&#x4E8E;&#x6D4F;&#x89C8;&#x5668;&#x652F;&#x6301;&#x6709;&#x6761;&#x4EF6;&#x5730;&#x63D0;&#x4F9B;&#x683C;&#x5F0F;:</p>
-<ul>
-<li><p>Guetzli + MozJPEG&#x7684;jpegtran&#x662F;JPEG&#x8D28;&#x91CF;&gt;90&#x7684;&#x4F18;&#x79C0;&#x4F18;&#x5316;&#x5668;&#x3002;</p>
-<ul>
-<li><p>&#x5BF9;&#x4E8E;Web, <code>q=90</code>&#x662F;&#x975E;&#x5E38;&#x6D6A;&#x8D39;&#x7684;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x5C1D;&#x8BD5;<code>q=80</code>, 2&#x500D;&#x5C4F;&#x663E;&#x793A;&#x5373;&#x4F7F;<code>q=50</code>&#x3002;&#x56E0;&#x4E3A;Guetzli&#x6CA1;&#x6709;&#x90A3;&#x4E48;&#x4F4E;&#xFF0C;&#x5BF9;&#x4E8E;web&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;MozJPEG&#x3002;</p>
-</li>
-<li><p>Kornel Lesi&#x144;ski&#x6700;&#x8FD1;&#x6539;&#x5584;mozjpeg&#x7684;cjpeg&#x547D;&#x4EE4;&#x6765;&#x6DFB;&#x52A0;&#x5C0F;sRGB&#x6982;&#x8981;&#x6587;&#x4EF6;&#x6765;&#x5E2E;&#x52A9;Chrome&#x5728;&#x5C4F;&#x5E55;&#x4E0A;&#x663E;&#x793A;&#x81EA;&#x7136;&#x8272;</p>
-</li>
-</ul>
-</li>
-<li><p>PNG pngquant + advpng&#x5177;&#x6709;&#x5F88;&#x597D;&#x7684;&#x901F;&#x5EA6;/&#x538B;&#x7F29;&#x6BD4;</p>
-</li>
-<li><p>&#x5982;&#x679C;&#x4F60;&#x53EF;&#x4EE5;&#x6709;&#x6761;&#x4EF6;&#x7684;&#x670D;&#x52A1;(&#x4F7F;&#x7528;<code>&lt;picture&gt;</code>&#xFF0C;<a href="https://www.igvita.com/2013/05/01/deploying-webp-via-accept-content-negotiation/" target="_blank">&#x63A5;&#x53D7;&#x5934;</a>&#x6216;<a href="https://scottjehl.github.io/picturefill/" target="_blank">&#x56FE;&#x50CF;&#x586B;&#x5145;</a>):</p>
-<ul>
-<li><p>&#x4E3A;&#x652F;&#x6301;WebP&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x63D0;&#x4F9B;WebP&#x670D;&#x52A1;</p>
-<ul>
-<li><p>&#x4ECE;&#x539F;&#x59CB;&#x7684;100%&#x8D28;&#x91CF;&#x7684;&#x56FE;&#x50CF;&#x521B;&#x5EFA;WebP&#x56FE;&#x50CF;&#x3002;&#x5426;&#x5219;&#xFF0C;&#x4F60;&#x5C06;&#x4F1A;&#x7ED9;&#x6D4F;&#x89C8;&#x5668;&#x63D0;&#x4F9B;&#x652F;&#x6301;&#x5B83;&#x7684;&#x66F4;&#x7CDF;&#x7CD5;&#x7684;&#x56FE;&#x50CF;&#x4E0E;JPEG&#x5931;&#x771F;&#x548C;WebP&#x5931;&#x771F;!&#x5982;&#x679C;&#x4F60;&#x4F7F;&#x7528;WebP&#x538B;&#x7F29;&#x672A;&#x538B;&#x7F29;&#x7684;&#x6E90;&#x56FE;&#x50CF;&#xFF0C;&#x5B83;&#x4F1A;&#x6709;&#x8F83;&#x5C11;&#x7684;&#x53EF;&#x89C1;WebP&#x5931;&#x771F;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x538B;&#x7F29;&#x5F97;&#x66F4;&#x597D;&#x3002;</p>
-</li>
-<li><p>WebP&#x56E2;&#x961F;&#x4F7F;&#x7528;&#x7684;<code>-m 4 - q 75</code>&#x7684;&#x9ED8;&#x8BA4;&#x8BBE;&#x7F6E;&#x901A;&#x5E38;&#x9002;&#x7528;&#x4E8E;&#x4ED6;&#x4EEC;&#x4F18;&#x5316;&#x901F;&#x5EA6;/&#x6BD4;&#x7387;&#x7684;&#x5927;&#x591A;&#x6570;&#x60C5;&#x51B5;&#x3002;</p>
-</li>
-<li><p>WebP&#x8FD8;&#x6709;&#x4E00;&#x79CD;&#x7279;&#x6B8A;&#x7684;&#x65E0;&#x635F;&#x6A21;&#x5F0F;(<code>- m 6 - q 100</code>)&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x63A2;&#x7D22;&#x6240;&#x6709;&#x53C2;&#x6570;&#x7EC4;&#x5408;&#x5C06;&#x6587;&#x4EF6;&#x7F29;&#x51CF;&#x5230;&#x6700;&#x5C0F;&#x5927;&#x5C0F;&#x3002;&#x867D;&#x7136;&#x901F;&#x5EA6;&#x6162;&#x4E86;&#x4E00;&#x4E2A;&#x6570;&#x91CF;&#x7EA7;&#xFF0C;&#x4F46;&#x5BF9;&#x4E8E;&#x9759;&#x6001;&#x8D44;&#x4EA7;&#x6765;&#x8BF4;&#x662F;&#x503C;&#x5F97;&#x7684;&#x3002;</p>
-</li>
-</ul>
-</li>
-<li><p>&#x4F5C;&#x4E3A;&#x4E00;&#x79CD;&#x9000;&#x8DEF;&#xFF0C;&#x5C06;Guetzli/MozJPEG&#x538B;&#x7F29;&#x6E90;&#x63D0;&#x4F9B;&#x7ED9;&#x5176;&#x4ED6;&#x6D4F;&#x89C8;&#x5668;</p>
-</li>
-</ul>
-</li>
-</ul>
-<p>&#x538B;&#x7F29;&#x5FEB;&#x4E50;!</p>
+                                <h2 id="15&#x7F13;&#x5B58;&#x56FE;&#x50CF;&#x8D44;&#x6E90;"><a href="https://images.guide/#caching-image-assets" target="_blank">15.&#x7F13;&#x5B58;&#x56FE;&#x50CF;&#x8D44;&#x6E90;</a></h2>
+<p>&#x8D44;&#x6E90;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;HTTP&#x7F13;&#x5B58;&#x6807;&#x5934;&#x6307;&#x5B9A;&#x7F13;&#x5B58;&#x7B56;&#x7565;&#x3002; &#x5177;&#x4F53;&#x6765;&#x8BF4;&#xFF0C;Cache-Control&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x8C01;&#x53EF;&#x4EE5;&#x7F13;&#x5B58;&#x54CD;&#x5E94;&#x4EE5;&#x53CA;&#x54CD;&#x5E94;&#x65F6;&#x95F4;</p>
+<p>&#x8D44;&#x6E90;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;<a href="https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/http-caching#cache-control" target="_blank">HTTP&#x7F13;&#x5B58;&#x6807;&#x5934;</a>&#x6307;&#x5B9A;&#x7F13;&#x5B58;&#x7B56;&#x7565;&#x3002;&#x5177;&#x4F53;&#x6765;&#x8BF4;&#xFF0C;<code>Cache-Control</code>&#x53EF;&#x4EE5;&#x5B9A;&#x4E49;&#x8C01;&#x53EF;&#x4EE5;&#x7F13;&#x5B58;&#x54CD;&#x5E94;&#x591A;&#x957F;&#x65F6;&#x95F4;&#x3002;</p>
+<p>&#x4F60;&#x5411;&#x7528;&#x6237;&#x63D0;&#x4F9B;&#x7684;&#x5927;&#x591A;&#x6570;&#x56FE;&#x50CF;&#x90FD;&#x662F;&#x9759;&#x6001;&#x8D44;&#x6E90;&#xFF0C;&#x5C06;&#x6765;<a href="http://kean.github.io/post/image-caching" target="_blank">&#x4E0D;&#x4F1A;&#x53D1;&#x751F;&#x53D8;&#x5316;</a>&#x3002; &#x8FD9;&#x7C7B;&#x8D44;&#x4EA7;&#x7684;&#x6700;&#x4F73;&#x7F13;&#x5B58;&#x7B56;&#x7565;&#x662F;&#x4E3B;&#x52A8;&#x7F13;&#x5B58;&#x3002;</p>
+<p>&#x8BBE;&#x7F6E;HTTP&#x7F13;&#x5B58;&#x5934;&#x6587;&#x4EF6;&#x65F6;&#xFF0C;&#x8BBE;&#x7F6E;Cache-Control&#x7684;&#x6700;&#x5927;&#x4F7F;&#x7528;&#x5E74;&#x9650;&#x4E3A;&#x4E00;&#x5E74;(&#x4F8B;&#x5982;: <code>Cache-Control: public; max-age = 31536000</code>)&#x3002;&#x8FD9;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x4E3B;&#x52A8;&#x7F13;&#x5B58;&#x5BF9;&#x4E8E;&#x5927;&#x591A;&#x6570;&#x7C7B;&#x578B;&#x7684;&#x56FE;&#x50CF;&#x90FD;&#x5F88;&#x6709;&#x6548;&#xFF0C;&#x7279;&#x522B;&#x662F;&#x90A3;&#x4E9B;&#x957F;&#x65F6;&#x95F4;&#x5B58;&#x5728;&#x7684;&#x56FE;&#x50CF;&#xFF0C;&#x6BD4;&#x5982;&#x5934;&#x50CF;&#x548C;&#x6807;&#x9898;&#x56FE;&#x50CF;&#x3002;</p>
 <table>
 <thead>
 <tr>
@@ -474,7 +446,7 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left">&#x6709;&#x5173;&#x5982;&#x4F55;&#x4F18;&#x5316;&#x56FE;&#x50CF;&#x7684;&#x66F4;&#x5B9E;&#x7528;&#x7684;&#x6307;&#x5BFC;&#xFF0C;&#x6211;&#x5F3A;&#x70C8;&#x63A8;&#x8350;Jeremy Wagner&#x7684;<a href="https://www.manning.com/books/web-performance-in-action" target="_blank">Web Performance in Action</a>&#x3002; <a href="http://shop.oreilly.com/product/0636920039730.do" target="_blank">&#x9AD8;&#x6027;&#x80FD;&#x56FE;&#x50CF;</a>&#x4E5F;&#x5145;&#x6EE1;&#x4E86;&#x5173;&#x4E8E;&#x8FD9;&#x4E2A;&#x4E3B;&#x9898;&#x7684;&#x4F18;&#x79C0;&#x3001;&#x7EC6;&#x81F4;&#x7684;&#x5EFA;&#x8BAE;&#x3002;</td>
+<td style="text-align:left">&#x5982;&#x679C;&#x4F60;&#x4F7F;&#x7528;PHP&#x63D0;&#x4F9B;&#x56FE;&#x50CF;&#xFF0C;&#x5219;&#x7531;&#x4E8E;&#x9ED8;&#x8BA4;&#x7684;<a href="http://php.net/manual/en/function.session-cache-limiter.php" target="_blank">session_cache_limiter</a>&#x8BBE;&#x7F6E;&#xFF0C;&#x5B83;&#x53EF;&#x80FD;&#x4F1A;&#x7834;&#x574F;&#x7F13;&#x5B58;&#x3002; &#x8FD9;&#x53EF;&#x80FD;&#x662F;&#x56FE;&#x50CF;&#x7F13;&#x5B58;&#x7684;&#x707E;&#x96BE;&#xFF0C;&#x4F60;&#x53EF;&#x80FD;&#x5E0C;&#x671B;&#x901A;&#x8FC7;&#x8BBE;&#x7F6E;session_cache_limiter&#xFF08;&apos;public&apos;&#xFF09;&#x6765;<a href="https://stackoverflow.com/a/3905468" target="_blank">&#x89E3;&#x51B3;&#x6B64;&#x95EE;&#x9898;</a>&#xFF0C;&#x8BE5;&#x4F1A;&#x8BDD;&#x5C06;&#x8BBE;&#x7F6E;public&#xFF0C;max-age =&#x3002; &#x7981;&#x7528;&#x548C;&#x8BBE;&#x7F6E;&#x81EA;&#x5B9A;&#x4E49;&#x7F13;&#x5B58;&#x63A7;&#x5236;&#x6807;&#x5934;&#x4E5F;&#x5F88;&#x597D;&#x3002;</td>
 </tr>
 </tbody>
 </table>
@@ -486,7 +458,7 @@
         hm.src = "https://hm.baidu.com/hm.js?4f01de5cc0f84f20fea5a4202233614f";
         var s = document.getElementsByTagName("script")[0]; 
         s.parentNode.insertBefore(hm, s);
-        _hmt.push(['_trackEvent', '图像优化', '写在最后', 18]);
+        _hmt.push(['_trackEvent', '图像优化', '缓存图像资源', 15]);
     })();
     </script>
 </div>
@@ -517,12 +489,12 @@
 
             
                 
-                <a href="ch17.html" class="navigation navigation-prev " aria-label="Previous page: 17.图像的性能预算">
+                <a href="ch14.html" class="navigation navigation-prev " aria-label="Previous page: 14.CDN对图像处理有意义吗？">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="ch19.html" class="navigation navigation-next " aria-label="Next page: 19.了解更多">
+                <a href="ch16.html" class="navigation navigation-next " aria-label="Next page: 16.预加载关键图像资源">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -533,7 +505,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"18.写在最后","level":"1.21","depth":1,"next":{"title":"19.了解更多","level":"1.22","depth":1,"path":"ch19.md","ref":"ch19.md","articles":[]},"previous":{"title":"17.图像的性能预算","level":"1.20","depth":1,"path":"ch17.md","ref":"ch17.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ch18.md","mtime":"2019-04-24T15:26:55.235Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-24T15:29:27.096Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"15.缓存图像资源","level":"1.18","depth":1,"next":{"title":"16.预加载关键图像资源","level":"1.19","depth":1,"path":"ch16.md","ref":"ch16.md","articles":[]},"previous":{"title":"14.CDN对图像处理有意义吗？","level":"1.17","depth":1,"path":"ch14.md","ref":"ch14.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ch15.md","mtime":"2019-04-23T08:22:13.329Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-27T11:41:10.230Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
