@@ -11,8 +11,7 @@
 
 *翻译&校验：freedom*
 
-----
-<div>
+<div style="display: none;">
     <script>
     var _hmt = _hmt || [];
     (function() {
