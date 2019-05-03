@@ -33,7 +33,7 @@
 
 你可以使你的图像文件大小越小，你就可以为用户提供更好的网络体验 —— 尤其是在移动平台上。在这篇文章中，我们将探讨通过现代压缩技术减少图像大小的方法，并将对图像质量的影响降到最低。
 
-<!-- <div>
+<div>
     <script>
     var _hmt = _hmt || [];
     (function() {
@@ -41,7 +41,7 @@
         hm.src = "https://hm.baidu.com/hm.js?4f01de5cc0f84f20fea5a4202233614f";
         var s = document.getElementsByTagName("script")[0]; 
         s.parentNode.insertBefore(hm, s);
-        _hmt.push(['_trackEvent', '图像优化', 'README.md', -1]);
+        _hmt.push(['_trackEvent', '图像优化', '概要', 1]);
     })();
     </script>
-</div> -->
+</div>
