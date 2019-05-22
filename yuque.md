@@ -1406,7 +1406,7 @@ Link: <https://example.com/logo-hires.jpg>; rel=preload; as=image
 
 要了解有关预加载的更多信息，请参阅[Chrome和预装中的预加载](https://medium.com/reloading/preload-prefetch-and-priorities-in-chrome-776165961bbf)和[预取和优先级：它有什么用？](https://www.smashingmagazine.com/2016/02/preload-what-is-it-good-for/).
 
-##[17.图像的性能预算](https://images.guide/#performance-budgets)
+## [17.图像的性能预算](https://images.guide/#performance-budgets)
 
 性能预算是团队尝试不超过的网页性能的“预算”。 例如，“任何页面上的图像不会超过200KB”或“用户体验必须在3秒内可用”。 如果没有达到预算，请探究原因以及如何回到目标上。
 
