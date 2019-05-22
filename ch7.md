@@ -2,7 +2,7 @@
 
 保持SVG精简意味着去掉任何不必要的东西。使用编辑器创建的SVG文件通常包含大量冗余信息(元数据、注释、隐藏层等)。这些内容通常可以安全地删除或转换为更小的形式，而不会影响SVG的最终呈现。
 
-![Performance](https://images.guide/images/book-images/Modern-Image26-large.jpg)
+![](https://yylifen.github.io/images.guide/images/Modern-Image26-large.jpg)
 
 > 由Jake Archibald创建的[SVGOMG](https://jakearchibald.github.io/svgomg/)是一个GUI界面工具，通过选择优化，通过输出标记的实时预览，你可以根据自己的喜好优化SVG。
 
@@ -24,13 +24,13 @@
 
 + 使用工具优化你的SVG。[SVGOMG](https://jakearchibald.github.io/svgomg/)是一个非常方便的基于Web的GUI，由Jake Archibald为[SVGO](https://github.com/svg/svgo)开发，我发现它非常有价值。如果使用Sketch，可以在导出文件时使用[运行SVGO的Sketch插件](https://www.sketchapp.com/extensions/plugins/svgo-compressor/)来缩小文件大小。
 
-![Performance](https://images.guide/images/book-images/svgo-precision-large.jpg)
+![](https://yylifen.github.io/images.guide/images/svgo-precision-large.jpg)
 
 > 通过SVGO以高精度模式运行SVG源（可以让文件大小节省29%）与低精度模式（可以让文件大小节省38%）的示例。
 
 [SVGO](https://www.sketchapp.com/extensions/plugins/svgo-compressor/)是一种基于节点的SVG优化工具。SVGO可以通过降低定义中数字的精度来减少文件大小。一个点之后的每一位数字都会增加一个字节，这就是为什么改变精度(位数)会严重影响文件大小的原因。但是，要非常非常小心地更改精度，因为它会在视觉上影响形状的外观。
 
-![Performance](https://images.guide/images/book-images/Modern-Image28-large.jpg)
+![](https://yylifen.github.io/images.guide/images/Modern-Image28-large.jpg)
 
 > 需要注意的是，虽然SVGO在前面的示例中没有过度简化路径和形状，但在很多情况下可能不是这样。观察上面火箭上的光带是如何以较低的精度扭曲的。
 
@@ -58,13 +58,13 @@ svgo input.svg --precision=1 -o output.svg
 
 **不要忘记压缩SVG！**
 
-![Performance](https://images.guide/images/book-images/before-after-svgo-large.jpg)
+![](https://yylifen.github.io/images.guide/images/before-after-svgo-large.jpg)
 
 另外，不要忘记给[SVG资源开Gzip](https://calendar.perfplanet.com/2014/tips-for-optimising-svg-delivery-for-the-web/)或使用Brotli提供。由于它们是基于文本的，所以可以很好地压缩(源代码大约可以压缩50%)。
 
 当谷歌发布一个新徽标时，我们宣布[最小的](https://twitter.com/addyosmani/status/638753485555671040)版本只有305字节。
 
-![Performance](https://images.guide/images/book-images/Modern-Image30-large.jpg)
+![](https://yylifen.github.io/images.guide/images/Modern-Image30-large.jpg)
 
 你可以使用[许多高级SVG技巧](https://www.clicktorelease.com/blog/svg-google-logo-in-305-bytes/)将其进一步缩减(一直到146字节)！我只想说，无论是通过工具还是手动清理，你都可以删除更多的SVG节点。
 
@@ -78,16 +78,3 @@ SVG可以为图标提供[强大的](https://css-tricks.com/icon-fonts-vs-svg/)�
 
 Sara Soueidan的《[Web优化SVG交付的技巧](https://calendar.perfplanet.com/2014/tips-for-optimising-svg-delivery-for-the-web/)》和Chris Coyier的《[SVG实践](https://abookapart.com/products/practical-svg)》都非常优秀。
 我还发现Andreas Larsen的SVG优化文章([第1部分](https://medium.com/larsenwork-andreas-larsen/optimising-svgs-for-web-use-part-1-67e8f2d4035)和[第2部分](https://medium.com/larsenwork-andreas-larsen/optimising-svgs-for-web-use-part-2-6711cc15df46))很有启发。《[在Sketch中准备和导出SVG图标](https://medium.com/sketch-app-sources/preparing-and-exporting-svg-icons-in-sketch-1a3d65b239bb)》也是一个不错的文章。
-
-<div>
-    <script>
-    var _hmt = _hmt || [];
-    (function() {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?4f01de5cc0f84f20fea5a4202233614f";
-        var s = document.getElementsByTagName("script")[0]; 
-        s.parentNode.insertBefore(hm, s);
-        _hmt.push(['_trackEvent', '图像优化', 'SVG优化', 7]);
-    })();
-    </script>
-</div>

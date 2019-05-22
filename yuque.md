@@ -2,7 +2,7 @@
 
 [原文地址](https://images.guide/)
 
-![Performance](https://images.guide/images/icons/logo.svg#alt=Performance)
+![](https://yylifen.github.io/images.guide/images/logo.svg#alt=Performance)
 
 作者：[Addy Osmani](https://twitter.com/addyosmani)
 
@@ -41,25 +41,25 @@
 
 根据Tammy Everts，将图像添加到页面或使用更多的现有图像已经被[证明](https://calendar.perfplanet.com/2014/images-are-king-an-image-optimization-checklist-for-everyone-in-your-organization/)可以提高转化率。图像不太可能消失，因此投资于有效的压缩策略以尽量减少网络膨胀变得非常重要。
 
-![Performance](https://images.guide/images/book-images/Modern-Image00-medium.jpg)
+![](https://yylifen.github.io/images.guide/images/Modern-Image00-large.jpg)
 
 > 根据2016年[Soasta/Google的研究](https://www.thinkwithgoogle.com/marketing-resources/experience-design/mobile-page-speed-load-time/)，图像是第二大转换预测指标，最佳页面的图像数量占比少于38%。
 
 图像优化包含各种不同的方法，它们都可以减少图像的文件大小。这最终取决于你对图像所要求的视觉保真度。
 
-![Performance](https://images.guide/images/book-images/image-optimisation-medium.jpeg)
+![](https://yylifen.github.io/images.guide/images/image-optimisation-large.jpeg)
 
 > **图像优化**：选择正确的格式，谨慎压缩，并将关键图像优先于那些可能被延迟加载的图像。
 
 常见的图像优化包括压缩，使用[``<picture>``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture)/[``<img srcset>``](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)根据屏幕大小响应式为它们服务，以及调整它们的大小以降低图像解码成本。
 
-![Performance](https://images.guide/images/book-images/chart_naedwl-medium.jpg)
+![](https://yylifen.github.io/images.guide/images/chart_naedwl-large.jpg)
 
 > 根据[HTTP存档](http://jsfiddle.net/rviscomi/rzneberp/embedded/result/)，每个图像在第95%(查看累积分布函数)的位置可以节省30KB流量！
 
 因此有足够的空间让我们一起把图像优化做得更好。
 
-![Performance](https://images.guide/images/book-images/image-optim-medium.jpg)
+![](https://yylifen.github.io/images.guide/images/image-optim-large.jpg)
 
 > ImageOptim是免费的，通过现代压缩技术和剥离不必要的EXIF元数据来减少图像大小。
 
@@ -69,17 +69,17 @@
 
 通过[WebPageTest.org](https://www.webpagetest.org/)执行站点审核，它将有更明显的把优化图像(参见“压缩图像”)到更好的机会。
 
-![Performance](https://images.guide/images/book-images/Modern-Image1-medium.jpg)
+![](https://yylifen.github.io/images.guide/images/Modern-Image1-large.jpg)
 
 > 网页测试报告中的“压缩图像”部分列出了可以更有效地压缩的图像以及这样做估计可以节省的文件大小。
 
-![Performance](https://images.guide/images/book-images/Modern-Image2-large.jpg)
+![](https://yylifen.github.io/images.guide/images/Modern-Image2-medium.jpg)
 
 [Lighthouse](https://developers.google.com/web/tools/lighthouse/)是审核性能的最佳实践工具。包括对图像优化的审核，并可以为可能被进一步压缩的图像提供建议，或者指出屏幕外可延迟加载的图像。
 
 从Chrome 60开始，Lighthouse现在是Chrome DevTools里目前最权威的[审核面板](https://developers.google.com/web/updates/2017/05/devtools-release-notes#lighthouse)：
 
-![Performance](https://images.guide/images/book-images/hbo-medium.jpg)
+![](https://yylifen.github.io/images.guide/images/hbo-large.jpg)
 
 > Lighthouse是可以审核Web性能的最佳实践和改进Web应用功能的工具。
 
@@ -89,7 +89,7 @@
 
 正如Ilya Grigorik在其出色的[图像优化指南](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization)中所指出的，图像的“正确格式”是视觉所期望的结果和功能需求的结合。你是在处理光栅图形还是矢量图形呢？
 
-![](https://images.guide/images/book-images/rastervvector-large.png)
+![](https://yylifen.github.io/images.guide/images/rastervvector-large.png)
 
 [光栅图形](https://en.wikipedia.org/wiki/Raster_graphics)通过对矩形像素网格内的每个像素的值进行编码来表示图像。 它们不是分辨率或者独立的缩放。 WebP和广泛支持的格式（如JPEG或PNG）可以很好地处理这些图像，其中照片写实是必需的。 我们讨论过的Guetzli，MozJPEG以及一些其他方法都很适用于光栅图形。
 
@@ -109,7 +109,7 @@ JPEG使用的是一种为了节省空间而丢弃信息的有损压缩算法，�
 
 JPEG等格式最适合具有多个颜色区域的照片或图像。 大多数优化工具将允许你设置你满意的压缩级别; 较高的压缩会减小更多文件大小，但会引入伪像，晕圈或块状降级。
 
-![Performance](https://images.guide/images/book-images/Modern-Image5-large.jpg)
+![](https://yylifen.github.io/images.guide/images/Modern-Image5-large.jpg)
 
 > JPEG：当我们从最佳质量转换到最低质量时，可感知的JPEG压缩伪像会增加。 请注意，一个工具中的图像质量分数与另一个工具中的质量分数又很大的不同。
 
@@ -137,13 +137,13 @@ JPEG图像格式有多种不同的[压缩模式](http://cs.haifa.ac.il/~nimrod/C
 
 基线JPEG(大多数图像编辑和优化工具默认的压缩模式)是以一种相对简单的自上而下的方式编码和解码。当基线JPEG加载在缓慢或不稳定的网络连接时，用户会看到图像的顶部，并将更多的图像显示为图像加载。与无损JPEG类似，但压缩比较小。
 
-![Performance](https://images.guide/images/book-images/Modern-Image6-large.jpg)
+![](https://yylifen.github.io/images.guide/images/Modern-Image6-large.jpg)
 
 > 基线JPEG从上到下的模式加载图像，而渐进式JPEG从模糊到锐利的模式加载图像。
 
 渐进式JPEG将图像划分为多个扫描区域。第一次扫描以模糊或低质量设置显示图像，后续扫描可提高图像质量。把这个过程看作是“逐步”改进它。图像的每一次“扫描”都会增加更多的细节。当合并在一起后，创造了一个完整的质量图像。
 
-![Performance](https://images.guide/images/book-images/Modern-Image7-large.jpg)
+![](https://yylifen.github.io/images.guide/images/Modern-Image7-large.jpg)
 
 > 基线JPEG从上到下加载图像。PJPEG从低分辨率（模糊）到高分辨率加载图像。Pat Meenan还编写了一个交互式工具来测试和学习渐进式JPEG扫描。
 
@@ -155,7 +155,7 @@ PJPEG能够在加载图像时提供低分辨率的“预览” — 用户可以�
 
 在较慢的3G网络连接上，只接收到部分文件时，用户可以(粗略地)查看图像中的内容，并调用是否等待文件完全加载。这可能比基线JPEG提供的自上而下显示图像的方式更令人愉快。
 
-![Performance](https://images.guide/images/book-images/pjpeg-graph-large.png)
+![](https://yylifen.github.io/images.guide/images/pjpeg-graph-large.png)
 
 > 在2015年，[Facebook改用了PJPEG(用于他们iOS应用程序)](https://code.facebook.com/posts/857662304298232/faster-photos-in-facebook-for-ios/)节省少了10%数据流量。他们能够比以前显示一个高质量的图像快了15%，优化感知到加载时间，如上图所示。
 
@@ -175,7 +175,7 @@ PJPEG能够在加载图像时提供低分辨率的“预览” — 用户可以�
 
 许多其他图像丰富的网站，如[Pinterest](https://pinterest.com/)，也在生产中使用渐进式JPEG。
 
-![Performance](https://images.guide/images/book-images/pinterest-loading-medium.png)
+![](https://yylifen.github.io/images.guide/images/pinterest-loading-large.png)
 
 > Pinterest的JPEG图像都是渐进式编码的。通过逐个扫描加载优化了用户体验。
 
@@ -210,7 +210,7 @@ gulp.task('images', function () {
 
 大多数图像编辑工具默认情况下将图像保存为基线JPEG文件。
 
-![Performance](https://images.guide/images/book-images/photoshop-medium.jpg)
+![](https://yylifen.github.io/images.guide/images/photoshop-large.jpg)
 
 > 大多数图像编辑工具默认将图像保存为基线JPEG文件。你可以在Photoshop中创建的任何图像保存为渐进式JPEG，方法是点击文件 -> 导出 -> 保存为Web（旧版），然后单击渐进式选项。Sketch也支持导出渐进式JPEG — 导出为JPG，并在保存图像时选中“渐进式”复选框。
 
@@ -218,11 +218,11 @@ gulp.task('images', function () {
 
 我们的眼睛对图像(色度)中颜色细节的丢失比亮度(简称亮度—亮度的度量)更宽容。[色度子采样](https://en.wikipedia.org/wiki/Chroma_subsampling)是一种压缩形式，它降低了有利于亮度的信号中颜色的精度。这可以减少文件大小(在某些情况下减少了[15%-17%](https://calendar.perfplanet.com/2015/why-arent-your-images-using-chroma-subsampling/))，而不会对图像质量产生负面影响，并且可以用于JPEG图像。子采样还可以减少图像的使用内存。
 
-![Performance](https://images.guide/images/book-images/luma-signal-medium.jpg)
+![](https://yylifen.github.io/images.guide/images/luma-signal-large.jpg)
 
 由于对比度负责形成我们在图像中看到的形状，因此定义它的亮度非常重要。 较旧或过滤的黑白照片可能不包含颜色，但由于亮度，它们可以像彩色照片一样详细。 色度（颜色）对视觉感知的影响较小。
 
-![Performance](https://images.guide/images/book-images/no-subsampling-medium.jpg)
+![](https://yylifen.github.io/images.guide/images/no-subsampling-large.jpg)
 
 > JPEG支持许多不同的子采样类型：none、horizontal、horizontal和vertical。这张图表来自Frédéric Kayser的**[马蹄蟹的JPEG](http://frdx.free.fr/JPEG_for_the_horseshoe_crabs.pdf)**。
 
@@ -240,7 +240,7 @@ gulp.task('images', function () {
 
 通过减少色度组件中的像素，可以显著减少颜色组件的大小，最终减少字节大小。
 
-![Performance](https://images.guide/images/book-images/subsampling-medium.jpg)
+![](https://yylifen.github.io/images.guide/images/subsampling-large.jpg)
 
 > Chrome子采样配置的JPEG是质量为80。
 
@@ -248,7 +248,7 @@ gulp.task('images', function () {
 
 包含字体的图像也会受到影响，因为文本的子采样不好会降低其可读性。锐利的边缘难以用JPEG压缩，因为JPEG的设计是为了更好地处理过渡柔和的照片场景。
 
-![Performance](https://images.guide/images/book-images/Screen_Shot_2017-08-25_at_11.06.27_AM-medium.jpg)
+![](https://yylifen.github.io/images.guide/images/Screen_Shot_2017-08-25_at_11.06.27_AM-large.jpg)
 
 > [理解JPEG](http://compress-or-die.com/Understanding-JPG/)推荐坚持使用4:4:4(1×1)的子采样处理包含文本的图像。
 
@@ -270,7 +270,7 @@ gulp.task('images', function () {
 
 *摘要 — 我们经常需要有条件地为不同的浏览器提供不同的格式，以享受任何现代的东西的好处。*
 
-![Performance](https://images.guide/images/book-images/format-comparison-medium.jpg)
+![](https://yylifen.github.io/images.guide/images/format-comparison-large.jpg)
 
 > 不同的现代图像格式(和优化器)用于演示在目标文件大小为26KB时可以实现的功能。我们可以使用[SSIM](https://en.wikipedia.org/wiki/Structural_similarity)(结构相似性)或[Butteraugli](https://github.com/google/butteraugli)来比较质量，稍后我们将更详细地介绍这两种方法。
 
@@ -334,9 +334,9 @@ gulp.task('mozjpeg', () =>
 );
 ```
 
-![Performance](https://images.guide/images/book-images/Modern-Image10-large.jpg)
+![](https://yylifen.github.io/images.guide/images/Modern-Image10-large.jpg)
 
-![Performance](https://images.guide/images/book-images/Modern-Image11-large.jpg)
+![](https://yylifen.github.io/images.guide/images/Modern-Image11-large.jpg)
 
 > MozJPEG: 比较文件大小和不同质量视觉相似度的得分。
 
@@ -383,11 +383,11 @@ gulp.task('guetzli', () =>
 );
 ```
 
-![Performance](https://images.guide/images/book-images/Modern-Image12-large.jpg)
+![](https://yylifen.github.io/images.guide/images/Modern-Image12-large.jpg)
 
 使用Guetzli对3x3MP图像进行编码几乎花费了7分钟(和很高的CPU使用率)，节省了大量的时间。对于存档高分辨率的照片，我可以看到它提供了一些价值。
 
-![Performance](https://images.guide/images/book-images/Modern-Image13-large.jpg)
+![](https://yylifen.github.io/images.guide/images/Modern-Image13-large.jpg)
 
 > Guetzli：比较不同质量的文件大小和视觉相似度的得分。
 
@@ -417,13 +417,13 @@ MozJPEG与Guetzli相比如何？ – Kornel的观点:
 
 [Butteraugli](https://github.com/google/butteraugli)是谷歌的一个项目，它估计一个人可能注意到两幅图像的视觉退化(心理视觉相似性)的时间点。那些在几乎没有明显差异的区域内它给出了可靠的图像打分。Butteraugli不仅给出了一个标量分数，而且还计算了差异级别的空间地图。当查看SSIM关注图像的错误集合时，Butteraugli关注最糟糕的部分。
 
-![Performance](https://images.guide/images/book-images/Modern-Image14-medium.jpg)
+![](https://yylifen.github.io/images.guide/images/Modern-Image14-large.jpg)
 
 > 上面的例子使用Butteraugli找到了JPEG质量阈值的最小值，而此时用户还没有注意到一些不清楚的地方。它使总文件大小减少了65%。
 
 在实践中，你将为视觉质量定义一个目标，然后运行许多不同的图像优化策略，查看Butteraugli评分，然后选择最适合文件大小和压缩级别的平衡点。
 
-![Performance](https://images.guide/images/book-images/Modern-Image15-large.jpg)
+![](https://yylifen.github.io/images.guide/images/Modern-Image15-large.jpg)
 
 > 总而言之,我花了大约30分钟安装后启动本地Butteraugli和在我的MAC上正确地编译C++源码构建。然后使用它相对简单: 指定两个图像比较(源和压缩版),它会给你一个分数。
 
@@ -443,7 +443,7 @@ MozJPEG是一个对初学者友好的网络资源编码器，它的速度相对�
 
 在过去的一年中，WebP在有损和无损模式下的压缩性能比传统的压缩性能提高了几个百分点，并且在速度方面，算法的速度提高了两倍，减压效率提高了10％。WebP不是一个面向所有用户的工具，但是它在图像压缩社区中有一定的地位和不断增长的用户基础。让我们看看这是为什么。
 
-![Performance](https://images.guide/images/book-images/Modern-Image16-large.jpg)
+![](https://yylifen.github.io/images.guide/images/Modern-Image16-large.jpg)
 
 > WebP: 比较文件大小和不同质量下的视觉相似度的得分。
 
@@ -483,7 +483,7 @@ Netflix、Amazon、Quora、Yahoo、Walmart、Ebay、The Guardian、Fortune和USA
 
 这个样本列表中指出的公司里还有不少其他公司支持WebP。
 
-![Performance](https://images.guide/images/book-images/webp-conversion-large.jpg)
+![](https://yylifen.github.io/images.guide/images/webp-conversion-large.jpg)
 
 > Google使用WebP：每天在YouTube，Google Play，Chrome数据保护程序和G+上的WebP图像请求每天达到430亿次。
 
@@ -493,11 +493,11 @@ WebP的有损编码是针对与JPEG静止图像相比的。WebP有损编码有�
 
 **宏块** —— 把图像分解为16×16(宏观)亮度像素的小块和两个8×8色像素的小块。这个想法听起来很像JPEG进行颜色空间转换、色度通道下采样和图像细分。
 
-![Performance](https://images.guide/images/book-images/Modern-Image18-medium.png)
+![](https://yylifen.github.io/images.guide/images/Modern-Image18-large.png)
 
 **预测** ——宏块的每个4×4子块具有应用的预测模型，其有效地进行滤波。它定义了一个块周围的两组像素 —— A（它正上方的行）和L（它左边的列）。使用这两个编码器填满4×4像素测试块，并确定哪个创建最接近原始块的值。Colt McAnlis在[WebP有损模式的工作原理](https://medium.com/@duhroach/how-webp-works-lossly-mode-33bd2b1d0670)中更深入地讨论了这一点。
 
-![Performance](https://images.guide/images/book-images/Modern-Image19-small.png)
+![](https://yylifen.github.io/images.guide/images/Modern-Image19-small.png)
 
 步骤类似于JPEG编码，应用离散余弦变换（DCT）。 和JPEG的霍夫曼相比关键的区别在于使用的[算法压缩器](https://www.youtube.com/watch?v=FdMoL3PzmSA&index=7&list=PLOU2XLYxmsIJGErt5rrCqaSGTMyyqNt2H)。
 
@@ -541,7 +541,7 @@ WebP并非没有缺点。它缺乏全分辨率的色彩空间选项，不支持�
 
 XnConvert支持批处理图像，兼容500多种图像格式。你可以组合80多个单独的操作以多种方式转换和编辑图像。
 
-![Performance](https://images.guide/images/book-images/Modern-Image20-large.png)
+![](https://yylifen.github.io/images.guide/images/Modern-Image20-large.png)
 
 > XnConvert支持批处理图像优化，允许直接从源文件转换为WebP和其他格式。除了压缩，XnConvert还可以帮助图像进行元数据的剥离、裁剪、颜色深度定制和其他转换。
 
@@ -687,7 +687,7 @@ Jeremy Wagner有一篇关于[使用Bash进行图像优化](https://jeremywagner.
 
 在Mac上，试试[WebP的Quick Look插件](https://github.com/Nyx0uf/qlImageSize)(qlImageSize)。它起得很好的作用:
 
-![Performance](https://images.guide/images/book-images/Modern-Image22-large.jpg)
+![](https://yylifen.github.io/images.guide/images/Modern-Image22-large.jpg)
 
 在Windows上，你还可以下载[WebP编解码包](https://storage.googleapis.com/downloads.webmproject.org/releases/webp/WebpCodecSetup.exe)，允许在文件管理器和Windows照片查看器中预览WebP图像。
 
@@ -695,11 +695,11 @@ Jeremy Wagner有一篇关于[使用Bash进行图像优化](https://jeremywagner.
 
 不支持WebP的浏览器最终可能根本不显示图像，这是不理想的。为了避免这种情况，我们可以使用一些策略来基于浏览器支持选择性提供WebP。
 
-![Performance](https://images.guide/images/book-images/play-format-webp-large.jpg)
+![](https://yylifen.github.io/images.guide/images/play-format-webp-large.jpg)
 
 > Chrome DevTools网络面板的“Type”列下，选择性为基于Blink的浏览器提供WebP文件的高亮显示。
 
-![Performance](https://images.guide/images/book-images/play-format-type-large.jpg)
+![](https://yylifen.github.io/images.guide/images/play-format-type-large.jpg)
 
 > 当Play store向Blink提供WebP时，它又回到了Firefox等浏览器的JPEG模式。
 
@@ -807,7 +807,7 @@ image/webp webp;
 
 GIF动画的格式非常有限，但是它仍然得到了广泛的使用。尽管从社交网络到流行媒体网站，所有东西都大量嵌入了GIF动画，但这种格式从未设计用于视频存储和动画。事实上，[GIF89a规范](https://www.w3.org/Graphics/GIF/spec-gif89a.txt)指出“GIF并不是一个动画平台”。[颜色的数量，帧数和尺寸](http://gifbrewery.tumblr.com/post/39564982268/can-you-recommend-a-good-length-of-clip-to-keep-gifs)都会影响GIF动画的大小。GIF动画转换成视频可以提供了节省最大的成本。
 
-![Performance](https://images.guide/images/book-images/animated-gif-large.jpg)
+![](https://yylifen.github.io/images.guide/images/animated-gif-large.jpg)
 
 > GIF动画与视频: 不同格式的文件大小在大约相等质量下的比较。
 
@@ -833,7 +833,7 @@ GIF动画的格式非常有限，但是它仍然得到了广泛的使用。尽�
 
 保持SVG精简意味着去掉任何不必要的东西。使用编辑器创建的SVG文件通常包含大量冗余信息(元数据、注释、隐藏层等)。这些内容通常可以安全地删除或转换为更小的形式，而不会影响SVG的最终呈现。
 
-![Performance](https://images.guide/images/book-images/Modern-Image26-large.jpg)
+![](https://yylifen.github.io/images.guide/images/Modern-Image26-large.jpg)
 
 > 由Jake Archibald创建的[SVGOMG](https://jakearchibald.github.io/svgomg/)是一个GUI界面工具，通过选择优化，通过输出标记的实时预览，你可以根据自己的喜好优化SVG。
 
@@ -855,13 +855,13 @@ GIF动画的格式非常有限，但是它仍然得到了广泛的使用。尽�
 
 + 使用工具优化你的SVG。[SVGOMG](https://jakearchibald.github.io/svgomg/)是一个非常方便的基于Web的GUI，由Jake Archibald为[SVGO](https://github.com/svg/svgo)开发，我发现它非常有价值。如果使用Sketch，可以在导出文件时使用[运行SVGO的Sketch插件](https://www.sketchapp.com/extensions/plugins/svgo-compressor/)来缩小文件大小。
 
-![Performance](https://images.guide/images/book-images/svgo-precision-large.jpg)
+![](https://yylifen.github.io/images.guide/images/svgo-precision-large.jpg)
 
 > 通过SVGO以高精度模式运行SVG源（可以让文件大小节省29%）与低精度模式（可以让文件大小节省38%）的示例。
 
 [SVGO](https://www.sketchapp.com/extensions/plugins/svgo-compressor/)是一种基于节点的SVG优化工具。SVGO可以通过降低定义中数字的精度来减少文件大小。一个点之后的每一位数字都会增加一个字节，这就是为什么改变精度(位数)会严重影响文件大小的原因。但是，要非常非常小心地更改精度，因为它会在视觉上影响形状的外观。
 
-![Performance](https://images.guide/images/book-images/Modern-Image28-large.jpg)
+![](https://yylifen.github.io/images.guide/images/Modern-Image28-large.jpg)
 
 > 需要注意的是，虽然SVGO在前面的示例中没有过度简化路径和形状，但在很多情况下可能不是这样。观察上面火箭上的光带是如何以较低的精度扭曲的。
 
@@ -889,13 +889,13 @@ svgo input.svg --precision=1 -o output.svg
 
 **不要忘记压缩SVG！**
 
-![Performance](https://images.guide/images/book-images/before-after-svgo-large.jpg)
+![](https://yylifen.github.io/images.guide/images/before-after-svgo-large.jpg)
 
 另外，不要忘记给[SVG资源开Gzip](https://calendar.perfplanet.com/2014/tips-for-optimising-svg-delivery-for-the-web/)或使用Brotli提供。由于它们是基于文本的，所以可以很好地压缩(源代码大约可以压缩50%)。
 
 当谷歌发布一个新徽标时，我们宣布[最小的](https://twitter.com/addyosmani/status/638753485555671040)版本只有305字节。
 
-![Performance](https://images.guide/images/book-images/Modern-Image30-large.jpg)
+![](https://yylifen.github.io/images.guide/images/Modern-Image30-large.jpg)
 
 你可以使用[许多高级SVG技巧](https://www.clicktorelease.com/blog/svg-google-logo-in-305-bytes/)将其进一步缩减(一直到146字节)！我只想说，无论是通过工具还是手动清理，你都可以删除更多的SVG节点。
 
@@ -918,7 +918,7 @@ Sara Soueidan的《[Web优化SVG交付的技巧](https://calendar.perfplanet.com
 
 重新编码一个有损耗的文件总是会得到一个较小的文件，但这并不意味着你可以从中获得你可能认为的那么高质量。
 
-![Performance](https://images.guide/images/book-images/generational-loss-large.jpg)
+![](https://yylifen.github.io/images.guide/images/generational-loss-large.jpg)
 
 > 上面，从Jon Sneyers的这段[优秀的视频](https://www.youtube.com/watch?v=w7vXJbLhTyI)和[附带的文章](http://cloudinary.com/blog/why_jpeg_is_like_a_photocopier)中，我们可以看到使用这几种格式进行重新压缩的世代损失影响。如果从社交网络中保存(已压缩)图像并重新上传(导致重新压缩)，你可能会遇到这个问题。质量损失会增加。
 
@@ -930,7 +930,7 @@ Sara Soueidan的《[Web优化SVG交付的技巧](https://calendar.perfplanet.com
 
 我们之前已经为用户提供了比用户所需要的更大、更高分辨率的图像。 是需要付出代价的。对于一般的移动硬件来说，解码和调整图像大小是非常昂贵的操作。如果向下发送大的图像并使用CSS的宽和高属性进行缩放，你可能会看到调整图像大小对性能的影响。
 
-![Performance](https://images.guide/images/book-images/image-pipeline-large.jpg)
+![](https://yylifen.github.io/images.guide/images/image-pipeline-large.jpg)
 
 当浏览器获取图像时，它必须将图像从原始源格式（例如JPEG）解码为内存中的位图。 通常需要调整图像的大小（例如，宽度已设置为其容器的百分比）。 解码和调整图像大小的操作就非常昂贵，并且可能会加长显示图像所需的时间。
 
@@ -938,19 +938,19 @@ Sara Soueidan的《[Web优化SVG交付的技巧](https://calendar.perfplanet.com
 
 省略图像上的```width```或```height```属性也会对性能产生负面影响。如果没有它们，浏览器会为图像指定一个较小的占位符区域，直到有足够的字节到达它才知道正确的尺寸。 此时，文档布局必须在成为回流的昂贵步骤中进行更新。
 
-![Performance](https://images.guide/images/book-images/devtools-decode-large.jpg)
+![](https://yylifen.github.io/images.guide/images/devtools-decode-large.jpg)
 
 > 浏览器必须经过许多步骤才能在屏幕上绘制图像。除了获取图像外，还需要对图像进行解码并经常调整大小。这些事件可以在Chrome DevTools [Timeline](https://developers.google.com/web/tools/chrome-devtools/evaluate-performance/performance-reference)中进行审查。
 
 较大的图像还会增加内存大小成本。解码后的图像每像素约4个字节。如果你并不关心，你会让浏览器崩溃；在低端设备上，启动内存交换并不需要那么多。因此，请关注你的图像解码、调整大小和内存的成本。
 
-![Performance](https://images.guide/images/book-images/image-decoding-mobile-large.jpg)
+![](https://yylifen.github.io/images.guide/images/image-decoding-mobile-large.jpg)
 
 > 在普通和低端手机上解码图像的成本非常高。 在某些情况下，解码速度可能会慢5倍（甚至更长）。
 
 在构建新的[移动网络体验](https://medium.com/@paularmstrong/twitter-lite-and-high-performance-react-progressive-web-apps-at-scale-d28a00e780a3)时，Twitter通过确保为用户提供适当大小的图像来提高图像的解码性能。 Twitter可以把很多图像的解码时间Timeline从大约400毫秒一直降到大约19毫秒！
 
-![Performance](https://images.guide/images/book-images/image-decoding-large.jpg)
+![](https://yylifen.github.io/images.guide/images/image-decoding-large.jpg)
 
 > Chrome DevTools Timeline和Performance面板突出显示了Twitter的Lite优化其图像管道之前和之后的图像解码时间（绿色）。
 
@@ -960,7 +960,7 @@ Sara Soueidan的《[Web优化SVG交付的技巧](https://calendar.perfplanet.com
 
 为了匹配用户可能期望的图像质量，请向设备提供最合适的分辨率图像。可以将锐利的高分辨率图像（例如2倍、3倍）提供给支持它们的设备。 低分辨率和标准分辨率的图像应该在没有高分辨率屏幕的情况下提供给用户，因为这样的2倍以上分辨率的图像通常会产生更多的字节。
 
-![Performance](https://images.guide/images/book-images/device-pixel-ratio-large.jpg)
+![](https://yylifen.github.io/images.guide/images/device-pixel-ratio-large.jpg)
 
 > 设备像素比率：许多网站都会跟踪常用设备的分辨率，包括[material.io](https://material.io/devices/)和[mydevice.io](https://mydevice.io/devices/)。
 
@@ -983,7 +983,7 @@ Sara Soueidan的《[Web优化SVG交付的技巧](https://calendar.perfplanet.com
 
 虽然向用户提供正确的解决方案很重要，但有些网站还需要从[艺术指导](http://usecases.responsiveimages.org/#art-direction)上考虑这一点。 如果用户位于较小的屏幕上，你可能需要裁剪或放大并显示主题以充分利用可用空间。尽管艺术指导超出了本文的范围，但像[Cloudinary](http://cloudinary.com/blog/automatically_art_directed_responsive_images%20)这样的服务提供的API尝试尽可能地自动化。
 
-![Performance](https://images.guide/images/book-images/responsive-art-direction-large.jpg)
+![](https://yylifen.github.io/images.guide/images/responsive-art-direction-large.jpg)
 
 > 艺术指导：埃里克·波蒂斯（Eric Portis）汇集了一个优秀的[样本](https://ericportis.com/etc/cloudinary/)，展示了在艺术指导上将如何呈现响应式图像。 此示例主要调整横幅在不同断点处的视觉特征，以充分利用可用空间。
 
@@ -999,7 +999,7 @@ Sara Soueidan的《[Web优化SVG交付的技巧](https://calendar.perfplanet.com
 
 两种常见的颜色模型是加色和减色。加色模型(如RGB，用于数字显示)使用光来显示颜色，而减色模型(如CMYK，用于打印)则通过去除光来工作。  
 
-![Performance](https://images.guide/images/book-images/colors_ept6f2-large.jpg)  
+![](https://yylifen.github.io/images.guide/images/colors_ept6f2-large.jpg)  
 
 > 在RGB中，红色、绿色和蓝色的光以不同的组合方式被加入，以产生广泛的颜色空间。CYMK(青色、品红、黄色和黑色)通过不同颜色的墨水从白纸上减去亮度来工作。  
 
@@ -1011,13 +1011,13 @@ Sara Soueidan的《[Web优化SVG交付的技巧](https://calendar.perfplanet.com
 
 [sRGB](https://en.wikipedia.org/wiki/SRGB)是为Web设计的[标准](https://www.w3.org/Graphics/Color/sRGB.html)颜色空间，它基于RGB。它是一个很小的颜色空间，通常被认为是跨浏览器颜色管理的最小公分母，也是最安全的选项。其他颜色空间(如[Adobe RGB](https://en.wikipedia.org/wiki/Adobe_RGB_color_space)或[ProPhoto RGB](https://en.wikipedia.org/wiki/ProPhoto_RGB_color_space) —— 在Photoshop和Lightroom中使用)可以比sRGB表示更鲜艳的颜色，但由于后者在大多数web浏览器、游戏和显示器中更普遍，所以通常它是人们关注的焦点。  
 
-![Performance](https://images.guide/images/book-images/color-wheel_hazsbk-large.jpg)
+![](https://yylifen.github.io/images.guide/images/color-wheel_hazsbk-large.jpg)
 
 > 上面我们可以看到色域的可视化 —— 颜色空间可以定义的颜色范围。  
 
 颜色空间有三个通道(红色、绿色和蓝色)。在8位模式下，每个通道可以有255种颜色，总共1670万种。16位图像可以显示数万亿种颜色。  
 
-![Performance](https://images.guide/images/book-images/srgb-rgb_ntuhi4-large.jpg)  
+![](https://yylifen.github.io/images.guide/images/srgb-rgb_ntuhi4-large.jpg)  
 
 > 使用图像中的[标尺](https://yardstick.pictures/tags/img%3Adci-p3)比较sRGB、Adobe RGB和ProPhoto RGB。在sRGB中显示这个概念是非常困难的，因为无法显示看不到的颜色。一张普通的sRGB和宽色域的照片应该所有的东西都相同，除了大多数饱和“多汁”的颜色。   
 
@@ -1074,7 +1074,7 @@ Sara Soueidan的《[Web优化SVG交付的技巧](https://calendar.perfplanet.com
 
 [图像精灵](https://developers.google.com/web/fundamentals/design-and-ui/responsive/images#use_image_sprites)(或CSS精灵)在Web上有很长的历史，所有浏览器都支持它，通过将它们组合成一个更大的图像切片来减少页面加载的图像数量，这是一种很流行的方法。
 
-![Performance](https://images.guide/images/book-images/i2_2ec824b0_1-large.jpg)
+![](https://yylifen.github.io/images.guide/images/i2_2ec824b0_1-large.jpg)
 
 > 图像精灵仍然广泛应用于大型生产环境站点，包括谷歌主页。
 
@@ -1086,7 +1086,7 @@ Sara Soueidan的《[Web优化SVG交付的技巧](https://calendar.perfplanet.com
 
 延迟加载是一种Web性能模式，它会延迟浏览器中图像的加载，直到用户需要看到它为止。例如，在滚动时，图像按需异步加载。这可以进一步补充使用图像压缩策略所节省的字节数。
 
-![Performance](https://images.guide/images/book-images/scrolling-viewport-large.jpg)
+![](https://yylifen.github.io/images.guide/images/scrolling-viewport-large.jpg)
 
 必须出现在“折叠上方”的图像，或者当Web页面首次出现时立即加载。然而，“折叠下方”的图像对用户来说还不可见。它们不必立即加载到浏览器中。只有当用户向下滚动并需要显示它们时，才可以稍后加载它们，或者延迟加载它们。
 
@@ -1112,7 +1112,7 @@ Sara Soueidan的《[Web优化SVG交付的技巧](https://calendar.perfplanet.com
 
 对于延迟加载的例子，请查看大多数承载大量图像的主要站点。一些著名的网站是[Medium](https://medium.com/)和[Pinterest](https://www.pinterest.com/)。
 
-![Performance](https://images.guide/images/book-images/Modern-Image35-large.jpg)
+![](https://yylifen.github.io/images.guide/images/Modern-Image35-large.jpg)
 
 > 一个高斯模糊内联预览图像在Medium.com的例子
 
@@ -1162,7 +1162,7 @@ Lazysizes是一个JavaScript库。它不需要配置。下载压缩过的js文�
 
 在这本书的Web版本中，我将Lazysizes(尽管你可以使用任何替代方案)与Cloudinary配对，用于按需响应图像。这让我可以自由地尝试不同的规模、质量、格式的值，以及是否以最小的价值逐步加载:
 
-![Performance](https://images.guide/images/book-images/cloudinary-responsive-images-large.jpg)
+![](https://yylifen.github.io/images.guide/images/cloudinary-responsive-images-large.jpg)
 
 **Lazysizes功能包括:**
 
@@ -1231,7 +1231,7 @@ Lazysizes不是你唯一的选择。这里有更多的懒加载库:
 
 对Chrome DevTools的network面板的快速检查将验证使用这些方法隐藏的图像仍然会被获取，即使我们预期是它们不会被获取。根据嵌入式资源规范，这种行为实际上是正确的。
 
-![Performance](https://images.guide/images/book-images/display-none-images-large.jpg)
+![](https://yylifen.github.io/images.guide/images/display-none-images-large.jpg)
 
 **```display:none```避免触发对图像```src```的请求?**
 
@@ -1287,7 +1287,7 @@ Jake Archibald的[Request Quest](https://jakearchibald.github.io/request-quest/)
 
 现在，我们只讨论静态图像。Cloudinary和Imgix都提供了一系列的图像处理方法，并且都在它们的标准和免费方案中支持压缩、调整大小、裁剪和创建缩略图等主要功能。
 
-![Performance](https://images.guide/images/book-images/Modern-Image36-large.jpg)
+![](https://yylifen.github.io/images.guide/images/Modern-Image36-large.jpg)
 
 > Cloudinary媒体库: 默认情况下，Cloudinary对[非渐进式JPEG](http://cloudinary.com/blog/progressive_jpegs_and_green_martians)进行编码。要选择生成它们，请检查“More options”中的“Progressive”选项或传递“fl_progressive”标志。
 
@@ -1378,7 +1378,7 @@ cdn需要成本。一个大量图像、大流量的网站每月的CDN费用可�
 
 像[Philips](https://www.usa.philips.com/)、[Flipkart](https://www.flipkart.com/)和[Xerox](https://www.xerox.com/)这样的网站使用```<link rel=preload>```来预加载他们的主要logo资源(通常在文档的早期使用)。[Kayak](https://kayak.com/)还使用preload来确保他们的头部的英雄图像被尽快加载。
 
-![Performance](https://images.guide/images/book-images/preload-philips-large.jpg)
+![](https://yylifen.github.io/images.guide/images/preload-philips-large.jpg)
 
 **什么是链接预加载头?**
 
@@ -1392,7 +1392,7 @@ Link: <https://example.com/logo-hires.jpg>; rel=preload; as=image
 
 当英国《金融时报》在其网站上引入链接预加载页眉时，他们将显示报头图像的时间缩[短了1秒](https://twitter.com/wheresrhys/status/843252599902167040):
 
-![Performance](https://images.guide/images/book-images/preload-financial-times-large.jpg)
+![](https://yylifen.github.io/images.guide/images/preload-financial-times-large.jpg)
 
 > 底部:带```<link rel="preload">```，顶部:不带。在WebPageTest上比较Moto G4在3G以上的使用[前](https://www.webpagetest.org/result/170319_Z2_GFR/)[后](https://www.webpagetest.org/result/170319_R8_G4Q/)。
 
@@ -1416,11 +1416,11 @@ Link: <https://example.com/logo-hires.jpg>; rel=preload; as=image
 
 一旦定义了图像大小的性能预算，SpeedCurve就会开始监控并在超出预算时提醒你：
 
-![Performance](https://images.guide/images/book-images/F2BCD61B-85C5-4E82-88CF-9E39CB75C9C0-large.jpg)
+![](https://yylifen.github.io/images.guide/images/F2BCD61B-85C5-4E82-88CF-9E39CB75C9C0-large.jpg)
 
 Calibre提供了类似的功能，支持为你定位的每个设备级设置预算。 这非常有用，因为你通过WiFi在桌面上调整图像大小的预算可能会因移动设备的预算而有很大差异。
 
-![Performance](https://images.guide/images/book-images/budgets-large.jpg)
+![](https://yylifen.github.io/images.guide/images/budgets-large.jpg)
 
 ## [18.写在最后](https://images.guide/#closing-recommendations)
 

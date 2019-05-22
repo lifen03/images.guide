@@ -6,13 +6,13 @@ JPEG图像格式有多种不同的[压缩模式](http://cs.haifa.ac.il/~nimrod/C
 
 基线JPEG(大多数图像编辑和优化工具默认的压缩模式)是以一种相对简单的自上而下的方式编码和解码。当基线JPEG加载在缓慢或不稳定的网络连接时，用户会看到图像的顶部，并将更多的图像显示为图像加载。与无损JPEG类似，但压缩比较小。
 
-![Performance](https://images.guide/images/book-images/Modern-Image6-large.jpg)
+![](https://yylifen.github.io/images.guide/images/Modern-Image6-large.jpg)
 
 > 基线JPEG从上到下的模式加载图像，而渐进式JPEG从模糊到锐利的模式加载图像。
 
 渐进式JPEG将图像划分为多个扫描区域。第一次扫描以模糊或低质量设置显示图像，后续扫描可提高图像质量。把这个过程看作是“逐步”改进它。图像的每一次“扫描”都会增加更多的细节。当合并在一起后，创造了一个完整的质量图像。
 
-![Performance](https://images.guide/images/book-images/Modern-Image7-large.jpg)
+![](https://yylifen.github.io/images.guide/images/Modern-Image7-large.jpg)
 
 > 基线JPEG从上到下加载图像。PJPEG从低分辨率（模糊）到高分辨率加载图像。Pat Meenan还编写了一个交互式工具来测试和学习渐进式JPEG扫描。
 
@@ -24,7 +24,7 @@ PJPEG能够在加载图像时提供低分辨率的“预览” — 用户可以�
 
 在较慢的3G网络连接上，只接收到部分文件时，用户可以(粗略地)查看图像中的内容，并调用是否等待文件完全加载。这可能比基线JPEG提供的自上而下显示图像的方式更令人愉快。
 
-![Performance](https://images.guide/images/book-images/pjpeg-graph-large.png)
+![](https://yylifen.github.io/images.guide/images/pjpeg-graph-large.png)
 
 > 在2015年，[Facebook改用了PJPEG(用于他们iOS应用程序)](https://code.facebook.com/posts/857662304298232/faster-photos-in-facebook-for-ios/)节省少了10%数据流量。他们能够比以前显示一个高质量的图像快了15%，优化感知到加载时间，如上图所示。
 
@@ -44,7 +44,7 @@ PJPEG能够在加载图像时提供低分辨率的“预览” — 用户可以�
 
 许多其他图像丰富的网站，如[Pinterest](https://pinterest.com/)，也在生产中使用渐进式JPEG。
 
-![Performance](https://images.guide/images/book-images/pinterest-loading-medium.png)
+![](https://yylifen.github.io/images.guide/images/pinterest-loading-large.png)
 
 > Pinterest的JPEG图像都是渐进式编码的。通过逐个扫描加载优化了用户体验。
 
@@ -79,7 +79,7 @@ gulp.task('images', function () {
 
 大多数图像编辑工具默认情况下将图像保存为基线JPEG文件。
 
-![Performance](https://images.guide/images/book-images/photoshop-medium.jpg)
+![](https://yylifen.github.io/images.guide/images/photoshop-large.jpg)
 
 > 大多数图像编辑工具默认将图像保存为基线JPEG文件。你可以在Photoshop中创建的任何图像保存为渐进式JPEG，方法是点击文件 -> 导出 -> 保存为Web（旧版），然后单击渐进式选项。Sketch也支持导出渐进式JPEG — 导出为JPG，并在保存图像时选中“渐进式”复选框。
 
@@ -87,11 +87,11 @@ gulp.task('images', function () {
 
 我们的眼睛对图像(色度)中颜色细节的丢失比亮度(简称亮度—亮度的度量)更宽容。[色度子采样](https://en.wikipedia.org/wiki/Chroma_subsampling)是一种压缩形式，它降低了有利于亮度的信号中颜色的精度。这可以减少文件大小(在某些情况下减少了[15%-17%](https://calendar.perfplanet.com/2015/why-arent-your-images-using-chroma-subsampling/))，而不会对图像质量产生负面影响，并且可以用于JPEG图像。子采样还可以减少图像的使用内存。
 
-![Performance](https://images.guide/images/book-images/luma-signal-medium.jpg)
+![](https://yylifen.github.io/images.guide/images/luma-signal-large.jpg)
 
 由于对比度负责形成我们在图像中看到的形状，因此定义它的亮度非常重要。 较旧或过滤的黑白照片可能不包含颜色，但由于亮度，它们可以像彩色照片一样详细。 色度（颜色）对视觉感知的影响较小。
 
-![Performance](https://images.guide/images/book-images/no-subsampling-medium.jpg)
+![](https://yylifen.github.io/images.guide/images/no-subsampling-large.jpg)
 
 > JPEG支持许多不同的子采样类型：none、horizontal、horizontal和vertical。这张图表来自Frédéric Kayser的**[马蹄蟹的JPEG](http://frdx.free.fr/JPEG_for_the_horseshoe_crabs.pdf)**。
 
@@ -109,7 +109,7 @@ gulp.task('images', function () {
 
 通过减少色度组件中的像素，可以显著减少颜色组件的大小，最终减少字节大小。
 
-![Performance](https://images.guide/images/book-images/subsampling-medium.jpg)
+![](https://yylifen.github.io/images.guide/images/subsampling-large.jpg)
 
 > Chrome子采样配置的JPEG是质量为80。
 
@@ -117,7 +117,7 @@ gulp.task('images', function () {
 
 包含字体的图像也会受到影响，因为文本的子采样不好会降低其可读性。锐利的边缘难以用JPEG压缩，因为JPEG的设计是为了更好地处理过渡柔和的照片场景。
 
-![Performance](https://images.guide/images/book-images/Screen_Shot_2017-08-25_at_11.06.27_AM-medium.jpg)
+![](https://yylifen.github.io/images.guide/images/Screen_Shot_2017-08-25_at_11.06.27_AM-large.jpg)
 
 > [理解JPEG](http://compress-or-die.com/Understanding-JPG/)推荐坚持使用4:4:4(1×1)的子采样处理包含文本的图像。
 
@@ -139,7 +139,7 @@ gulp.task('images', function () {
 
 *摘要 — 我们经常需要有条件地为不同的浏览器提供不同的格式，以享受任何现代的东西的好处。*
 
-![Performance](https://images.guide/images/book-images/format-comparison-medium.jpg)
+![](https://yylifen.github.io/images.guide/images/format-comparison-large.jpg)
 
 > 不同的现代图像格式(和优化器)用于演示在目标文件大小为26KB时可以实现的功能。我们可以使用[SSIM](https://en.wikipedia.org/wiki/Structural_similarity)(结构相似性)或[Butteraugli](https://github.com/google/butteraugli)来比较质量，稍后我们将更详细地介绍这两种方法。
 
@@ -203,9 +203,9 @@ gulp.task('mozjpeg', () =>
 );
 ```
 
-![Performance](https://images.guide/images/book-images/Modern-Image10-large.jpg)
+![](https://yylifen.github.io/images.guide/images/Modern-Image10-large.jpg)
 
-![Performance](https://images.guide/images/book-images/Modern-Image11-large.jpg)
+![](https://yylifen.github.io/images.guide/images/Modern-Image11-large.jpg)
 
 > MozJPEG: 比较文件大小和不同质量视觉相似度的得分。
 
@@ -252,11 +252,11 @@ gulp.task('guetzli', () =>
 );
 ```
 
-![Performance](https://images.guide/images/book-images/Modern-Image12-large.jpg)
+![](https://yylifen.github.io/images.guide/images/Modern-Image12-large.jpg)
 
 使用Guetzli对3x3MP图像进行编码几乎花费了7分钟(和很高的CPU使用率)，节省了大量的时间。对于存档高分辨率的照片，我可以看到它提供了一些价值。
 
-![Performance](https://images.guide/images/book-images/Modern-Image13-large.jpg)
+![](https://yylifen.github.io/images.guide/images/Modern-Image13-large.jpg)
 
 > Guetzli：比较不同质量的文件大小和视觉相似度的得分。
 
@@ -286,13 +286,13 @@ MozJPEG与Guetzli相比如何？ – Kornel的观点:
 
 [Butteraugli](https://github.com/google/butteraugli)是谷歌的一个项目，它估计一个人可能注意到两幅图像的视觉退化(心理视觉相似性)的时间点。那些在几乎没有明显差异的区域内它给出了可靠的图像打分。Butteraugli不仅给出了一个标量分数，而且还计算了差异级别的空间地图。当查看SSIM关注图像的错误集合时，Butteraugli关注最糟糕的部分。
 
-![Performance](https://images.guide/images/book-images/Modern-Image14-medium.jpg)
+![](https://yylifen.github.io/images.guide/images/Modern-Image14-large.jpg)
 
 > 上面的例子使用Butteraugli找到了JPEG质量阈值的最小值，而此时用户还没有注意到一些不清楚的地方。它使总文件大小减少了65%。
 
 在实践中，你将为视觉质量定义一个目标，然后运行许多不同的图像优化策略，查看Butteraugli评分，然后选择最适合文件大小和压缩级别的平衡点。
 
-![Performance](https://images.guide/images/book-images/Modern-Image15-large.jpg)
+![](https://yylifen.github.io/images.guide/images/Modern-Image15-large.jpg)
 
 > 总而言之,我花了大约30分钟安装后启动本地Butteraugli和在我的MAC上正确地编译C++源码构建。然后使用它相对简单: 指定两个图像比较(源和压缩版),它会给你一个分数。
 
@@ -305,16 +305,3 @@ MozJPEG与Guetzli相比如何？ – Kornel的观点:
 对于较大的图像，我发现将Guetzli与MozJPEG中的**无损压缩**(jpegtran，而不是cjpeg，以避免丢弃Guetzli所做的工作)相结合，可以进一步减少10%-15%的文件大小(总体减少55%)，而SSIM只减少很小的一部分。我想提醒大家的是，这需要实验和分析，这一领域的其他人，如[Ariya Hidayat](https://ariya.io/2017/03/squeezing-jpeg-images-with-guetzli)，也曾尝试过，结果值得期待。
 
 MozJPEG是一个对初学者友好的网络资源编码器，它的速度相对较快，可以生成高质量的图像。由于Guetzli是资源密集型的，最适合处理文件大小更大、质量更高的图像，所以我将它保留给中级到高级用户。
-
-<div>
-    <script>
-    var _hmt = _hmt || [];
-    (function() {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?4f01de5cc0f84f20fea5a4202233614f";
-        var s = document.getElementsByTagName("script")[0]; 
-        s.parentNode.insertBefore(hm, s);
-        _hmt.push(['_trackEvent', '图像优化', 'JPEG压缩模式', 5]);
-    })();
-    </script>
-</div>

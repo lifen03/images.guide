@@ -2,7 +2,7 @@
 
 [原文地址](https://images.guide/)
 
-![Performance](https://images.guide/images/icons/logo.svg#alt=Performance)
+![](https://yylifen.github.io/images.guide/images/logo.svg#alt=Performance)
 
 作者：[Addy Osmani](https://twitter.com/addyosmani)
 

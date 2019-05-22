@@ -6,39 +6,26 @@
 
 根据Tammy Everts，将图像添加到页面或使用更多的现有图像已经被[证明](https://calendar.perfplanet.com/2014/images-are-king-an-image-optimization-checklist-for-everyone-in-your-organization/)可以提高转化率。图像不太可能消失，因此投资于有效的压缩策略以尽量减少网络膨胀变得非常重要。
 
-![Performance](https://images.guide/images/book-images/Modern-Image00-medium.jpg)
+![](https://yylifen.github.io/images.guide/images/Modern-Image00-large.jpg)
 
 > 根据2016年[Soasta/Google的研究](https://www.thinkwithgoogle.com/marketing-resources/experience-design/mobile-page-speed-load-time/)，图像是第二大转换预测指标，最佳页面的图像数量占比少于38%。
 
 图像优化包含各种不同的方法，它们都可以减少图像的文件大小。这最终取决于你对图像所要求的视觉保真度。
 
-![Performance](https://images.guide/images/book-images/image-optimisation-medium.jpeg)
+![](https://yylifen.github.io/images.guide/images/image-optimisation-large.jpeg)
 
 > **图像优化**：选择正确的格式，谨慎压缩，并将关键图像优先于那些可能被延迟加载的图像。
 
 常见的图像优化包括压缩，使用[``<picture>``](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture)/[``<img srcset>``](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)根据屏幕大小响应式为它们服务，以及调整它们的大小以降低图像解码成本。
 
-![Performance](https://images.guide/images/book-images/chart_naedwl-medium.jpg)
+![](https://yylifen.github.io/images.guide/images/chart_naedwl-large.jpg)
 
 > 根据[HTTP存档](http://jsfiddle.net/rviscomi/rzneberp/embedded/result/)，每个图像在第95%(查看累积分布函数)的位置可以节省30KB流量！
 
 因此有足够的空间让我们一起把图像优化做得更好。
 
-![Performance](https://images.guide/images/book-images/image-optim-medium.jpg)
+![](https://yylifen.github.io/images.guide/images/image-optim-large.jpg)
 
 > ImageOptim是免费的，通过现代压缩技术和剥离不必要的EXIF元数据来减少图像大小。
 
 如果你是一个设计师，也有一个[Sketch的ImageOptim插件](https://github.com/ImageOptim/Sketch-plugin)，可以优化你导出的资源。我发现它可以节省很多时间。
-
-<div>
-    <script>
-    var _hmt = _hmt || [];
-    (function() {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?4f01de5cc0f84f20fea5a4202233614f";
-        var s = document.getElementsByTagName("script")[0]; 
-        s.parentNode.insertBefore(hm, s);
-        _hmt.push(['_trackEvent', '图像优化', '介绍', 1]);
-    })();
-    </script>
-</div>

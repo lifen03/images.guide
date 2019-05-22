@@ -4,7 +4,7 @@
 
 在过去的一年中，WebP在有损和无损模式下的压缩性能比传统的压缩性能提高了几个百分点，并且在速度方面，算法的速度提高了两倍，减压效率提高了10％。WebP不是一个面向所有用户的工具，但是它在图像压缩社区中有一定的地位和不断增长的用户基础。让我们看看这是为什么。
 
-![Performance](https://images.guide/images/book-images/Modern-Image16-large.jpg)
+![](https://yylifen.github.io/images.guide/images/Modern-Image16-large.jpg)
 
 > WebP: 比较文件大小和不同质量下的视觉相似度的得分。
 
@@ -44,7 +44,7 @@ Netflix、Amazon、Quora、Yahoo、Walmart、Ebay、The Guardian、Fortune和USA
 
 这个样本列表中指出的公司里还有不少其他公司支持WebP。
 
-![Performance](https://images.guide/images/book-images/webp-conversion-large.jpg)
+![](https://yylifen.github.io/images.guide/images/webp-conversion-large.jpg)
 
 > Google使用WebP：每天在YouTube，Google Play，Chrome数据保护程序和G+上的WebP图像请求每天达到430亿次。
 
@@ -54,11 +54,11 @@ WebP的有损编码是针对与JPEG静止图像相比的。WebP有损编码有�
 
 **宏块** —— 把图像分解为16×16(宏观)亮度像素的小块和两个8×8色像素的小块。这个想法听起来很像JPEG进行颜色空间转换、色度通道下采样和图像细分。
 
-![Performance](https://images.guide/images/book-images/Modern-Image18-medium.png)
+![](https://yylifen.github.io/images.guide/images/Modern-Image18-large.png)
 
 **预测** ——宏块的每个4×4子块具有应用的预测模型，其有效地进行滤波。它定义了一个块周围的两组像素 —— A（它正上方的行）和L（它左边的列）。使用这两个编码器填满4×4像素测试块，并确定哪个创建最接近原始块的值。Colt McAnlis在[WebP有损模式的工作原理](https://medium.com/@duhroach/how-webp-works-lossly-mode-33bd2b1d0670)中更深入地讨论了这一点。
 
-![Performance](https://images.guide/images/book-images/Modern-Image19-small.png)
+![](https://yylifen.github.io/images.guide/images/Modern-Image19-small.png)
 
 步骤类似于JPEG编码，应用离散余弦变换（DCT）。 和JPEG的霍夫曼相比关键的区别在于使用的[算法压缩器](https://www.youtube.com/watch?v=FdMoL3PzmSA&index=7&list=PLOU2XLYxmsIJGErt5rrCqaSGTMyyqNt2H)。
 
@@ -102,7 +102,7 @@ WebP并非没有缺点。它缺乏全分辨率的色彩空间选项，不支持�
 
 XnConvert支持批处理图像，兼容500多种图像格式。你可以组合80多个单独的操作以多种方式转换和编辑图像。
 
-![Performance](https://images.guide/images/book-images/Modern-Image20-large.png)
+![](https://yylifen.github.io/images.guide/images/Modern-Image20-large.png)
 
 > XnConvert支持批处理图像优化，允许直接从源文件转换为WebP和其他格式。除了压缩，XnConvert还可以帮助图像进行元数据的剥离、裁剪、颜色深度定制和其他转换。
 
@@ -248,7 +248,7 @@ Jeremy Wagner有一篇关于[使用Bash进行图像优化](https://jeremywagner.
 
 在Mac上，试试[WebP的Quick Look插件](https://github.com/Nyx0uf/qlImageSize)(qlImageSize)。它起得很好的作用:
 
-![Performance](https://images.guide/images/book-images/Modern-Image22-large.jpg)
+![](https://yylifen.github.io/images.guide/images/Modern-Image22-large.jpg)
 
 在Windows上，你还可以下载[WebP编解码包](https://storage.googleapis.com/downloads.webmproject.org/releases/webp/WebpCodecSetup.exe)，允许在文件管理器和Windows照片查看器中预览WebP图像。
 
@@ -256,11 +256,11 @@ Jeremy Wagner有一篇关于[使用Bash进行图像优化](https://jeremywagner.
 
 不支持WebP的浏览器最终可能根本不显示图像，这是不理想的。为了避免这种情况，我们可以使用一些策略来基于浏览器支持选择性提供WebP。
 
-![Performance](https://images.guide/images/book-images/play-format-webp-large.jpg)
+![](https://yylifen.github.io/images.guide/images/play-format-webp-large.jpg)
 
 > Chrome DevTools网络面板的“Type”列下，选择性为基于Blink的浏览器提供WebP文件的高亮显示。
 
-![Performance](https://images.guide/images/book-images/play-format-type-large.jpg)
+![](https://yylifen.github.io/images.guide/images/play-format-type-large.jpg)
 
 > 当Play store向Blink提供WebP时，它又回到了Firefox等浏览器的JPEG模式。
 
@@ -368,7 +368,7 @@ image/webp webp;
 
 GIF动画的格式非常有限，但是它仍然得到了广泛的使用。尽管从社交网络到流行媒体网站，所有东西都大量嵌入了GIF动画，但这种格式从未设计用于视频存储和动画。事实上，[GIF89a规范](https://www.w3.org/Graphics/GIF/spec-gif89a.txt)指出“GIF并不是一个动画平台”。[颜色的数量，帧数和尺寸](http://gifbrewery.tumblr.com/post/39564982268/can-you-recommend-a-good-length-of-clip-to-keep-gifs)都会影响GIF动画的大小。GIF动画转换成视频可以提供了节省最大的成本。
 
-![Performance](https://images.guide/images/book-images/animated-gif-large.jpg)
+![](https://yylifen.github.io/images.guide/images/animated-gif-large.jpg)
 
 > GIF动画与视频: 不同格式的文件大小在大约相等质量下的比较。
 
@@ -389,16 +389,3 @@ GIF动画的格式非常有限，但是它仍然得到了广泛的使用。尽�
 + 考虑有损GIF编码器。 Gifsicle的分支[Gifsossy](https://github.com/pornel/giflossy)支持带有```-lossy```标签，它可以减少约60%-65%的文件大小。 还有一个很好的基于Gifsossy的工具，叫做[Gifify](https://github.com/vvo/gifify)。 对于非动画GIF，把它们转换为PNG或WebP。
 
 更多的相关信息，请查看Rigor的《[Book of GIF](https://rigor.com/wp-content/uploads/2017/03/TheBookofGIFPDF.pdf)》。
-
-<div>
-    <script>
-    var _hmt = _hmt || [];
-    (function() {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?4f01de5cc0f84f20fea5a4202233614f";
-        var s = document.getElementsByTagName("script")[0]; 
-        s.parentNode.insertBefore(hm, s);
-        _hmt.push(['_trackEvent', '图像优化', 'WebP是什么?', 6]);
-    })();
-    </script>
-</div>
